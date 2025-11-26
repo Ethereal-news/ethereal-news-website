@@ -1,18 +1,12 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
-import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://ethereal.news",
-  integrations: [sitemap(), mdx(),
-  pagefind({
-    build: {
-      engine: 'js',
-    }
-  })],
+  integrations: [sitemap(), mdx(),],
   vite: {
     plugins: [tailwindcss()],
   },
