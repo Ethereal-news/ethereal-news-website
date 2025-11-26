@@ -1,0 +1,84 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import FormattedDate from "@components/FormattedDate.astro";
+import { readingTime } from "@lib/utils";
+import { SITE, HOME } from "@consts";
+import CalendarArrowCard from "@components/CalendarArrowCard.astro";
+import Link from "@components/Link.astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
+
+const issues = (await getCollection("issues"))
+  .filter((issue) => !issue.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+
+const issue = issues[0];
+
+const { Content } = await render(issue);
+
+const currentDate = new Date(); // Get today's date
+
+const calendar: CollectionEntry<"calendar">[] = (
+  await getCollection("calendar")
+)
+  .filter((calendarItem) => !calendarItem.data.draft) // Filter out draft items
+  .filter((calendarItem) => calendarItem.data.date >= currentDate) // Filter out past dates
+  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()) // Sort by date
+  .slice(0, SITE.NUM_CALENDAR_ITEMS_ON_HOMEPAGE);
+---
+
+<Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-16">
+        <div class="my-10 space-y-1">
+          <h1 class="animate text-3xl font-semibold text-black dark:text-white">
+            {issue.data.title}
+          </h1>
+          <div class="animate flex items-center gap-1.5">
+            <div class="font-base text-sm">
+              <FormattedDate date={issue.data.date} />
+            </div>
+            &bull;
+            {issue.body && (
+              <div class="font-base text-sm">
+                {readingTime(issue.body)}
+              </div>
+            )}        
+          </div>
+        </div>
+        <span class="block w-fit mx-auto">
+          <a
+            href="https://etherealnews.substack.com/subscribe"
+            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+          >
+            <div class="text-sm font-bold">
+              Subscribe to Ethereal news
+            </div>
+          </a>
+        </span>
+        <article class="animate">
+          <Content />
+        </article>
+
+        <section class="animate space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-y-2">
+            <h2 class="font-semibold text-black dark:text-white">
+              Upcoming calendar
+            </h2>
+            <Link href="/calendar"> See full calendar </Link>
+          </div>
+          <ul class="not-prose flex flex-col gap-4">
+            {
+              calendar.map((calendar) => (
+                <li>
+                  <CalendarArrowCard entry={calendar} />
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
+    </aside>
+  </Container>
+</Layout>

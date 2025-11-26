@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import CalendarArrowCard from "@components/CalendarArrowCard.astro";
+import { CALENDAR } from "@consts";
+
+const currentDate = new Date(); // Get today's date
+
+const calendar = (await getCollection("calendar"))
+  .filter((calendarItem) => !calendarItem.data.draft) // Filter out draft items
+  .filter((calendarItem) => calendarItem.data.date >= currentDate) // Filter out past dates
+  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()); // Sort by date
+---
+
+<Layout title={CALENDAR.TITLE} description={CALENDAR.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-10">
+        <div class="animate font-semibold text-black dark:text-white">
+          Calendar
+        </div>
+        <ul class="animate not-prose flex flex-col gap-4">
+          {
+            calendar.map((item) => (
+              <li>
+                <CalendarArrowCard entry={item} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </aside>
+  </Container>
+</Layout>

@@ -1,0 +1,21 @@
+---
+import FormattedDate from "@components/FormattedDate.astro";
+
+// Define the props for the component
+type Props = {
+  date: Date;
+  endDate?: Date;
+};
+
+const { date, endDate } = Astro.props;
+---
+
+{
+  endDate ? (
+    <span>
+      <FormattedDate date={date} /> - <FormattedDate date={endDate} />
+    </span>
+  ) : (
+    <FormattedDate date={date} />
+  )
+}

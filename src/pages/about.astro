@@ -1,0 +1,23 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { getEntry } from 'astro:content';
+import { ABOUT } from "@consts";
+import Link from "@components/Link.astro";
+
+const about = await getEntry('pages', 'about');
+if (!about) {
+  throw new Error('About page not found in content collection');
+}
+const { Content } = await about.render();
+---
+
+<Layout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+       <div class="prose dark:prose-invert max-w-none">
+        <Content components={{ Link }} />
+      </div>
+    </aside>
+  </Container>
+</Layout>
