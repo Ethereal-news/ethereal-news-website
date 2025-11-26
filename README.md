@@ -12,5 +12,4 @@
 
 ## Licences
 
-* Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 * Software & website is [MIT](https://github.com/Ethereal-news/ethereal-news-website?tab=MIT-1-ov-file)

@@ -14,7 +14,6 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 * [Daring Fireball](https://daringfireball.net) (DF): John Gruber's minimalistic blog focused on one topic sustained by a single weekly sponsor is the inspiration for Ethereal news minimalism and long term sustainability model. John is also the creator of [Markdown](https://daringfireball.net/2004/03/introducing_markdown). 
 
 ## Licenses
-* Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 * Software & website is [MIT](https://github.com/Ethereal-news/ethereal-news-website?tab=MIT-1-ov-file)
 
 ## Disclosures
