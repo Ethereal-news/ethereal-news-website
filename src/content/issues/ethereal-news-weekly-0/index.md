@@ -4,6 +4,8 @@ description: 'Coming soon'
 date: 'November 28, 2025'
 ---
 
+Coming soon, subscribe to get the first issue in your inbox.
+
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
