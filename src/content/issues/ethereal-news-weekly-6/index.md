@@ -137,15 +137,6 @@ A complete suite of trusted products to build anything in web3.
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-6](https://ethereal.news/ethereal-news-weekly-6)*  
-
+ 
 ---
-
-### Upcoming calendar
-
-* Jan 30 \- Feb 11: [HackMoney](https://ethglobal.com/events/hackmoney2026) (hackathon), online  
-* Feb 6-8: [ETH Oxford](https://www.ethoxford.io/) (hackathon), Oxford, United Kingdom  
-* Feb 17-21: [ETHDenver](https://ethdenver.com/) (conference & hackathon), Denver, United States  
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
-
-[*Full calendar*](https://ethereal.news/calendar/)  
 
