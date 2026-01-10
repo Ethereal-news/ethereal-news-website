@@ -56,7 +56,11 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
       <div class="space-y-16">
         <div class="my-10 space-y-1">
           <h1 class="animate text-3xl font-semibold text-black dark:text-white">
-            {issue.data.title}
+            <a
+              href={`/${issue.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
+            >
+              {issue.data.title}
+            </a>
           </h1>
           <div class="animate flex items-center gap-1.5">
             <div class="font-base text-sm">
