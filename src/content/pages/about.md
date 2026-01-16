@@ -38,3 +38,4 @@ Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and 
 * [Christine D. Kim](https://christinedkim.substack.com/): Newsletter & interviews
 * [The Daily Gwei](https://www.youtube.com/c/TheDailyGwei): YouTube hosted by Anthony Sassano
 * [ETH Daily](https://ethdaily.io): Newsletter & podcast
+* [Daily Doots podcast](https://evmavericks.libsyn.com/): Podcast of the highlights from the r/ethereum daily
