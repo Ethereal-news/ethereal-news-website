@@ -11,6 +11,11 @@ const calendar = (await getCollection("calendar"))
   .filter((calendarItem) => !calendarItem.data.draft) // Filter out draft items
   .filter((calendarItem) => calendarItem.data.date >= currentDate) // Filter out past dates
   .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()); // Sort by date
+
+// Build calendar subscription URLs
+const icsUrl = new URL("/calendar.ics", Astro.site).toString();
+const googleCalendarUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(icsUrl)}`;
+const appleCalendarUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
 ---
 
 <Layout title={CALENDAR.TITLE} description={CALENDAR.DESCRIPTION}>
@@ -19,6 +24,35 @@ const calendar = (await getCollection("calendar"))
       <div class="space-y-10">
         <div class="animate font-semibold text-black dark:text-white">
           Calendar
+        </div>
+        <div class="animate flex flex-wrap gap-3 w-fit">
+          <a
+            href={googleCalendarUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+          >
+            <div class="text-sm font-bold whitespace-nowrap">
+              Add to Google Calendar
+            </div>
+          </a>
+          <a
+            href={appleCalendarUrl}
+            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+          >
+            <div class="text-sm font-bold whitespace-nowrap">
+              Add to Apple Calendar
+            </div>
+          </a>
+          <a
+            href="/calendar.ics"
+            download="ethereal-news-calendar.ics"
+            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+          >
+            <div class="text-sm font-bold whitespace-nowrap">
+              Download ICS File
+            </div>
+          </a>
         </div>
         <ul class="animate not-prose flex flex-col gap-4">
           {
