@@ -9,10 +9,17 @@ export async function GET(context) {
     (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
   );
 
+  const imageUrl = new URL("/etherealnews.jpg", context.site).toString();
+
   return rss({
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
+    customData: `<image>
+      <url>${imageUrl}</url>
+      <title>${SITE.TITLE}</title>
+      <link>${context.site}</link>
+    </image>`,
     items: items.map((item) => ({
       title: item.data.title,
       description: item.data.description,
