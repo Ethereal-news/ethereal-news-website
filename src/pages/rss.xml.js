@@ -10,12 +10,17 @@ export async function GET(context) {
   );
 
   const imageUrl = new URL("/etherealnews.jpg", context.site).toString();
+  const rssUrl = new URL("/rss.xml", context.site).toString();
 
   return rss({
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
-    customData: `<image>
+    xmlns: {
+      atom: "http://www.w3.org/2005/Atom",
+    },
+    customData: `<atom:link href="${rssUrl}" rel="self" type="application/rss+xml"/>
+    <image>
       <url>${imageUrl}</url>
       <title>${SITE.TITLE}</title>
       <link>${context.site}</link>
