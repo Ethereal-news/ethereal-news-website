@@ -62,8 +62,8 @@ export async function GET() {
   }) satisfies EventAttributes[];
 
   const { error, value } = createEvents(icsEvents, {
-    productId: "-//Ethereal News//Ethereal News Calendar//EN",
-    calName: "Ethereal News Calendar",
+    productId: "-//Ethereal news//Ethereal news calendar//EN",
+    calName: "Ethereal news calendar",
     method: "PUBLISH",
   });
 
