@@ -8,13 +8,37 @@ type Props = {
 };
 
 const { date, endDate } = Astro.props;
+
+// Check if both dates are in the same month and year
+const sameMonth = endDate && 
+  date.getMonth() === endDate.getMonth() && 
+  date.getFullYear() === endDate.getFullYear();
 ---
 
 {
   endDate ? (
-    <span>
-      <FormattedDate date={date} /> - <FormattedDate date={endDate} />
-    </span>
+    sameMonth ? (
+      <span>
+        <time datetime={date.toISOString()}>
+          {date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+          })}
+        </time>
+        {" - "}
+        {endDate.toLocaleDateString("en-US", {
+          day: "numeric",
+        })}
+        {", "}
+        {date.toLocaleDateString("en-US", {
+          year: "numeric",
+        })}
+      </span>
+    ) : (
+      <span>
+        <FormattedDate date={date} /> - <FormattedDate date={endDate} />
+      </span>
+    )
   ) : (
     <FormattedDate date={date} />
   )

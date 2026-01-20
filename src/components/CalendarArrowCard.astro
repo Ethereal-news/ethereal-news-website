@@ -17,22 +17,28 @@ const { entry } = Astro.props as {
   class="not-prose group relative flex flex-nowrap rounded-lg border border-black/15 px-4 py-3 pr-10 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
 >
   <div class="flex flex-1 flex-col truncate">
-    <div class="font-semibold">
-      {entry.data.title}
-    </div>
-    <div class="text-sm">
-      {entry.data.location}
-    </div>
-    <div class="text-sm">
-      <FormattedDates date={entry.data.date} endDate={entry.data.endDate} />
-    </div>
-    {entry.data.tags && entry.data.tags.length > 0 && (
-      <div class="mt-2 flex flex-wrap gap-2">
-        {entry.data.tags.map((tag) => (
-          <CalendarTag tag={tag} />
-        ))}
+    <div class="flex items-center justify-between gap-2 flex-wrap">
+      <div class="text-[0.7rem]">
+        <FormattedDates date={entry.data.date} endDate={entry.data.endDate} />
       </div>
-    )}
+      {entry.data.tags && entry.data.tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {entry.data.tags.map((tag) => (
+            <CalendarTag tag={tag} />
+          ))}
+        </div>
+      )}
+    </div>
+    <div class="flex items-center gap-2 flex-wrap">
+      <div class="font-semibold">
+        {entry.data.title}
+      </div>
+      {entry.data.location && (
+        <div class="text-sm">
+          {entry.data.location}
+        </div>
+      )}
+    </div>
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
