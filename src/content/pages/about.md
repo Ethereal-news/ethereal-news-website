@@ -18,7 +18,7 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 
 ## Disclosures
 
-Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and ENS (from airdrop).
+Andrew is supported by [Consensys](https://consensys.io/).  Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and ENS (from airdrop).
 
 ## Resources
 
