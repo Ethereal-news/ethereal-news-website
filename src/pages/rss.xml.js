@@ -20,11 +20,11 @@ export async function GET(context) {
       atom: "http://www.w3.org/2005/Atom",
     },
     customData: `<atom:link href="${rssUrl}" rel="self" type="application/rss+xml"/>
-    <image>
-      <url>${imageUrl}</url>
-      <title>${SITE.TITLE}</title>
-      <link>${context.site}</link>
-    </image>`,
+<image>
+<url>${imageUrl}</url>
+<title>${SITE.TITLE}</title>
+<link>${context.site}</link>
+</image>`,
     items: items.map((item) => ({
       title: item.data.title,
       description: item.data.description,
