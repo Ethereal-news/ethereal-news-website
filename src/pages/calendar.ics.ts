@@ -22,12 +22,25 @@ export async function GET() {
     const exclusiveEndDate = new Date(endDate);
     exclusiveEndDate.setUTCDate(exclusiveEndDate.getUTCDate() + 1);
 
-    // Build description: combine description and URL if both exist
-    const description = eventFromCollection.data.url
-      ? eventFromCollection.data.description
-        ? `${eventFromCollection.data.description}\n\n${eventFromCollection.data.url}`
-        : eventFromCollection.data.url
-      : eventFromCollection.data.description;
+    // Build description: combine description, tags, and URL if they exist
+    const parts: string[] = [];
+    
+    if (eventFromCollection.data.description) {
+      parts.push(eventFromCollection.data.description);
+    }
+    
+    if (eventFromCollection.data.tags && eventFromCollection.data.tags.length > 0) {
+      const capitalizedTags = eventFromCollection.data.tags.map(
+        (tag) => tag.charAt(0).toUpperCase() + tag.slice(1)
+      );
+      parts.push(capitalizedTags.join(" + "));
+    }
+    
+    if (eventFromCollection.data.url) {
+      parts.push(eventFromCollection.data.url);
+    }
+    
+    const description = parts.length > 0 ? parts.join("\n\n") : undefined;
 
     // For all-day events, use 3-element DateArray [year, month, day]
     const eventData = {
