@@ -34,33 +34,27 @@ const appleCalendarUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
             ))
           }
         </ul>
-        <div class="animate flex flex-wrap gap-3 w-fit">
+        <div class="animate flex flex-wrap gap-2 w-fit">
           <a
             href={googleCalendarUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+            class="not-prose inline-flex items-center rounded-full bg-black/5 px-2 py-1 text-[0.7rem] font-medium text-black dark:bg-white/10 dark:text-white"
           >
-            <div class="text-sm font-bold whitespace-nowrap">
-              Add to Google
-            </div>
+            Add to Google
           </a>
           <a
             href={appleCalendarUrl}
-            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+            class="not-prose inline-flex items-center rounded-full bg-black/5 px-2 py-1 text-[0.7rem] font-medium text-black dark:bg-white/10 dark:text-white"
           >
-            <div class="text-sm font-bold whitespace-nowrap">
-              Add to Apple
-            </div>
+            Add to Apple
           </a>
           <a
             href="/calendar.ics"
             download="ethereal-news-calendar.ics"
-            class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
+            class="not-prose inline-flex items-center rounded-full bg-black/5 px-2 py-1 text-[0.7rem] font-medium text-black dark:bg-white/10 dark:text-white"
           >
-            <div class="text-sm font-bold whitespace-nowrap">
-              Download ICS
-            </div>
+            Download ICS
           </a>
         </div>
       </div>
