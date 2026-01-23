@@ -54,7 +54,7 @@ A complete suite of trusted products to build anything in web3.
 * Hardhat [v3.1.5](https://github.com/NomicFoundation/hardhat/releases/tag/hardhat%403.1.5) (dev framework): Solidity tests improved display & Solidity compiler hook for plugins  
 * [Remix guide for DevRels](https://ethereumremix.substack.com/p/remix-ide-the-goto-devrel-tool): deep link using URL parameters, create a tutorial (LearnEth), run Remix Desktop (for offline demos) and use templates & plugins   
 * Slither (static analyzer):  
-  * Slither [0.11.5](https://github.com/crytic/slither/releases/tag/0.11.5): adds reentracy balance detector   
+  * Slither [0.11.5](https://github.com/crytic/slither/releases/tag/0.11.5): adds reentrancy balance detector   
   * Slither MCP Server [v2.3.0](https://github.com/trailofbits/slither-mcp/releases/tag/v2.3.0): adds 11 analysis tools & expands tool descriptions to follow Anthropic best practices  
 * [EVM storage chronicle](https://medium.com/@brotherbarzzz/introducing-evm-storage-chronicle-rebuilding-a-missing-piece-of-ethereum-infrastructure-8c9fb89eb22b) (web tool): inspect mainnet contract storage, includes variable & slot history   
 * [ENS community dataset](https://ens.domains/blog/post/google-bigquery-community-dataset) on Google Cloud BigQuery  
