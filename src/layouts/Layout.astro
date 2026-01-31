@@ -3,6 +3,7 @@ import Head from "@components/Head.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Pagefind from "@components/PageFind.astro";
+import ReadingProgress from "@components/ReadingProgress.astro";
 import { SITE } from "@consts";
 
 type Props = {
@@ -31,6 +32,7 @@ const displayTitle = title.replace(/^Ethereal news /i, "");
     />
   </head>
   <body>
+    <ReadingProgress />
     <Header />
     <main>
       <slot />

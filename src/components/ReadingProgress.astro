@@ -1,0 +1,28 @@
+---
+---
+
+<div
+  id="reading-progress"
+  class="fixed top-0 left-0 h-0.5 bg-black/50 dark:bg-white/50 z-[60] transition-all duration-150"
+  style="width: 0%"
+></div>
+
+<script>
+  function initReadingProgress() {
+    const progressBar = document.getElementById('reading-progress');
+    if (!progressBar) return;
+
+    function updateProgress() {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+    }
+
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  document.addEventListener('DOMContentLoaded', initReadingProgress);
+  document.addEventListener('astro:after-swap', initReadingProgress);
+</script>
