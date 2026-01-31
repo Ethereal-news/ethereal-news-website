@@ -59,8 +59,8 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
 >
   <Container>
     <aside data-pagefind-ignore>
-      <div class="space-y-16">
-        <div class="my-10 space-y-1">
+      <div class="space-y-10">
+        <div class="space-y-1">
           <h1 class="animate text-3xl font-semibold text-black dark:text-white">
             <a
               href={`/${issue.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
@@ -77,7 +77,7 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
               <div class="font-base text-sm">
                 {readingTime(issue.body)}
               </div>
-            )}        
+            )}
           </div>
         </div>
         <SubscribeButton />

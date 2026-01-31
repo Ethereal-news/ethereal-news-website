@@ -57,8 +57,8 @@ const { Content } = await render(issue);
   isArticle={true}
 >
   <Container>
-    <div class="space-y-16 pb-0">
-      <div class="my-10 space-y-1">
+    <div class="space-y-10">
+      <div class="space-y-1">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           {issue.data.title}
         </h1>
@@ -71,7 +71,7 @@ const { Content } = await render(issue);
             <div class="font-base text-sm">
               {readingTime(issue.body)}
             </div>
-          )}        
+          )}
         </div>
       </div>
       <SubscribeButton />

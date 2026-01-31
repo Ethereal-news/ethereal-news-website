@@ -2,8 +2,6 @@
 title: About
 description: About Ethereal news
 ---
-# About
-
 Ethereal news is curated Ethereum news focused on developers (core & application), edited by Andrew B Coathup (former editor of [Week in Ethereum News](https://weekinethereumnews.com)).
 
 ## Credits
