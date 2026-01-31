@@ -50,7 +50,12 @@ if (calendar.length < 6) {
 calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 
-<Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+<Layout
+  title={HOME.TITLE}
+  description={issue.data.description}
+  publishedDate={issue.data.date}
+  isArticle={true}
+>
   <Container>
     <aside data-pagefind-ignore>
       <div class="space-y-16">
