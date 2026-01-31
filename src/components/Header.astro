@@ -2,6 +2,7 @@
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
 import HamburgerMenu from "@components/HamburgerMenu.astro";
+import KiteIcon from "@components/KiteIcon.astro";
 import { SITE } from "@consts";
 ---
 
@@ -9,7 +10,8 @@ import { SITE } from "@consts";
   <Container>
     <div class="flex flex-wrap justify-between gap-y-2">
       <Link href="/" underline={false}>
-        <div class="font-semibold">
+        <div class="flex items-center gap-2 font-semibold">
+          <KiteIcon />
           {SITE.TITLE}
         </div>
       </Link>
