@@ -75,9 +75,18 @@ const jsonLd = isArticle && publishedDate ? {
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+<link rel="apple-touch-icon" href="/etherealnews-logo.jpg" />
 <meta name="generator" content={Astro.generator} />
+
+<!-- Preconnect hints -->
+<link rel="preconnect" href="https://etherealnews.substack.com" />
+
+<!-- RSS Autodiscovery -->
+<link rel="alternate" type="application/rss+xml" title="Ethereal news RSS Feed" href="/rss.xml" />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -109,6 +118,7 @@ const jsonLd = isArticle && publishedDate ? {
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={imageUrl} />
 <meta property="twitter:site" content="@EtherealnewsHQ" />
+<meta property="twitter:creator" content="@abcoathup" />
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
