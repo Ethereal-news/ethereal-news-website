@@ -9,18 +9,30 @@ type Props = {
 const { entry } = Astro.props as {
   entry: CollectionEntry<"issues">;
 };
+
+// Extract issue number from title (e.g., "Ethereal news weekly #9" -> "#9")
+const issueMatch = entry.data.title.match(/#(\d+)/);
+const issueNumber = issueMatch ? `#${issueMatch[1]}` : null;
 ---
 
 <a
   href={`/${entry.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
   class="not-prose group relative flex flex-nowrap rounded-lg border border-black/15 px-4 py-3 pr-10 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
 >
-  <div class="flex flex-1 flex-col truncate">
+  {issueNumber && (
+    <div class="flex items-center justify-center w-8 sm:w-12 mr-2 sm:mr-4 text-sm sm:text-lg font-bold text-black/50 dark:text-white/50">
+      {issueNumber}
+    </div>
+  )}
+  <div class="flex flex-1 flex-col overflow-hidden">
     <div class="font-semibold">
       {entry.data.title}
     </div>
-    <div class="text-sm">
-      <FormattedDate date={entry.data.date} /> - {entry.data.description}
+    <div class="text-sm text-black/50 dark:text-white/50">
+      <FormattedDate date={entry.data.date} />
+    </div>
+    <div class="text-sm line-clamp-5">
+      {entry.data.description}
     </div>
   </div>
   <svg
