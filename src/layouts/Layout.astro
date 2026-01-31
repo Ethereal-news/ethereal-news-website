@@ -14,13 +14,16 @@ type Props = {
 };
 
 const { title, description, image, publishedDate, isArticle } = Astro.props;
+
+// Remove "Ethereal news " prefix to avoid redundancy in page title
+const displayTitle = title.replace(/^Ethereal news /i, "");
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <Head
-      title={`${title} | ${SITE.TITLE}`}
+      title={`${displayTitle} | ${SITE.TITLE}`}
       description={description}
       image={image}
       publishedDate={publishedDate}
