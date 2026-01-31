@@ -5,6 +5,7 @@ import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
 import BackToPrevious from "@components/BackToPrevious.astro";
+import SubscribeButton from "@components/SubscribeButton.astro";
 import IssueNavigation from "@components/IssueNavigation.astro";
 
 export async function getStaticPaths() {
@@ -73,16 +74,7 @@ const { Content } = await render(issue);
           )}        
         </div>
       </div>
-      <span class="block w-fit mx-auto">
-        <a
-          href="https://etherealnews.substack.com/subscribe"
-          class="not-prose group relative flex w-fit flex-nowrap rounded-sm border border-black/15 py-1.5 px-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white justify-center items-center"
-        >
-          <div class="text-sm font-bold">
-            Subscribe to Ethereal news
-          </div>
-        </a>
-      </span>
+      <SubscribeButton />
       <article class="animate mb-0">
         <Content />
         <div class="mt-12">
