@@ -62,13 +62,13 @@ const { Content } = await render(issue);
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           {issue.data.title}
         </h1>
-        <div class="animate flex items-center gap-1.5">
-          <div class="font-base text-sm">
+        <div class="animate flex items-center gap-1.5 text-xs uppercase tracking-wide text-black/60 dark:text-white/60">
+          <div>
             <FormattedDate date={issue.data.date} />
           </div>
           &bull;
           {issue.body && (
-            <div class="font-base text-sm">
+            <div>
               {readingTime(issue.body)}
             </div>
           )}
@@ -77,7 +77,7 @@ const { Content } = await render(issue);
       <SubscribeButton />
       <article class="animate mb-0">
         <Content />
-        <div class="mt-12">
+        <div class="mt-6">
           <IssueNavigation prevIssue={prevIssue} nextIssue={nextIssue} />
         </div>
         <div class="mt-1 mb-0">
