@@ -68,13 +68,13 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
               {issue.data.title}
             </a>
           </h1>
-          <div class="animate flex items-center gap-1.5">
-            <div class="font-base text-sm">
+          <div class="animate flex items-center gap-1.5 text-xs uppercase tracking-wide text-black/60 dark:text-white/60">
+            <div>
               <FormattedDate date={issue.data.date} />
             </div>
             &bull;
             {issue.body && (
-              <div class="font-base text-sm">
+              <div>
                 {readingTime(issue.body)}
               </div>
             )}
@@ -87,7 +87,7 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
 
         <section class="animate space-y-6">
           <div class="flex flex-wrap items-center justify-between gap-y-2">
-            <h2 class="font-semibold text-black dark:text-white">
+            <h2 class="text-xl font-semibold text-black dark:text-white">
               Upcoming calendar
             </h2>
             <Link href="/calendar"> See full calendar </Link>

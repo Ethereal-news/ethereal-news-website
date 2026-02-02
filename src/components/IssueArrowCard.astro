@@ -25,13 +25,13 @@ const issueNumber = issueMatch ? `#${issueMatch[1]}` : null;
     </div>
   )}
   <div class="flex flex-1 flex-col overflow-hidden">
-    <div class="font-semibold">
+    <div class="text-lg font-semibold text-black dark:text-white">
       {entry.data.title}
     </div>
-    <div class="text-sm text-black/50 dark:text-white/50">
+    <div class="text-xs uppercase tracking-wide text-black/60 dark:text-white/60">
       <FormattedDate date={entry.data.date} />
     </div>
-    <div class="text-sm line-clamp-5">
+    <div class="mt-1 text-sm line-clamp-5">
       {entry.data.description}
     </div>
   </div>

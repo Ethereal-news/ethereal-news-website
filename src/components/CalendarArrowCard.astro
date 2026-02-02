@@ -22,7 +22,7 @@ const { entry } = Astro.props as {
 >
   <div class="flex flex-1 flex-col truncate">
     <div class="flex items-center justify-between gap-2 flex-wrap">
-      <div class="text-[0.7rem]">
+      <div class="text-xs uppercase tracking-wide text-black/60 dark:text-white/60">
         <FormattedDates date={entry.data.date} endDate={entry.data.endDate} />
       </div>
       {entry.data.tags && entry.data.tags.length > 0 && (
@@ -34,11 +34,11 @@ const { entry } = Astro.props as {
       )}
     </div>
     <div class="flex items-center gap-2 flex-wrap">
-      <div class="font-semibold">
+      <div class="text-base font-semibold text-black dark:text-white">
         {entry.data.title}
       </div>
       {entry.data.location && (
-        <div class="text-sm">
+        <div class="text-sm text-black/60 dark:text-white/60">
           {entry.data.location}
         </div>
       )}
