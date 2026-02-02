@@ -4,7 +4,6 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
-import BackToPrevious from "@components/BackToPrevious.astro";
 import SubscribeButton from "@components/SubscribeButton.astro";
 import IssueNavigation from "@components/IssueNavigation.astro";
 
@@ -79,9 +78,6 @@ const { Content } = await render(issue);
         <Content />
         <div class="mt-6">
           <IssueNavigation prevIssue={prevIssue} nextIssue={nextIssue} />
-        </div>
-        <div class="mt-1 mb-0">
-          <BackToPrevious href="/archive">Back to archive </BackToPrevious>
         </div>
       </article>
     </div>

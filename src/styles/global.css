@@ -59,7 +59,7 @@
   }
 
   main {
-    @apply flex-1 py-20;
+    @apply flex-1 pt-20 pb-10;
   }
 
   footer {
@@ -158,13 +158,6 @@
   @apply translate-y-0 opacity-100;
 }
 
-html #back-to-top {
-  @apply pointer-events-none opacity-0;
-}
-
-html.scrolled #back-to-top {
-  @apply pointer-events-auto opacity-100;
-}
 
 /* shiki config */
 pre {
