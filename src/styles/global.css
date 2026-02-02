@@ -49,7 +49,7 @@
     @apply font-sans antialiased;
     @apply flex flex-col;
     @apply bg-neutral-100 dark:bg-neutral-900;
-    @apply text-black/75 dark:text-white/75;
+    @apply text-black/85 dark:text-white/85;
   }
 
   header {
@@ -84,8 +84,13 @@
   }
 
   .nav-link:hover::after,
-  .nav-link:focus-visible::after {
+  .nav-link:focus-visible::after,
+  .nav-link-active::after {
     @apply w-full;
+  }
+
+  .nav-link-active {
+    @apply text-black dark:text-white;
   }
 
   article {

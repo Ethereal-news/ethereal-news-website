@@ -1,12 +1,14 @@
 ---
 import Link from "@components/Link.astro";
 import ThemeToggle from "@components/ThemeToggle.astro";
+
+const pathname = Astro.url.pathname;
 ---
 
 <div class="relative">
   <button
     id="hamburger-button"
-    class="group flex h-8 w-8 items-center justify-center rounded-sm border border-black/15 bg-neutral-100 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white md:hidden"
+    class="group flex h-8 w-8 items-center justify-center rounded-sm border border-black/15 text-black/50 transition-colors duration-300 ease-in-out hover:text-black focus-visible:text-black dark:border-white/20 dark:text-white/50 dark:hover:text-white dark:focus-visible:text-white md:hidden"
     aria-label="Menu"
     aria-expanded="false"
   >
@@ -46,12 +48,12 @@ import ThemeToggle from "@components/ThemeToggle.astro";
 
   <div
     id="mobile-menu"
-    class="absolute right-0 top-full mt-2 w-48 rounded-lg border border-black/15 bg-neutral-100 p-4 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-300 ease-out opacity-0 scale-95 -translate-y-2 pointer-events-none"
+    class="absolute right-0 top-full mt-2 w-48 overflow-hidden rounded-lg border border-black/15 bg-neutral-100 p-4 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-300 ease-out opacity-0 scale-95 -translate-y-2 pointer-events-none"
   >
     <nav class="flex flex-col gap-4 text-sm">
-      <Link href="/archive" underline={false}>archive</Link>
-      <Link href="/calendar" underline={false}>calendar</Link>
-      <Link href="/about" underline={false}>about</Link>
+      <a href="/archive" class={`transition-colors duration-300 ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>archive</a>
+      <a href="/calendar" class={`transition-colors duration-300 ${pathname.startsWith('/calendar') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>calendar</a>
+      <a href="/about" class={`transition-colors duration-300 ${pathname.startsWith('/about') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>about</a>
       <div class="flex items-center gap-4">
         <button
           id="mobile-search"
@@ -79,70 +81,72 @@ import ThemeToggle from "@components/ThemeToggle.astro";
 </div>
 
 <script>
-  const hamburgerButton = document.getElementById("hamburger-button");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const mobileSearch = document.getElementById("mobile-search");
-  const hamburgerTop = document.getElementById("hamburger-top");
-  const hamburgerMiddle = document.getElementById("hamburger-middle");
-  const hamburgerBottom = document.getElementById("hamburger-bottom");
+  function setupHamburgerMenu() {
+    const hamburgerButton = document.getElementById("hamburger-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileSearch = document.getElementById("mobile-search");
+    const hamburgerTop = document.getElementById("hamburger-top");
+    const hamburgerMiddle = document.getElementById("hamburger-middle");
+    const hamburgerBottom = document.getElementById("hamburger-bottom");
 
-  let isOpen = false;
+    let isOpen = false;
 
-  function openMenu() {
-    isOpen = true;
-    hamburgerButton?.setAttribute("aria-expanded", "true");
-    mobileMenu?.classList.remove("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
-    mobileMenu?.classList.add("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
-    // Animate hamburger to X
-    hamburgerTop?.setAttribute("d", "M6 6l12 12");
-    hamburgerMiddle?.classList.add("opacity-0");
-    hamburgerBottom?.setAttribute("d", "M6 18L18 6");
+    function openMenu() {
+      isOpen = true;
+      hamburgerButton?.setAttribute("aria-expanded", "true");
+      mobileMenu?.classList.remove("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
+      mobileMenu?.classList.add("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
+      hamburgerTop?.setAttribute("d", "M6 6l12 12");
+      hamburgerMiddle?.classList.add("opacity-0");
+      hamburgerBottom?.setAttribute("d", "M6 18L18 6");
+    }
+
+    function closeMenu() {
+      isOpen = false;
+      hamburgerButton?.setAttribute("aria-expanded", "false");
+      mobileMenu?.classList.add("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
+      mobileMenu?.classList.remove("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
+      hamburgerTop?.setAttribute("d", "M4 6h16");
+      hamburgerMiddle?.classList.remove("opacity-0");
+      hamburgerBottom?.setAttribute("d", "M4 18h16");
+    }
+
+    if (hamburgerButton && mobileMenu) {
+      hamburgerButton.addEventListener("click", () => {
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !hamburgerButton.contains(event.target as Node) &&
+          !mobileMenu.contains(event.target as Node)
+        ) {
+          closeMenu();
+        }
+      });
+
+      if (mobileSearch) {
+        mobileSearch.addEventListener("click", () => {
+          const searchButton = document.getElementById("magnifying-glass");
+          if (searchButton) {
+            searchButton.click();
+          }
+          closeMenu();
+        });
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && isOpen) {
+          closeMenu();
+        }
+      });
+    }
   }
 
-  function closeMenu() {
-    isOpen = false;
-    hamburgerButton?.setAttribute("aria-expanded", "false");
-    mobileMenu?.classList.add("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
-    mobileMenu?.classList.remove("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
-    // Animate X back to hamburger
-    hamburgerTop?.setAttribute("d", "M4 6h16");
-    hamburgerMiddle?.classList.remove("opacity-0");
-    hamburgerBottom?.setAttribute("d", "M4 18h16");
-  }
-
-  if (hamburgerButton && mobileMenu && mobileSearch) {
-    hamburgerButton.addEventListener("click", () => {
-      if (isOpen) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener("click", (event) => {
-      if (
-        !hamburgerButton.contains(event.target as Node) &&
-        !mobileMenu.contains(event.target as Node)
-      ) {
-        closeMenu();
-      }
-    });
-
-    // Handle mobile search click
-    mobileSearch.addEventListener("click", () => {
-      const searchButton = document.getElementById("magnifying-glass");
-      if (searchButton) {
-        searchButton.click();
-      }
-      closeMenu();
-    });
-
-    // Close on escape key
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && isOpen) {
-        closeMenu();
-      }
-    });
-  }
+  setupHamburgerMenu();
+  document.addEventListener("astro:after-swap", setupHamburgerMenu);
 </script> 

@@ -51,16 +51,21 @@ const { class: className = "" } = Astro.props;
 </button>
 
 <script>
-  document.querySelectorAll(".theme-toggle").forEach((toggle) => {
-    toggle.addEventListener("click", () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      if (isDark) {
-        localStorage.setItem("theme", "light");
-        document.documentElement.classList.remove("dark");
-      } else {
-        localStorage.setItem("theme", "dark");
-        document.documentElement.classList.add("dark");
-      }
+  function setupThemeToggle() {
+    document.querySelectorAll(".theme-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const isDark = document.documentElement.classList.contains("dark");
+        if (isDark) {
+          localStorage.setItem("theme", "light");
+          document.documentElement.classList.remove("dark");
+        } else {
+          localStorage.setItem("theme", "dark");
+          document.documentElement.classList.add("dark");
+        }
+      });
     });
-  });
+  }
+
+  setupThemeToggle();
+  document.addEventListener("astro:after-swap", setupThemeToggle);
 </script>
