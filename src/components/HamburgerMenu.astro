@@ -5,33 +5,52 @@ import Link from "@components/Link.astro";
 <div class="relative">
   <button
     id="hamburger-button"
-    class="flex h-8 w-8 items-center justify-center rounded-sm border border-black/15 bg-neutral-100 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white md:hidden"
+    class="group flex h-8 w-8 items-center justify-center rounded-sm border border-black/15 bg-neutral-100 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white md:hidden"
     aria-label="Menu"
+    aria-expanded="false"
   >
     <svg
-      class="h-4 w-4"
+      class="h-4 w-4 transition-transform duration-300"
       fill="none"
       stroke="currentColor"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
+        id="hamburger-top"
+        class="origin-center transition-all duration-300"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"
+        d="M4 6h16"
+      ></path>
+      <path
+        id="hamburger-middle"
+        class="origin-center transition-all duration-300"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 12h16"
+      ></path>
+      <path
+        id="hamburger-bottom"
+        class="origin-center transition-all duration-300"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 18h16"
       ></path>
     </svg>
   </button>
 
   <div
     id="mobile-menu"
-    class="absolute right-0 top-full mt-2 hidden w-48 rounded-lg border border-black/15 bg-neutral-100 p-4 shadow-lg dark:border-white/20 dark:bg-neutral-900"
+    class="absolute right-0 top-full mt-2 w-48 rounded-lg border border-black/15 bg-neutral-100 p-4 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-300 ease-out opacity-0 scale-95 -translate-y-2 pointer-events-none"
   >
     <nav class="flex flex-col gap-4 text-sm">
-      <Link href="/archive">archive</Link>
-      <Link href="/calendar">calendar</Link>
-      <Link href="/about">about</Link>
+      <Link href="/archive" underline={false}>archive</Link>
+      <Link href="/calendar" underline={false}>calendar</Link>
+      <Link href="/about" underline={false}>about</Link>
       <button
         id="mobile-search"
         aria-label="Search"
@@ -61,10 +80,41 @@ import Link from "@components/Link.astro";
   const hamburgerButton = document.getElementById("hamburger-button");
   const mobileMenu = document.getElementById("mobile-menu");
   const mobileSearch = document.getElementById("mobile-search");
+  const hamburgerTop = document.getElementById("hamburger-top");
+  const hamburgerMiddle = document.getElementById("hamburger-middle");
+  const hamburgerBottom = document.getElementById("hamburger-bottom");
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    hamburgerButton?.setAttribute("aria-expanded", "true");
+    mobileMenu?.classList.remove("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
+    mobileMenu?.classList.add("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
+    // Animate hamburger to X
+    hamburgerTop?.setAttribute("d", "M6 6l12 12");
+    hamburgerMiddle?.classList.add("opacity-0");
+    hamburgerBottom?.setAttribute("d", "M6 18L18 6");
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    hamburgerButton?.setAttribute("aria-expanded", "false");
+    mobileMenu?.classList.add("opacity-0", "scale-95", "-translate-y-2", "pointer-events-none");
+    mobileMenu?.classList.remove("opacity-100", "scale-100", "translate-y-0", "pointer-events-auto");
+    // Animate X back to hamburger
+    hamburgerTop?.setAttribute("d", "M4 6h16");
+    hamburgerMiddle?.classList.remove("opacity-0");
+    hamburgerBottom?.setAttribute("d", "M4 18h16");
+  }
 
   if (hamburgerButton && mobileMenu && mobileSearch) {
     hamburgerButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
     // Close menu when clicking outside
@@ -73,18 +123,24 @@ import Link from "@components/Link.astro";
         !hamburgerButton.contains(event.target as Node) &&
         !mobileMenu.contains(event.target as Node)
       ) {
-        mobileMenu.classList.add("hidden");
+        closeMenu();
       }
     });
 
     // Handle mobile search click
     mobileSearch.addEventListener("click", () => {
-      // Assuming there's a global search function
       const searchButton = document.getElementById("magnifying-glass");
       if (searchButton) {
         searchButton.click();
       }
-      mobileMenu.classList.add("hidden");
+      closeMenu();
+    });
+
+    // Close on escape key
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && isOpen) {
+        closeMenu();
+      }
     });
   }
 </script> 
