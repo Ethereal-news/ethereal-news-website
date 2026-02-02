@@ -102,14 +102,14 @@
   article hr::before,
   .prose hr::before {
     content: '';
-    @apply absolute left-0 top-1/2 h-px w-[calc(50%-1rem)] -translate-y-1/2;
+    @apply absolute left-0 top-1/2 h-px w-1/2 -translate-y-1/2;
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2));
   }
 
   article hr::after,
   .prose hr::after {
     content: '';
-    @apply absolute right-0 top-1/2 h-px w-[calc(50%-1rem)] -translate-y-1/2;
+    @apply absolute right-0 top-1/2 h-px w-1/2 -translate-y-1/2;
     background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2));
   }
 
@@ -123,18 +123,6 @@
     background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.2));
   }
 
-  article hr,
-  .prose hr {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M198.437 230.803L192.397 74.3046L288.924 87.7973L343.772 168.391L198.437 230.803Z' stroke='rgba(0,0,0,0.3)' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M198 229.318C198 229.318 177.841 275.616 112.884 262.174C68.4941 252.989 52.3468 284.95 46.5733 306.112C44.5251 314.009 43.6916 322.171 44.1015 330.318' stroke='rgba(0,0,0,0.3)' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1rem 1rem;
-  }
-
-  .dark article hr,
-  .dark .prose hr {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M198.437 230.803L192.397 74.3046L288.924 87.7973L343.772 168.391L198.437 230.803Z' stroke='rgba(255,255,255,0.3)' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M198 229.318C198 229.318 177.841 275.616 112.884 262.174C68.4941 252.989 52.3468 284.95 46.5733 306.112C44.5251 314.009 43.6916 322.171 44.1015 330.318' stroke='rgba(255,255,255,0.3)' stroke-width='16' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  }
 }
 
 @layer utilities {
