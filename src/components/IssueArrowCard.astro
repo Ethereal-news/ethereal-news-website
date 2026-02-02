@@ -17,7 +17,7 @@ const issueNumber = issueMatch ? `#${issueMatch[1]}` : null;
 
 <a
   href={`/${entry.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
-  class="not-prose group relative flex flex-nowrap rounded-lg border border-black/15 px-4 py-3 pr-10 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+  class="not-prose group relative flex flex-nowrap rounded-lg border border-black/15 px-4 py-3 pr-10 transition-all duration-300 ease-in-out hover:border-black/25 hover:bg-black/5 hover:shadow-sm hover:text-black focus-visible:border-black/25 focus-visible:bg-black/5 focus-visible:shadow-sm focus-visible:text-black dark:border-white/20 dark:hover:border-white/35 dark:hover:bg-white/5 dark:hover:shadow-sm dark:hover:text-white dark:focus-visible:border-white/35 dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
 >
   {issueNumber && (
     <div class="flex items-center justify-center w-8 sm:w-12 mr-2 sm:mr-4 text-sm sm:text-lg font-bold text-black/50 dark:text-white/50">
