@@ -15,16 +15,10 @@ import { SITE } from "@consts";
           {SITE.TITLE}
         </div>
       </Link>
-      <nav class="hidden items-center gap-1 text-sm md:flex">
-        <Link href="/archive">archive</Link>
-        <span>
-          {`|`}
-        </span>
-        <Link href="/calendar">calendar</Link>
-        <span>
-          {`|`}
-        </span>
-        <Link href="/about">about</Link>
+      <nav class="hidden items-center gap-6 text-sm md:flex">
+        <a href="/archive" class="nav-link">archive</a>
+        <a href="/calendar" class="nav-link">calendar</a>
+        <a href="/about" class="nav-link">about</a>
         <button
           id="magnifying-glass"
           aria-label="Search"
