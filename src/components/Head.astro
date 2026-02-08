@@ -36,6 +36,9 @@ const { title, description, image = "/etherealnews.jpg", publishedDate, isArticl
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://ethereal.news";
 const imageUrl = new URL(image, siteUrl).toString();
 
+// Keywords for Ethereum-related articles
+const articleKeywords = ["Ethereum", "Web3", "Blockchain", "Smart Contracts", "DeFi", "NFT", "Crypto", "Developer"];
+
 // JSON-LD structured data
 const jsonLd = isArticle && publishedDate ? {
   "@context": "https://schema.org",
@@ -45,11 +48,18 @@ const jsonLd = isArticle && publishedDate ? {
   "image": imageUrl,
   "datePublished": publishedDate.toISOString(),
   "dateModified": publishedDate.toISOString(),
-  "author": {
-    "@type": "Organization",
-    "name": "Ethereal news",
-    "url": siteUrl
-  },
+  "author": [
+    {
+      "@type": "Organization",
+      "name": "Ethereal news",
+      "url": siteUrl
+    },
+    {
+      "@type": "Person",
+      "name": "Andrew B Coathup",
+      "url": "https://x.com/abcoathup"
+    }
+  ],
   "publisher": {
     "@type": "Organization",
     "name": "Ethereal news",
@@ -62,13 +72,27 @@ const jsonLd = isArticle && publishedDate ? {
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": canonicalURL.toString()
-  }
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "keywords": articleKeywords.join(", ")
 } : {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Ethereal news",
   "description": "Ethereum news focused on developers.",
-  "url": siteUrl
+  "url": siteUrl,
+  "inLanguage": "en"
+};
+
+// BreadcrumbList structured data
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl },
+    ...(isArticle ? [{ "@type": "ListItem", "position": 2, "name": title, "item": canonicalURL.toString() }] : [])
+  ]
 };
 ---
 
@@ -103,11 +127,15 @@ const jsonLd = isArticle && publishedDate ? {
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:site_name" content="Ethereal news" />
+<meta property="og:locale" content="en_US" />
 {isArticle && publishedDate && (
   <>
     <meta property="article:published_time" content={publishedDate.toISOString()} />
     <meta property="article:author" content="Ethereal news" />
     <meta property="article:section" content="Technology" />
+    <meta property="article:tag" content="Ethereum" />
+    <meta property="article:tag" content="web3" />
+    <meta property="article:tag" content="blockchain" />
   </>
 )}
 
@@ -122,6 +150,7 @@ const jsonLd = isArticle && publishedDate ? {
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 <!-- PageFind -->
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
