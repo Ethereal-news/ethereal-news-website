@@ -4,3 +4,6 @@ Allow: /
 
 # Sitemap
 Sitemap: https://ethereal.news/sitemap-index.xml
+
+# LLMs
+LLMs-Txt: https://ethereal.news/llms.txt
