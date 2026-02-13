@@ -2,7 +2,6 @@
 title: 'Ethereal news weekly #11'
 description: 'BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity developer survey'
 date: 'February 13, 2026'
-draft: true
 ---
 
 BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity developer survey
@@ -13,9 +12,9 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 * Devcon: [propose country/city for next location](https://x.com/EFDevcon/status/2021984650437259561), deadline March 15  
 * EF Offstage (builder stories): [Danny Ryan interview](https://www.youtube.com/watch?v=GZPLTF5ds2A) \[video\]  
 * ETH metrics:  
-  * [Gas](https://ultrasound.money/#gas) (gwei): 1.0 average, 0.0 \- 49.7 (12.4 for zero net issuance)  
-  * [ETH supply change](https://ultrasound.money/): 17.5k net issuance  
-  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,825 \- $2,739 (all time high $4,946, August 24, 2025\)  
+  * [Gas](https://ultrasound.money/#gas) (gwei): 0.2 average, 0.0 \- 4.0 (12.4 for zero net issuance)  
+  * [ETH supply change](https://ultrasound.money/): 18.7k net issuance  
+  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,907 \- $2,131 (all time high $4,946, August 24, 2025\)  
   * [ETH ETFs](https://dune.com/hildobby/eth-etfs): 5% of ETH supply  
   * [ETHBTC](https://ratiogang.com/): 0.029 (0.166 for the Flippening)
 
@@ -25,13 +24,14 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 
 ![Consensys](./consensys.jpg)
 
-### A complete suite of trusted products to build anything in web3. [consensys.io](https://consensys.io/) 
+A complete suite of trusted products to build anything in web3.  
+[consensys.io](https://consensys.io/)  
 
 ---
 
 ### Enterprise
 
-* [BlackRock](https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl) BUIDL tradeable on UniswapX via Securitize and made strategic investment within Uniswap ecosystem  
+* [BlackRock](https://blog.uniswap.org/unlocking-defi-liquidity-for-buidl) BUIDL tradeable via UniswapX (through Securitize), alongside strategic investment in Uniswap ecosystem  
 * [Robinhood Chain](https://robinhood.com/us/en/newsroom/robinhood-chain-launches-public-testnet/) (Arbitrum L2) public testnet  
 * Stripe [machine payments](https://x.com/jeff_weinstein/status/2021331763960873058) (preview): x402 support using USDC on Base
 
@@ -40,11 +40,11 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 * [ENS staying on mainnet](https://ens.domains/blog/post/ens-staying-on-ethereum) due to L1 scaling, ENSv2 to be deployed on mainnet & Namechain (L2) development stopped   
 * [Aave Labs proposal](https://governance.aave.com/t/temp-check-aave-will-win-framework/24055): ratify v4, Aave branded product revenue goes to DAO treasury, new foundation to hold Aave trademarks & requests ongoing funding for Labs  
 * [Spark Prime](https://paragraph.com/@spark-11/spark-prime-cedefi-margin-lending): CeDeFi margin lending for institutional borrowers  
-* [Ondo Finance](https://ondo.finance/blog/defi-adoption-of-ondo-tokenized-stocks-live) tokenized stocks available for use as collateral  
+* [Ondo Finance](https://ondo.finance/blog/defi-adoption-of-ondo-tokenized-stocks-live) tokenized stocks available for use as collateral in DeFi  
 * MetaLeX [cyberSign](https://x.com/MetaLeX_Labs/status/2021884894507340113): sign legal agreements on mainnet, Base & Arbitrum  
 * Base app:   
-  * [Talk feed](https://x.com/baseapp/status/2020949108849246249) removed & creator rewards sunset  
-  * [Leaderboards](https://www.base.dev/leaderboard): mini apps by weekly transacting users
+  * [Leaderboards](https://www.base.dev/leaderboard): mini apps by weekly transacting users  
+  * [Talk feed](https://x.com/baseapp/status/2020949108849246249) removed & creator rewards sunset
 
 ### Developers
 
@@ -54,11 +54,12 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 * Base [builder codes](https://blog.base.dev/builder-codes-and-erc-8021-fixing-onchain-attribution): transaction attribution using ERC8021 (data suffix appended to transaction calldata)   
 * Agents & wallets:  
   * [Sign In With Agent](https://siwa.id/) (SIWA): sign via keyring proxy, agent doesn’t see private key, implements ERC8004 & ERC8128   
-  * Coinbase [agentic wallets](https://www.coinbase.com/en-au/developer-platform/discover/launches/agentic-wallets): session caps & transaction limits, private key remains  in Coinbase infrastructure  
-  * [Bankrwallet](https://bankrwallet.app/) (browser wallet): agents have separate password & can’t export private key  
+  * Coinbase [agentic wallets](https://www.coinbase.com/en-au/developer-platform/discover/launches/agentic-wallets): session caps & transaction limits, private key remains in Coinbase infrastructure  
+  * [BankrWallet](https://bankrwallet.app/) (browser wallet): agents have separate password & can’t export private key  
 * EF dAI team: [register MCP server using ERC8004](https://ai.ethereum.foundation/blog/how-to-register-an-mcp-server-using-erc-8004)  
 * RareSkills: [formal verification with Certora](https://rareskills.io/tutorials/certora-book)  
-* Certora: [Capture the Funds \- endless edition](https://www.certora.com/blog/capture-the-funds)  
+* CTF:  
+  * Certora Capture the Funds [endless edition](https://www.certora.com/blog/capture-the-funds), $1k prize for beating current score by 25 ETH  
 * Application layer standards (ERCs):  
   * [ERC8152](https://github.com/ethereum/ERCs/pull/1521/changes): Content-addressable logic modules  
   * [ERC8153](https://github.com/ethereum/ERCs/pull/1524/changes): Facet-based diamonds  
@@ -72,7 +73,7 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 
 * Security Alliance (SEAL):  
   * SEAL Safe Harbor [v3.0](https://x.com/_SEAL_Org/status/2021938041120546963): enhanced clarity on good faith actions, clearer protections, updated adoption guidance & independently reviewed by Cyfrin  
-  * [TheDAO Security Fund](https://paragraph.com/@thedao.fund/our-first-action-supporting-seal-911-and-seal) allocated 133.7 ETH \+ 0.1337 ETH per day to SEAL 911 &  69 ETH \+ 0.069 ETH per day to SEAL  
+  * [TheDAO Security Fund](https://paragraph.com/@thedao.fund/our-first-action-supporting-seal-911-and-seal) allocating 133.7 ETH \+ 0.1337 ETH per day to SEAL 911 & 69 ETH \+ 0.069 ETH per day to SEAL  
   * [EF](https://radar.securityalliance.org/protecting-ethereum-users-with-the-ef/) sponsoring SEAL Intel security engineer to track & neutralize drainers   
 * [SolidityGuard](https://github.com/alt-research/SolidityGuard#readme): contract security scanner (Solidity & Vyper); CLI, desktop or web; integrates Slither, Mythril, Echidna, Aderyn, Foundry, Medusa, Halmos & Certora
 
@@ -89,7 +90,7 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
     * [EIP8141](https://ethereum-magicians.org/t/hegota-headliner-proposal-frame-transaction/27618) frame transaction: execution spec implementation & tests in progress  
     * [EIP8105](https://ethereum-magicians.org/t/hegota-headliner-proposal-eip-8105-universal-enshrined-encrypted-mempool-eem/27448) encrypted transaction pool  
     * [EIP7807](https://ethereum-magicians.org/t/hegota-headliner-proposal-ssz-execution-blocks/27619) SSZ execution blocks  
-    * Client teams to writeup headliner preferences (including no execution layer headliner) for next ACDE with decision at ACDE after that
+    * Client teams to writeup headliner preferences (including option of no execution layer headliner) for next ACDE with decision at ACDE after that
 
 #### All core devs \- testing (ACDT) [\#69](https://forkcast.org/calls/acdt/069/)
 
@@ -118,14 +119,17 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 ### Research
 
 * [ZK API usage credits](https://ethresear.ch/t/zk-api-usage-credits-llms-and-beyond/24104): deposit once & make API calls without linking identity, double-signaling can have stake claimed and policy abusers stake can be slashed  
-* [Linearly-homomorphic signatures for RLNC](https://ethresear.ch/t/linearly-homomorphic-signatures-for-rlnc/24072)
+* [Linearly-homomorphic signatures for RLNC](https://ethresear.ch/t/linearly-homomorphic-signatures-for-rlnc/24072), avoid sending full blocks during propagation
 
 ### Staking
 
-* [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23% \[Note: [dual governance](https://dg.lido.fi/)\]  
+* [Client diversity](https://clientdiversity.org/#distribution):  
+  * Consensus layer: Lighthouse \~50% (data may not be accurate)  
+  * Execution layer: Geth \~41%, Nethermind \~38% (estimated from self reports)  
+* [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23.5% \[Note: [dual governance](https://dg.lido.fi/)\]  
 * [Validators](https://pectrified.com/mainnet): 966k active (target 128k)  
   * EF Protocol Support: [validator consolidation progress](https://x.com/EFprotocol/status/2020861045678502178)  
-    * 0x02 credentials: 0.86% of validators, \~16% of staked ETH, \~700 ETH average balance  
+    * 0x02 credentials: \~1% of validators, \~17% of staked ETH, \~700 ETH average balance  
     * Barriers to adoption: reward liquidity concerns, batch consolidation increased withdrawal key exposure, migration downtime & prioritization  
 * Client releases:  
   * Consensus layer:  
@@ -140,7 +144,7 @@ BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity develop
 
 ### Regulation
 
-* CFTC [Innovation Advisory Committee members](https://www.cftc.gov/PressRoom/PressReleases/9182-26), includes Hayden Adams (Uniswap), Brian Armstrong (Coinbase) & Vivek Raman (Etherealize)  
+* US CFTC [Innovation Advisory Committee members](https://www.cftc.gov/PressRoom/PressReleases/9182-26), includes Hayden Adams (Uniswap), Brian Armstrong (Coinbase) & Vivek Raman (Etherealize)  
 * Bprotocol Foundation & Localcoin [patent infringement case](https://x.com/jolieyang/status/2021428593075925275) against Uniswap dismissed
 
 ### General
