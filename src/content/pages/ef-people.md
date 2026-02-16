@@ -8,7 +8,7 @@ EF last updated: January 2026. Please report any errors or omissions.*
 
 ## Board
 
-* Vitalik Buterin *[@vitalikButerin](https://x.com/vitalikButerin)*
+* Vitalik Buterin *[@VitalikButerin](https://x.com/vitalikButerin)*
 * Aya Miyaguchi *[@AyaMiyagotchi](https://x.com/AyaMiyagotchi)*
 * Patrick Storchenegger
 * Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
