@@ -91,7 +91,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Gary
 * Jared Wasinger
 * Zsolt Felfoldi
-* Bosul Mun *[@004YUKICHAN](https://x.com/004YUKICHAN)*
+* Bosul Mun *[@1004YUKICHAN](https://x.com/1004YUKICHAN)*
 * Jonny Rhea
 
 ### zkEVM
