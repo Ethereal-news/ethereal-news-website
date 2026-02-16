@@ -3,7 +3,8 @@ title: Ethereum Foundation people
 description: Ethereum Foundation organization structure and people.
 ---
 
-*Markdown version of the [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png). EF last updated: January 2026. Please report any errors or omissions.*
+*Markdown version of the [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png). 
+EF last updated: January 2026. Please report any errors or omissions.*
 
 ## Board
 
