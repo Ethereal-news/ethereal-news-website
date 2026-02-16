@@ -146,6 +146,7 @@ A complete suite of trusted products to build anything in web3.
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-0](https://ethereal.news/ethereal-news-weekly-0)* 
+*Permalink: [ethereal.news/ethereal-news-weekly-0](https://ethereal.news/ethereal-news-weekly-0)*
+*Markdown: [ethereal.news/ethereal-news-weekly-0.md](https://ethereal.news/ethereal-news-weekly-0.md)*
 
 ---

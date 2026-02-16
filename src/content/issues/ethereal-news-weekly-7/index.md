@@ -152,7 +152,8 @@ We’ve consolidated everything you need to build on MetaMask, from quickstarts 
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-7](https://ethereal.news/ethereal-news-weekly-7)*  
+*Permalink: [ethereal.news/ethereal-news-weekly-7](https://ethereal.news/ethereal-news-weekly-7)*
+*Markdown: [ethereal.news/ethereal-news-weekly-7.md](https://ethereal.news/ethereal-news-weekly-7.md)*
 
 ---
 

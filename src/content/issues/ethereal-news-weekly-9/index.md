@@ -160,6 +160,7 @@ Access official docs, tutorials, and global community events \- all in one place
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-9](https://ethereal.news/ethereal-news-weekly-9/)*  
+*Permalink: [ethereal.news/ethereal-news-weekly-9](https://ethereal.news/ethereal-news-weekly-9/)*
+*Markdown: [ethereal.news/ethereal-news-weekly-9.md](https://ethereal.news/ethereal-news-weekly-9.md)*
 
 ---

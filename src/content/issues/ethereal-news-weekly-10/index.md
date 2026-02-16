@@ -155,6 +155,7 @@ Install the skill: [use the Smart Accounts Kit with OpenClaw](https://docs.metam
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-10](https://ethereal.news/ethereal-news-weekly-10/)*  
+*Permalink: [ethereal.news/ethereal-news-weekly-10](https://ethereal.news/ethereal-news-weekly-10/)*
+*Markdown: [ethereal.news/ethereal-news-weekly-10.md](https://ethereal.news/ethereal-news-weekly-10.md)*
 
 ---
