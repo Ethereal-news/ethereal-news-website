@@ -52,6 +52,7 @@ const pathname = Astro.url.pathname;
     <nav class="flex flex-col gap-4 text-sm">
       <a href="/archive" class={`transition-colors duration-300 ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>archive</a>
       <a href="/calendar" class={`transition-colors duration-300 ${pathname.startsWith('/calendar') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>calendar</a>
+      <a href="/resources" class={`transition-colors duration-300 ${pathname.startsWith('/resources') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>resources</a>
       <a href="/about" class={`transition-colors duration-300 ${pathname.startsWith('/about') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>about</a>
       <div class="flex items-center gap-4">
         <button

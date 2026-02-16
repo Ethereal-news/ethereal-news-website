@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { getEntry } from 'astro:content';
+import { CLIENTS } from "@consts";
+import Link from "@components/Link.astro";
+
+const clients = await getEntry('pages', 'clients');
+if (!clients) {
+  throw new Error('Clients page not found in content collection');
+}
+const { Content } = await clients.render();
+---
+
+<Layout title={CLIENTS.TITLE} description={CLIENTS.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-10">
+        <h1 class="animate text-3xl font-semibold text-black dark:text-white">
+          Ethereum Clients
+        </h1>
+        <div class="prose dark:prose-invert max-w-none">
+          <Content components={{ Link }} />
+        </div>
+      </div>
+    </aside>
+  </Container>
+</Layout>

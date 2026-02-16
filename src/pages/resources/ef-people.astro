@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { getEntry } from 'astro:content';
+import { EF_PEOPLE } from "@consts";
+import Link from "@components/Link.astro";
+
+const efPeople = await getEntry('pages', 'ef-people');
+if (!efPeople) {
+  throw new Error('EF people page not found in content collection');
+}
+const { Content } = await efPeople.render();
+---
+
+<Layout title={EF_PEOPLE.TITLE} description={EF_PEOPLE.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-10">
+        <h1 class="animate text-3xl font-semibold text-black dark:text-white">
+          Ethereum Foundation People
+        </h1>
+        <div class="prose dark:prose-invert max-w-none">
+          <Content components={{ Link }} />
+        </div>
+      </div>
+    </aside>
+  </Container>
+</Layout>

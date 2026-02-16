@@ -21,6 +21,8 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 
 ## Resources
 
+* [Ethereum Foundation people](/resources/ef-people): EF organization structure and people.
+* [Ethereum clients](/resources/clients): Execution layer and consensus layer clients.
 * [Eth Research](https://ethresear.ch/): Discourse forum for Ethereum research.
 * [Eth Magicians](https://ethereum-magicians.org): Discourse forum for protocol call summaries, EIP/RIP/ERC discussions, naming and community discussions. Andrew is a moderator.
 * **Eth R&D Discord**: Discord for discussions on Eth R&D.

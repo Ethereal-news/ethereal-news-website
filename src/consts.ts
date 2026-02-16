@@ -28,6 +28,24 @@ export const ABOUT: Metadata = {
     "About Ethereal news, disclosures and resources.",
 };
 
+export const RESOURCES: Metadata = {
+  TITLE: "resources",
+  DESCRIPTION:
+    "Ethereum resources including EF people and clients.",
+};
+
+export const EF_PEOPLE: Metadata = {
+  TITLE: "EF people",
+  DESCRIPTION:
+    "Ethereum Foundation organization structure and people.",
+};
+
+export const CLIENTS: Metadata = {
+  TITLE: "clients",
+  DESCRIPTION:
+    "Ethereum execution layer and consensus layer clients.",
+};
+
 export const SOCIALS: Socials = [
   {
     NAME: "X",
