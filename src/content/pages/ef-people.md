@@ -42,7 +42,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Cryptography Research
 
-* George Kadianakis *[@asn_d6](https://x.com/asn_d6)*
+* **George Kadianakis** *[@asn_d6](https://x.com/asn_d6)*
 * Gottfried Herold
 * Dmitry Khovratovich *[@khovr](https://x.com/khovr)*
 * Antonio Sanso *[@asanso](https://x.com/asanso)*
@@ -51,7 +51,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Robust Incentives Group
 
-* Caspar Schwarz-Schilling *[@casparschwa](https://x.com/casparschwa)*
+* **Caspar Schwarz-Schilling** *[@casparschwa](https://x.com/casparschwa)*
 * Anders Elowsson *[@weboftrees](https://x.com/weboftrees)*
 * Julian Ma *[@_julianma](https://x.com/_julianma)*
 * Thomas Thiery *[@soispoke](https://x.com/soispoke)*
@@ -60,7 +60,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Protocol Prototyping
 
-* Toni Wahrstätter *[@nero_eth](https://x.com/nero_eth)*
+* **Toni Wahrstätter** *[@nero_eth](https://x.com/nero_eth)*
 * Jochem Brouwer *[@jochembrouwer96](https://x.com/jochembrouwer96)*
 * Rahul *[@raxhvl](https://x.com/raxhvl)*
 * Milos Stankovic *[@MorphNetrunner](https://x.com/MorphNetrunner)*
@@ -70,7 +70,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Protocol Security
 
-* Fredrik *[@fredrik0x](https://x.com/fredrik0x)*
+* **Fredrik** *[@fredrik0x](https://x.com/fredrik0x)*
 * Tyler Holmes *[@Z3nChada](https://x.com/Z3nChada)*
 * Andrés Láinez *[@nethoxa](https://x.com/nethoxa)*
 * Bhargava Shastry *[@ibags](https://x.com/ibags)*
@@ -82,7 +82,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Geth
 
-* Felix Lange *@ethereum.org*
+* **Felix Lange** *@ethereum.org*
 * Marius van der Wijden *[@vdWijden](https://x.com/vdWijden)*
 * Matt Garnett
 * Lightclient *[@lightclients](https://x.com/lightclients)*
@@ -96,7 +96,7 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### zkEVM
 
-* Kev Wedderburn *[@kevaundray](https://x.com/kevaundray)*
+* **Kev Wedderburn** *[@kevaundray](https://x.com/kevaundray)*
 * Thomas Coratger *[@tcoratger](https://x.com/tcoratger)*
 * Cody Gunton
 * Han Jian *[@han_0110](https://x.com/han_0110)*
@@ -104,12 +104,12 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Application Support
 
-* Nico Consigny *[@ncsgy](https://x.com/ncsgy)*
+* **Nico Consigny** *[@ncsgy](https://x.com/ncsgy)*
 * Luc van Kampen *[@LucemansNL](https://x.com/LucemansNL)*
 
 ### EthPandaOps
 
-* Pari Jayanthi *[@parithosh_j](https://x.com/parithosh_j)*
+* **Pari Jayanthi** *[@parithosh_j](https://x.com/parithosh_j)*
 * Barnabas Busa *[@BarnabasBusa](https://x.com/BarnabasBusa)*
 * Sam Calder-Mason *[@samcmAU](https://x.com/samcmAU)*
 * Andrew Davis *[@Savid](https://x.com/Savid)*
@@ -120,18 +120,18 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### P2P Networking
 
-* Raúl Kripalani *[@raulvk](https://x.com/raulvk)*
+* **Raúl Kripalani** *[@raulvk](https://x.com/raulvk)*
 * Marco Munizaga
 * Sukun Tarachandani *[@sukunrt](https://x.com/sukunrt)*
 
 ### Trillion Dollar Security
 
-* Fredrik *[@fredrik0x](https://x.com/fredrik0x)* / Josh Stark *[@0xstark](https://x.com/0xstark)*
+* **Fredrik** *[@fredrik0x](https://x.com/fredrik0x)* / **Josh Stark** *[@0xstark](https://x.com/0xstark)*
 * Hester Bruikman *[@hesterbruikman](https://x.com/hesterbruikman)*
 
 ### Protocol Support
 
-* Nixo *[@nixorokish](https://x.com/nixorokish)*
+* **Nixo** *[@nixorokish](https://x.com/nixorokish)*
 * Joshua Davis *[@joshdavislight](https://x.com/joshdavislight)*
 * Mario Havel *[@TMIYChao](https://x.com/TMIYChao)*
 * Marc Garreau *[@wolovim](https://x.com/wolovim)*
@@ -139,41 +139,41 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Protocol Snarkification
 
-* Alexander Hicks *[@alexanderlhicks](https://x.com/alexanderlhicks)*
+* **Alexander Hicks** *[@alexanderlhicks](https://x.com/alexanderlhicks)*
 * Derek Sorensen *[@dhsorens](https://x.com/dhsorens)*
 
 ### dAI
 
-* Davide Crapis *[@DavideCrapis](https://x.com/DavideCrapis)*
+* **Davide Crapis** *[@DavideCrapis](https://x.com/DavideCrapis)*
 * Jessy *[@t3yearoldvc](https://x.com/t3yearoldvc)*
 * Marcello Politi *[@Marcello_AI](https://x.com/Marcello_AI)*
 
 ### Ethproofs
 
-* Fara Woolf *[@fbwoolf](https://x.com/fbwoolf)*
+* **Fara Woolf** *[@fbwoolf](https://x.com/fbwoolf)*
 
 ### Protocol Consensus
 
-* Roberto Saltini *[@robsaltini](https://x.com/robsaltini)*
+* **Roberto Saltini** *[@robsaltini](https://x.com/robsaltini)*
 * Luca Zanolini *[@luca_zanolini](https://x.com/luca_zanolini)*
 * Yann Vonlanthen
 
 ### Chain Abstraction / Account Abstraction
 
-* Yoav Weiss *[@yoavw](https://x.com/yoavw)*
+* **Yoav Weiss** *[@yoavw](https://x.com/yoavw)*
 * Marissa Posner *[@thewizardofpos](https://x.com/thewizardofpos)*
 * Tom Teman *[@tomteman](https://x.com/tomteman)*
 
 ### Stateless Consensus
 
-* Guillaume Ballet *[@gballet](https://x.com/gballet)*
+* **Guillaume Ballet** *[@gballet](https://x.com/gballet)*
 * Wei Han *[@ngweihan_eth](https://x.com/ngweihan_eth)*
 * Carlos Perez *[@CPerezz19](https://x.com/CPerezz19)*
 * Matan Prasma
 
 ### STEEL
 
-* Mario Vega *[@elbuenmayini](https://x.com/elbuenmayini)*
+* **Mario Vega** *[@elbuenmayini](https://x.com/elbuenmayini)*
 * Felix Hoffmann *[GitHub: @felix314159](https://github.com/felix314159)*
 * Carson
 * Guruprasad Kamath *[@guruka_math](https://x.com/guruka_math)*
@@ -193,51 +193,51 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 **dev/acc**
 
-* Austin Griffith *[@austingriffith](https://x.com/austingriffith)*
+* **Austin Griffith** *[@austingriffith](https://x.com/austingriffith)*
 * Elliott Alexander *[@escottalexander](https://x.com/escottalexander)*
 
 **Founder Success**
 
-* Leo Sprueth *[@oel4all](https://x.com/oel4all)*
+* **Leo Sprueth** *[@oel4all](https://x.com/oel4all)*
 * Abbas Khan *[@KhanAbbas201](https://x.com/KhanAbbas201)*
 
 **App Relations**
 
-* Jason Chaskin *[Farcaster: @chaskin.eth](https://warpcast.com/chaskin.eth)*
+* **Jason Chaskin** *[Farcaster: @chaskin.eth](https://warpcast.com/chaskin.eth)*
 * Isha Sangani *[@isha_sangani](https://x.com/isha_sangani)*
 * Charles St. Louis *[@CharlieStLouis](https://x.com/CharlieStLouis)*
 
 **Enterprise Acceleration**
 
-* David Walsh *[@davwals](https://x.com/davwals)*
+* **David Walsh** *[@davwals](https://x.com/davwals)*
 * Matthew Dawson *[@ismimatthew](https://x.com/ismimatthew)*
 
 ### Ecosystem Unblocking
 
 **Global Policy Strategy**
 
-* Connor Spelliscy *[@c_spelliscy](https://x.com/c_spelliscy)*
+* **Connor Spelliscy** *[@c_spelliscy](https://x.com/c_spelliscy)*
 
 **Academic Secretariat**
 
-* Shyam Sridhar *[@ShyamSridhar7](https://x.com/ShyamSridhar7)*
+* **Shyam Sridhar** *[@ShyamSridhar7](https://x.com/ShyamSridhar7)*
 * Theo Beutel *[@theobtl](https://x.com/theobtl)*
 
 **Unblocking Pilots**
 
-* Devansh Mehta (Deep Funding) *[@thedevanshmehta](https://x.com/thedevanshmehta)*
+* **Devansh Mehta** (Deep Funding) *[@thedevanshmehta](https://x.com/thedevanshmehta)*
 * Ori Shimony (Use Case Lab) *[@orishim](https://x.com/orishim)*
 
 **Ethereum for Public Infrastructure & Commons**
 
-* Taira Ishikura (on leave) *[TG: @tairais](https://t.me/tairais)*
+* **Taira Ishikura** (on leave) *[TG: @tairais](https://t.me/tairais)*
 * Sara Amaral (interim) *[@sarabdamaral](https://x.com/sarabdamaral)*
 
 ### Ecosystem Amplification
 
 **Digital Studio**
 
-* Joshua *[@renaissancing_](https://x.com/renaissancing_)*
+* **Joshua** *[@renaissancing_](https://x.com/renaissancing_)*
 * Jakub Konopka *[@asbet0s](https://x.com/asbet0s)*
 * Luka Kropec *[@LKropec](https://x.com/LKropec)*
 * Nuno Loureiro *[@nloureiro](https://x.com/nloureiro)*
@@ -249,17 +249,17 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 **Ecodev Automation**
 
-* Ramshreyas Rao *[@RamshreyasRao](https://x.com/RamshreyasRao)*
+* **Ramshreyas Rao** *[@RamshreyasRao](https://x.com/RamshreyasRao)*
 * Patrick Wissmann *[TG: @BamRikket](https://t.me/BamRikket)*
 * Sherkhan Azimov *[@azimov_se](https://x.com/azimov_se)*
 
 **Specialized Events**
 
-* Heather Davidson *[@Heather_claire](https://x.com/Heather_claire)*
+* **Heather Davidson** *[@Heather_claire](https://x.com/Heather_claire)*
 
 **Ethereum Everywhere**
 
-* Jaf Carmiol *[@ImTheJaf](https://x.com/ImTheJaf)*
+* **Jaf Carmiol** *[@ImTheJaf](https://x.com/ImTheJaf)*
 * Perrie *[@youfoundperrie](https://x.com/youfoundperrie)*
 * Eniko Garam *[@Eniko_G](https://x.com/Eniko_G)*
 * Matteo D'Andreta *[@matteoikari](https://x.com/matteoikari)*
@@ -268,7 +268,7 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 **Grant Management**
 
-* Federico Landini *[TG: @fedeebasta1](https://t.me/fedeebasta1)*
+* **Federico Landini** *[TG: @fedeebasta1](https://t.me/fedeebasta1)*
 * Monet du Plessis *[@EthMomi](https://x.com/EthMomi)*
 * Vanessa Koh
 * Yijin Lee *[@yj_alt](https://x.com/yj_alt)*
@@ -277,7 +277,7 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 **Funding Coordination**
 
-* Vinay Vasanji *(Signal: @vinayvasanji.13)*
+* **Vinay Vasanji** *(Signal: @vinayvasanji.13)*
 * Martin Hansen *[@MartinBreiten](https://x.com/MartinBreiten)*
 * Raul Romanutti *[@nachortti](https://x.com/nachortti)*
 * Eliza Pancake *[@Elizapancake01](https://x.com/Elizapancake01)*
@@ -288,7 +288,7 @@ Coordinator: Igor *[@barinov](https://x.com/barinov)*
 
 ### Kohaku
 
-* Nico Consigny *[@ncsgy](https://x.com/ncsgy)*
+* **Nico Consigny** *[@ncsgy](https://x.com/ncsgy)*
 
 ### PSE (Privacy & Scaling Exploration)
 
@@ -344,10 +344,10 @@ Coordinator: George Trotter *[Farcaster: @georgey](https://warpcast.com/georgey)
 
 ### Comms Coordination
 
-* Josh Stark *[@0xstark](https://x.com/0xstark)*
+* **Josh Stark** *[@0xstark](https://x.com/0xstark)*
 * Joe Schweitzer *[@JBSchweitzer](https://x.com/JBSchweitzer)*
 * Emily Rasowsky *[@erasowsky](https://x.com/erasowsky)*
 
 ### Hiring
 
-* Arpi Ter-Galstanyan *[@arpiden](https://x.com/arpiden)*
+* **Arpi Ter-Galstanyan** *[@arpiden](https://x.com/arpiden)*
