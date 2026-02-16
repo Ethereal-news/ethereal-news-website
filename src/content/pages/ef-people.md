@@ -2,7 +2,9 @@
 title: Ethereum Foundation People
 description: Ethereum Foundation organization structure and people.
 ---
-Markdown version of the [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png) (updated January 2026). Please report any errors or omissions.
+EF last updated: January 2026
+
+Markdown version of the [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png). Please report any errors or omissions.
 
 ## Board
 
@@ -13,11 +15,13 @@ Markdown version of the [Ethereum Foundation org chart](https://ethereum.foundat
 
 ## Management
 
-* Tomasz Stanczak *[@tkstanczak](https://x.com/tkstanczak)* & Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
+* Co-Executive Directors: Tomasz Stanczak *[@tkstanczak](https://x.com/tkstanczak)* & Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
 * Bastian Aue *[@aerugoettinea](https://x.com/aerugoettinea)*
 * Josh Stark *[@0xstark](https://x.com/0xstark)*
 
 ## Protocol
+
+[protocol.ethereum.foundation](https://protocol.ethereum.foundation)
 
 Coordinators: Alex Stokes *[@ralexstokes](https://x.com/ralexstokes)*, Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*, Tim Beiko *[@timbeiko](https://x.com/timbeiko)*
 
@@ -42,6 +46,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Cryptography Research
 
+[crypto.ethereum.org](https://crypto.ethereum.org)
+
 * **George Kadianakis** *[@asn_d6](https://x.com/asn_d6)*
 * Gottfried Herold
 * Dmitry Khovratovich *[@khovr](https://x.com/khovr)*
@@ -50,6 +56,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Arantxa Zapico *[@arantxazapico](https://x.com/arantxazapico)*
 
 ### Robust Incentives Group
+
+[rig.ethereum.org](https://rig.ethereum.org)
 
 * **Caspar Schwarz-Schilling** *[@casparschwa](https://x.com/casparschwa)*
 * Anders Elowsson *[@weboftrees](https://x.com/weboftrees)*
@@ -60,6 +68,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Protocol Prototyping
 
+[prototyping.ethereum.foundation](https://prototyping.ethereum.foundation)
+
 * **Toni Wahrstätter** *[@nero_eth](https://x.com/nero_eth)*
 * Jochem Brouwer *[@jochembrouwer96](https://x.com/jochembrouwer96)*
 * Rahul *[@raxhvl](https://x.com/raxhvl)*
@@ -69,6 +79,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Jihoon Song *[@jih2nn](https://x.com/jih2nn)*
 
 ### Protocol Security
+
+[security.ethereum.org](https://security.ethereum.org)
 
 * **Fredrik** *[@fredrik0x](https://x.com/fredrik0x)*
 * Tyler Holmes *[@Z3nChada](https://x.com/Z3nChada)*
@@ -81,6 +93,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Huaifeng *[TG: @hf_zhang](https://t.me/hf_zhang)*
 
 ### Geth
+
+[geth.ethereum.org](https://geth.ethereum.org) *[@go_ethereum](https://x.com/go_ethereum)*
 
 * **Felix Lange** *@ethereum.org*
 * Marius van der Wijden *[@vdWijden](https://x.com/vdWijden)*
@@ -108,6 +122,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Luc van Kampen *[@LucemansNL](https://x.com/LucemansNL)*
 
 ### EthPandaOps
+
+[ethpandaops.io](https://ethpandaops.io) *[@ethPandaOps](https://x.com/ethPandaOps)*
 
 * **Pari Jayanthi** *[@parithosh_j](https://x.com/parithosh_j)*
 * Barnabas Busa *[@BarnabasBusa](https://x.com/BarnabasBusa)*
@@ -160,11 +176,15 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 ### Chain Abstraction / Account Abstraction
 
+[erc4337.io](https://erc4337.io) *[@erc4337](https://x.com/erc4337)*
+
 * **Yoav Weiss** *[@yoavw](https://x.com/yoavw)*
 * Marissa Posner *[@thewizardofpos](https://x.com/thewizardofpos)*
 * Tom Teman *[@tomteman](https://x.com/tomteman)*
 
 ### Stateless Consensus
+
+[stateless.fyi](https://stateless.fyi)
 
 * **Guillaume Ballet** *[@gballet](https://x.com/gballet)*
 * Wei Han *[@ngweihan_eth](https://x.com/ngweihan_eth)*
@@ -191,51 +211,51 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 ### Ecosystem Acceleration
 
-**dev/acc**
+#### dev/acc
 
 * **Austin Griffith** *[@austingriffith](https://x.com/austingriffith)*
 * Elliott Alexander *[@escottalexander](https://x.com/escottalexander)*
 
-**Founder Success**
+#### Founder Success
 
 * **Leo Sprueth** *[@oel4all](https://x.com/oel4all)*
 * Abbas Khan *[@KhanAbbas201](https://x.com/KhanAbbas201)*
 
-**App Relations**
+#### App Relations
 
 * **Jason Chaskin** *[Farcaster: @chaskin.eth](https://warpcast.com/chaskin.eth)*
 * Isha Sangani *[@isha_sangani](https://x.com/isha_sangani)*
 * Charles St. Louis *[@CharlieStLouis](https://x.com/CharlieStLouis)*
 
-**Enterprise Acceleration**
+#### Enterprise Acceleration
 
 * **David Walsh** *[@davwals](https://x.com/davwals)*
 * Matthew Dawson *[@ismimatthew](https://x.com/ismimatthew)*
 
 ### Ecosystem Unblocking
 
-**Global Policy Strategy**
+#### Global Policy Strategy
 
 * **Connor Spelliscy** *[@c_spelliscy](https://x.com/c_spelliscy)*
 
-**Academic Secretariat**
+#### Academic Secretariat
 
 * **Shyam Sridhar** *[@ShyamSridhar7](https://x.com/ShyamSridhar7)*
 * Theo Beutel *[@theobtl](https://x.com/theobtl)*
 
-**Unblocking Pilots**
+#### Unblocking Pilots
 
 * **Devansh Mehta** (Deep Funding) *[@thedevanshmehta](https://x.com/thedevanshmehta)*
 * Ori Shimony (Use Case Lab) *[@orishim](https://x.com/orishim)*
 
-**Ethereum for Public Infrastructure & Commons**
+#### Ethereum for Public Infrastructure & Commons
 
 * **Taira Ishikura** (on leave) *[TG: @tairais](https://t.me/tairais)*
 * Sara Amaral (interim) *[@sarabdamaral](https://x.com/sarabdamaral)*
 
 ### Ecosystem Amplification
 
-**Digital Studio**
+#### Digital Studio
 
 * **Joshua** *[@renaissancing_](https://x.com/renaissancing_)*
 * Jakub Konopka *[@asbet0s](https://x.com/asbet0s)*
@@ -247,17 +267,17 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 * Melissa Nelson *[@web3content](https://x.com/web3content)*
 * Binji *[@binji_x](https://x.com/binji_x)*
 
-**Ecodev Automation**
+#### Ecodev Automation
 
 * **Ramshreyas Rao** *[@RamshreyasRao](https://x.com/RamshreyasRao)*
 * Patrick Wissmann *[TG: @BamRikket](https://t.me/BamRikket)*
 * Sherkhan Azimov *[@azimov_se](https://x.com/azimov_se)*
 
-**Specialized Events**
+#### Specialized Events
 
 * **Heather Davidson** *[@Heather_claire](https://x.com/Heather_claire)*
 
-**Ethereum Everywhere**
+#### Ethereum Everywhere
 
 * **Jaf Carmiol** *[@ImTheJaf](https://x.com/ImTheJaf)*
 * Perrie *[@youfoundperrie](https://x.com/youfoundperrie)*
@@ -266,7 +286,7 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 ### Ecosystem Support Program
 
-**Grant Management**
+#### Grant Management
 
 * **Federico Landini** *[TG: @fedeebasta1](https://t.me/fedeebasta1)*
 * Monet du Plessis *[@EthMomi](https://x.com/EthMomi)*
@@ -275,7 +295,7 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 * June Manuel *[Farcaster: @bugbird](https://warpcast.com/bugbird)*
 * Boris Stanic *[@BOR444](https://x.com/BOR444)*
 
-**Funding Coordination**
+#### Funding Coordination
 
 * **Vinay Vasanji** *(Signal: @vinayvasanji.13)*
 * Martin Hansen *[@MartinBreiten](https://x.com/MartinBreiten)*
@@ -296,25 +316,27 @@ Coordinator: Andy *[@andyguzmaneth](https://x.com/andyguzmaneth)*
 
 Research Lead: N, Product Lead: Z, Ops Lead: zk_th
 
-**Private Reads**
+#### Private Reads
 
 * Private Reads: Ali, +4 team members
 * Product Management: Z, +3 team members
 * Privacy Support: Nicole, +4 team members
 
-**Private Writes**
+#### Private Writes
 
 * Private Transfers Engineering: John, +3 team members
 * Private Computation: zk_th, +2 team members
 * Private Research: zk_th, +2 team members
 
-**Private Proving**
+#### Private Proving
 
 * Client-Side Proving: Z, +6 team members
 * Data Portability: Andy, +6 team members
 * Private Identities: Z
 
 ## Devcon & Devconnect
+
+[devcon.com](https://devcon.com) | [devconnect.org](https://devconnect.org) *[@EFDevcon](https://x.com/EFDevcon)*
 
 * Nethan *[@nethan_eth](https://x.com/nethan_eth)*
 * Lasse Jacobsen *[@lassejaco](https://x.com/lassejaco)*
