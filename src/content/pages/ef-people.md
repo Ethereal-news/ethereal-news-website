@@ -1,5 +1,5 @@
 ---
-title: Ethereum Foundation People
+title: Ethereum Foundation people
 description: Ethereum Foundation organization structure and people.
 ---
 
