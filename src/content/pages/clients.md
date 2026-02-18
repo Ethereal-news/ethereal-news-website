@@ -2,7 +2,7 @@
 title: Ethereum Clients
 description: Ethereum execution layer and consensus layer clients.
 ---
-Ethereum mainnet has multiple client implementations for both the execution layer and consensus layer. Client diversity is important for network resilience.
+*Markdown: [ethereal.news/resources/clients.md](https://ethereal.news/resources/clients.md)*
 
 ## Execution Layer Clients
 
@@ -23,4 +23,3 @@ Ethereum mainnet has multiple client implementations for both the execution laye
 ## Resources
 
 * [clientdiversity.org](https://clientdiversity.org/): Client diversity dashboard
-* [ethereum.org clients](https://ethereum.org/en/developers/docs/nodes-and-clients/): Official documentation on nodes and clients

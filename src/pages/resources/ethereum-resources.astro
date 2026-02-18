@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { getEntry } from 'astro:content';
+import { ETHEREUM_RESOURCES } from "@consts";
+import Link from "@components/Link.astro";
+
+const ethResources = await getEntry('pages', 'ethereum-resources');
+if (!ethResources) {
+  throw new Error('Ethereum resources page not found in content collection');
+}
+const { Content } = await ethResources.render();
+---
+
+<Layout title={ETHEREUM_RESOURCES.TITLE} description={ETHEREUM_RESOURCES.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-10">
+        <h1 class="animate text-3xl font-semibold text-black dark:text-white">
+          Ethereum resources
+        </h1>
+        <div class="prose dark:prose-invert max-w-none">
+          <Content components={{ Link }} />
+        </div>
+      </div>
+    </aside>
+  </Container>
+</Layout>

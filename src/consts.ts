@@ -40,6 +40,18 @@ export const EF_PEOPLE: Metadata = {
     "Ethereum Foundation organization structure and people.",
 };
 
+export const ETHEREUM_RESOURCES: Metadata = {
+  TITLE: "Ethereum resources",
+  DESCRIPTION:
+    "Ethereum resources including research forums, community and protocol repositories.",
+};
+
+export const NEWS_SOURCES: Metadata = {
+  TITLE: "news sources",
+  DESCRIPTION:
+    "Additional Ethereum news sources including newsletters, podcasts and YouTube.",
+};
+
 export const CLIENTS: Metadata = {
   TITLE: "clients",
   DESCRIPTION:

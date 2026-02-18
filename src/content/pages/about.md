@@ -19,24 +19,3 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 * Andrew is supported by [Consensys](https://consensys.io/).
 * Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and ENS (from airdrop).
 
-## Resources
-
-* [Ethereum Foundation people](/resources/ef-people): EF organization structure and people.
-* [Ethereum clients](/resources/clients): Execution layer and consensus layer clients.
-* [Eth Research](https://ethresear.ch/): Discourse forum for Ethereum research.
-* [Eth Magicians](https://ethereum-magicians.org): Discourse forum for protocol call summaries, EIP/RIP/ERC discussions, naming and community discussions. Andrew is a moderator.
-* **Eth R&D Discord**: Discord for discussions on Eth R&D.
-* [r/Ethereum](https://www.reddit.com/r/ethereum): Subreddit for community discussions. Andrew is a moderator.
-* [Ethereum Foundation GitHub](https://github.com/ethereum/):
-  * [ethereum/pm](https://github.com/ethereum/pm/): protocol call agendas.
-  * [ethereum/EIPs](https://github.com/ethereum/EIPs/): Ethereum improvement proposals.
-  * [ethereum/RIPs](https://github.com/ethereum/RIPs/): Rollup (Layer 2) improvement proposals.
-  * [ethereum/ERCs](https://github.com/ethereum/ERCs/): application layer standards.
-* [Ethereum Foundation blog](https://blog.ethereum.org/)
-
-## Additional Ethereum news sources
-
-* [Christine D. Kim](https://christinedkim.substack.com/): Newsletter & interviews
-* [The Daily Gwei](https://www.youtube.com/c/TheDailyGwei): YouTube hosted by Anthony Sassano
-* [ETH Daily](https://ethdaily.io): Newsletter & podcast
-* [Doots](https://evmavericks.libsyn.com/): Podcast of the highlights from the r/ethereum daily
