@@ -27,6 +27,14 @@ Ethereal news is a weekly newsletter covering the latest Ethereum news focused o
 
 ${issueLinks}
 
+## Resources
+
+- [Ethereum clients](${new URL("/resources/clients.md", context.site)}): Execution and consensus layer client implementations
+- [EF people](${new URL("/resources/ef-people.md", context.site)}): Ethereum Foundation org chart
+- [Ethereum resources](${new URL("/resources/ethereum-resources.md", context.site)}): Resources for developers and researchers
+- [News sources](${new URL("/resources/news-sources.md", context.site)}): Additional Ethereum news sources
+- [Dev tooling](${new URL("/resources/dev-tooling.md", context.site)}): Frameworks, client libraries and security tools
+
 ## Optional
 
 - [Full content](${new URL("/llms-full.txt", context.site)}): All issues in a single file

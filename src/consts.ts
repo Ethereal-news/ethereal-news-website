@@ -31,7 +31,7 @@ export const ABOUT: Metadata = {
 export const RESOURCES: Metadata = {
   TITLE: "resources",
   DESCRIPTION:
-    "Ethereum resources including EF people and clients.",
+    "Ethereum resources including EF people, clients and dev tooling.",
 };
 
 export const EF_PEOPLE: Metadata = {
@@ -56,6 +56,12 @@ export const CLIENTS: Metadata = {
   TITLE: "clients",
   DESCRIPTION:
     "Ethereum execution layer and consensus layer clients.",
+};
+
+export const DEV_TOOLING: Metadata = {
+  TITLE: "dev tooling",
+  DESCRIPTION:
+    "Ethereum developer tools including frameworks, client libraries and security tools.",
 };
 
 export const SOCIALS: Socials = [
