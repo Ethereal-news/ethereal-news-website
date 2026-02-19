@@ -108,7 +108,7 @@ Linea will focus on becoming a self-sustaining chain, and MetaMask will expand i
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-4](https://ethereal.news/ethereal-news-weekly-4)*
+*Permalink: [ethereal.news/ethereal-news-weekly-4](https://ethereal.news/ethereal-news-weekly-4)*  
 *Markdown: [ethereal.news/ethereal-news-weekly-4.md](https://ethereal.news/ethereal-news-weekly-4.md)*
 
 ---

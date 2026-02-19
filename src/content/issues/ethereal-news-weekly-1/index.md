@@ -158,7 +158,7 @@ Snaps are apps that customize your wallet experience and let you add new feature
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
-*Permalink: [ethereal.news/ethereal-news-weekly-1](https://ethereal.news/ethereal-news-weekly-1)*
+*Permalink: [ethereal.news/ethereal-news-weekly-1](https://ethereal.news/ethereal-news-weekly-1)*  
 *Markdown: [ethereal.news/ethereal-news-weekly-1.md](https://ethereal.news/ethereal-news-weekly-1.md)*
 
 ---
