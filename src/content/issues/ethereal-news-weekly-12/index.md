@@ -2,7 +2,6 @@
 title: 'Ethereal news weekly #12'
 description: 'FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack'
 date: 'February 20, 2026'
-draft: true
 ---
 
 FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack
