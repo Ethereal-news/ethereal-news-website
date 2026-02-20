@@ -1,22 +1,22 @@
 ---
 title: 'Ethereal news weekly #12'
-description: 'FOCIL selected as Hegotá headliner, Base moving to own stack, Tomasz Stańczak stepping down as co-ED at EF'
+description: 'FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack'
 date: 'February 20, 2026'
 draft: true
 ---
 
-FOCIL selected as Hegotá headliner, Base moving to own stack, Tomasz Stańczak stepping down as co-ED at EF
+FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack
 
 ### Ecosystem
 
 * Ethereum Foundation:  
-  * [Tomasz Stańczak stepping down](https://blog.ethereum.org/2026/02/13/tomasz-update) as co-Executive Director at end of February, less than 1 year into a 2 year term  
+  * [Tomasz Stańczak stepping down](https://blog.ethereum.org/2026/02/13/tomasz-update) as co-Executive Director at end of February  
     * [Bastian Aue stepping in](https://x.com/aerugoettinea/status/2022318885047779576) as interim co-Executive Director (previously part of [management team](https://blog.ethereum.org/2025/04/28/ef-mgmt-board))  
   * [Protocol priorities](https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026):   
     * Scale: unifies scale L1 & scale blobs efforts  
     * Improve UX: native account abstraction & interoperability  
-    * Harden the L1: security, censorship resistance and network reliance & testing  
-  * [Platform team](https://blog.ethereum.org/en/2026/02/17/platform): new EF team to deliver cohesive platform (L1 \+ L2s)  
+    * Harden the L1: security, censorship resistance and network resilience & testing  
+  * [Platform team](https://blog.ethereum.org/2026/02/17/platform): new EF team to deliver cohesive platform (L1 \+ L2s)  
   * Tomasz Stańczak: [5 steps to make Ethereum driven by LLMs](https://x.com/tkstanczak/status/2023096942650376343)  
   * [Ethereum protocol studies](https://blog.ethereum.org/2026/02/17/ethereum-protocol-studies-26): study group starts February 23, adds self-paced learning platform and tracks on cryptography & lean consensus/zkEVM  
 * Videos: [EthDenver](https://www.youtube.com/playlist?list=PLAy4HNUNlzRlahJg-0I_f-Aqbxht0UFlM) & [EthBoulder](https://www.youtube.com/playlist?list=PLCAL60uIpJYMrz0uuC3RP5C9o4TQnsCg2)  
@@ -32,7 +32,8 @@ FOCIL selected as Hegotá headliner, Base moving to own stack, Tomasz Stańczak 
 ### Sponsor: [MetaMask Developer](https://metamask.io/developer)
 
 Check out our Builder Hub for tutorials, code samples, and best practices:  
-[builder.metamask.io](https://builder.metamask.io/)  
+[builder.metamask.io](https://builder.metamask.io/)
+
 ---
 
 ### Enterprise
@@ -44,7 +45,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
 
 * [DefiLlama search](https://search.defillama.com/): search for DeFi websites, curated by DefiLlama  
 * [Privacy Pools](https://x.com/0xprivacypools/status/2024137428857163967) adds Liquity BOLD stablecoin  
-* [Supernova](https://paragraph.com/@supernovadex/announcing-supernova-mainnet?referrer=0xBaA59eebBb50d322EAE8540e021FfE5015633d70) ve(3,3) DEX live on mainnet  
+* [Supernova](https://paragraph.com/@supernovadex/announcing-supernova-mainnet) ve(3,3) DEX live on mainnet  
 * [EY Nightfall](https://starkware.co/blog/institutional-privacy-is-moving-onchain-nightfall-deploys-on-starknet/) deployed on Starknet  
 * Octant [Epoch 11](https://x.com/OctantApp/status/2024201516266275007): allocate to Protocol Guild (or yourself) & migrate to v2  
 * Vitalik: [prediction markets \+ LLMs](https://www.reddit.com/r/ethereum/comments/1r4k0gy/a_better_path_forward_for_prediction_markets_pms/) as a next-gen replacement for fiat currency
@@ -60,7 +61,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
 * Sol2uml [v2.5.25](https://github.com/naddison36/sol2uml/releases/tag/v2.5.25): (tool) class diagrams show which functions are called on dependencies  
 * Uniswap [developer portal](https://api-docs.uniswap.org/introduction): API & Agent skill to integrate swap & LP functionality, beta  
 * [ERC7984](https://eips.ethereum.org/EIPS/eip-7984) confidential fungible token:  
-  * [Zama implementation](https://www.zama.org/post/erc-7984-the-confidential-token-standard-explained%20) & create tokens using [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/confidential)  
+  * [Zama implementation](https://www.zama.org/post/erc-7984-the-confidential-token-standard-explained) & create tokens using [OpenZeppelin Contracts Wizard](https://wizard.openzeppelin.com/confidential)  
 * EF Institutional Privacy Task Force (IPTF): [private stablecoin transfers](https://iptf.ethereum.org/building-private-transfers-on-ethereum/) using gated shielded pools, proof of concept  
 * Application layer standards (ERCs):  
   * [ERC8161](https://github.com/ethereum/ERCs/pull/1544/changes): Transferable asynchronous tokenized vault requests  
@@ -73,7 +74,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
 * Cyfrin [Solskill](https://github.com/Cyfrin/solskill#readme) ([skill](https://raw.githubusercontent.com/Cyfrin/solskill/refs/heads/main/skills/solidity/SKILL.md)): how to write production grade Solidity  
 * [Conway Domains](https://conway.domains/) ([skill](https://conway.domains/skills.md)): search, register (x402 payments) & manage domains  
 * Fileverse [API & Agent skill](https://x.com/fileverse/status/2023788802582380809): collaborate on docs, agents can generate a key pair, multisig & content hash registry isolated from users main dDocs account  
-* [Anet](https://github.com/murrlincoln/anet#readme\\): build an agent that is discoverable (ERC8004), callable (ERC8128 auth & x402 payments), messageable (XMTP) & reputable (calls submit reputation feedback)
+* [Anet](https://github.com/murrlincoln/anet#readme): build an agent that is discoverable (ERC8004), callable (ERC8128 auth & x402 payments), messageable (XMTP) & reputable (calls submit reputation feedback)
 
 ### Security
 
@@ -102,7 +103,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
     * Gas repricing breakout [\#2](https://forkcast.org/calls/price/002/)  
 * [Hegotá](https://forkcast.org/upgrade/hegota/) upgrade (targeting late-2026):  
   * Ethstaker [Hegotá proposed headliners](https://www.youtube.com/live/s3FZk51h41g?t=506s) community call  
-  * Vitalik: [FOCIL & EIP8141 frame transactions](https://www.reddit.com/r/ethereum/comments/1r980ut/on_focil_and_native_aa_synergies/) synergies  
+  * Vitalik: [FOCIL & native AA](https://www.reddit.com/r/ethereum/comments/1r980ut/on_focil_and_native_aa_synergies/) synergies  
   * Encrypt the transaction pool breakout [\#0](https://forkcast.org/calls/etm/000/)  
 * ethPandaOps [consensoor](https://github.com/ethpandaops/consensoor#readme): Python consensus layer client for local testing & prototyping  
 * Ben Edgington: [fast finality input wanted](https://x.com/benjaminion_xyz/status/2023776842910462248)  
@@ -121,7 +122,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
 * Rocket Pool [Saturn One](https://x.com/Rocket_Pool/status/2023913306499784898) upgrade live, 4 ETH validators, megapools & RPL fee switch  
 * Vibe coded clients:  
   * Dapplion [vibehouse](https://github.com/dapplion/vibehouse): consensus layer client, Lighthouse v8 fork  
-  * Fucory [XVI](https://github.com/evmts/xvi#readme): execution layer clients in Zig & Effect-TS   
+  * Fucory [XVI](https://github.com/evmts/xvi#readme): execution layer client in Zig & Effect-TS   
 * [Client diversity](https://clientdiversity.org/#distribution):  
   * Consensus layer: Lighthouse \~51% (data may not be accurate)  
   * Execution layer: Geth \~41%, Nethermind \~38% (estimated from self reports)  
@@ -158,7 +159,7 @@ Check out our Builder Hub for tutorials, code samples, and best practices:
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-12/](https://ethereal.news/ethereal-news-weekly-12/)*  
-Markdown*: [ethereal.news/ethereal-news-weekly-12.md](https://ethereal.news/ethereal-news-weekly-12.md)*  
+*Markdown: [ethereal.news/ethereal-news-weekly-12.md](https://ethereal.news/ethereal-news-weekly-12.md)*  
 ---
 
 ### Upcoming calendar
