@@ -1,0 +1,132 @@
+---
+type Props = {
+  issueId: string;
+  title: string;
+};
+
+const { issueId, title } = Astro.props;
+
+const mdUrl = `https://ethereal.news/${issueId}.md`;
+const prompt = `Read ${title}, Ethereum news focused on developers: ${mdUrl}`;
+const encodedPrompt = encodeURIComponent(prompt);
+
+const chatgptUrl = `https://chatgpt.com/?q=${encodedPrompt}`;
+const claudeUrl = `https://claude.ai/new?q=${encodedPrompt}`;
+const grokUrl = `https://grok.com/?q=${encodedPrompt}`;
+---
+
+<span class="inline-block" id="open-in-ai">
+  <button
+    id="open-in-ai-btn"
+    class="not-prose inline-flex items-center gap-1 rounded-full bg-black/5 px-2 py-1 text-[0.7rem] font-medium text-black dark:bg-white/10 dark:text-white cursor-pointer"
+  >
+    Open in AI
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+    </svg>
+  </button>
+</span>
+
+<template id="open-in-ai-menu-template">
+  <div
+    id="open-in-ai-menu"
+    class="fixed z-50 min-w-[160px] rounded-lg border border-black/10 bg-white py-1 shadow-lg dark:border-white/10 dark:bg-neutral-900"
+    style="display:none"
+  >
+    <a
+      href={chatgptUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      ChatGPT
+    </a>
+    <a
+      href={claudeUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      Claude
+    </a>
+    <a
+      href={grokUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      Grok
+    </a>
+    <div class="my-1 border-t border-black/10 dark:border-white/10"></div>
+    <button
+      id="copy-md-btn"
+      data-md-url={`/${issueId}.md`}
+      class="flex w-full items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 cursor-pointer"
+    >
+      Copy as Markdown
+    </button>
+  </div>
+</template>
+
+<script>
+  const toggle = document.getElementById("open-in-ai-btn");
+  const template = document.getElementById("open-in-ai-menu-template") as HTMLTemplateElement;
+
+  if (toggle && template) {
+    // Teleport menu to body so it escapes all parent stacking contexts
+    const menu = template.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    document.body.appendChild(menu);
+
+    const copyBtn = menu.querySelector("#copy-md-btn");
+
+    toggle.addEventListener("click", () => {
+      const visible = menu.style.display !== "none";
+      if (visible) {
+        menu.style.display = "none";
+      } else {
+        const rect = toggle.getBoundingClientRect();
+        menu.style.left = `${rect.left}px`;
+        menu.style.top = `${rect.bottom + 4}px`;
+        menu.style.display = "";
+      }
+    });
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.style.display = "none";
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (
+        !toggle.contains(e.target as Node) &&
+        !menu.contains(e.target as Node)
+      ) {
+        menu.style.display = "none";
+      }
+    });
+
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        const mdUrl = copyBtn.getAttribute("data-md-url");
+        if (!mdUrl) return;
+        try {
+          const res = await fetch(mdUrl);
+          const text = await res.text();
+          await navigator.clipboard.writeText(text);
+          menu.style.display = "none";
+          const original = copyBtn.textContent;
+          copyBtn.textContent = "Copied!";
+          setTimeout(() => {
+            copyBtn.textContent = original;
+          }, 2000);
+        } catch {
+          copyBtn.textContent = "Error";
+          setTimeout(() => {
+            copyBtn.textContent = "Copy as Markdown";
+          }, 2000);
+        }
+      });
+    }
+  }
+</script>

@@ -7,6 +7,7 @@ import { HOME } from "@consts";
 import CalendarArrowCard from "@components/CalendarArrowCard.astro";
 import Link from "@components/Link.astro";
 import SubscribeButton from "@components/SubscribeButton.astro";
+import OpenInAI from "@components/OpenInAI.astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 
 const issues = (await getCollection("issues"))
@@ -78,6 +79,8 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
                 {readingTime(issue.body)}
               </div>
             )}
+            &bull;
+            <OpenInAI issueId={issue.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")} title={issue.data.title} />
           </div>
         </div>
         <SubscribeButton />

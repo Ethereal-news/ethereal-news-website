@@ -5,6 +5,7 @@ import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
 import SubscribeButton from "@components/SubscribeButton.astro";
+import OpenInAI from "@components/OpenInAI.astro";
 import IssueNavigation from "@components/IssueNavigation.astro";
 
 export async function getStaticPaths() {
@@ -71,6 +72,8 @@ const { Content } = await render(issue);
               {readingTime(issue.body)}
             </div>
           )}
+          &bull;
+          <OpenInAI issueId={Astro.params.id} title={issue.data.title} />
         </div>
       </div>
       <SubscribeButton />
