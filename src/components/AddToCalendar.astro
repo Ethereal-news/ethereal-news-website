@@ -1,0 +1,87 @@
+---
+type Props = {
+  googleCalendarUrl: string;
+  appleCalendarUrl: string;
+};
+
+const { googleCalendarUrl, appleCalendarUrl } = Astro.props;
+---
+
+<span class="inline-block" id="add-to-calendar">
+  <button
+    id="add-to-calendar-btn"
+    class="not-prose inline-flex items-center gap-1 rounded-full bg-black/5 px-2 py-1 text-[0.7rem] font-medium text-black dark:bg-white/10 dark:text-white cursor-pointer"
+  >
+    Add to calendar
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+    </svg>
+  </button>
+</span>
+
+<template id="add-to-calendar-menu-template">
+  <div
+    id="add-to-calendar-menu"
+    class="fixed z-50 min-w-[160px] rounded-lg border border-black/10 bg-white py-1 shadow-lg dark:border-white/10 dark:bg-neutral-900"
+    style="display:none"
+  >
+    <a
+      href={googleCalendarUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      Google Calendar
+    </a>
+    <a
+      href={appleCalendarUrl}
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      Apple Calendar
+    </a>
+    <a
+      href="/calendar.ics"
+      download="ethereal-news-calendar.ics"
+      class="flex items-center gap-2 px-3 py-2.5 text-xs text-black hover:bg-black/5 dark:text-white dark:hover:bg-white/5 no-underline"
+    >
+      Download ICS
+    </a>
+  </div>
+</template>
+
+<script>
+  const toggle = document.getElementById("add-to-calendar-btn");
+  const template = document.getElementById("add-to-calendar-menu-template") as HTMLTemplateElement;
+
+  if (toggle && template) {
+    const menu = template.content.firstElementChild!.cloneNode(true) as HTMLElement;
+    document.body.appendChild(menu);
+
+    toggle.addEventListener("click", () => {
+      const visible = menu.style.display !== "none";
+      if (visible) {
+        menu.style.display = "none";
+      } else {
+        const rect = toggle.getBoundingClientRect();
+        menu.style.left = `${rect.left}px`;
+        menu.style.top = `${rect.bottom + 4}px`;
+        menu.style.display = "";
+      }
+    });
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.style.display = "none";
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (
+        !toggle.contains(e.target as Node) &&
+        !menu.contains(e.target as Node)
+      ) {
+        menu.style.display = "none";
+      }
+    });
+  }
+</script>
