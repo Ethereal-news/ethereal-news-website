@@ -2,24 +2,11 @@
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 
-import "@fontsource/geist-sans/100.css";
-import "@fontsource/geist-sans/200.css";
-import "@fontsource/geist-sans/300.css";
 import "@fontsource/geist-sans/400.css";
 import "@fontsource/geist-sans/500.css";
 import "@fontsource/geist-sans/600.css";
 import "@fontsource/geist-sans/700.css";
-import "@fontsource/geist-sans/800.css";
-import "@fontsource/geist-sans/900.css";
-import "@fontsource/geist-mono/100.css";
-import "@fontsource/geist-mono/200.css";
-import "@fontsource/geist-mono/300.css";
 import "@fontsource/geist-mono/400.css";
-import "@fontsource/geist-mono/500.css";
-import "@fontsource/geist-mono/600.css";
-import "@fontsource/geist-mono/700.css";
-import "@fontsource/geist-mono/800.css";
-import "@fontsource/geist-mono/900.css";
 
 interface Props {
   title: string;
@@ -27,11 +14,12 @@ interface Props {
   image?: string;
   publishedDate?: Date;
   isArticle?: boolean;
+  noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/etherealnews.jpg", publishedDate, isArticle = false } = Astro.props;
+const { title, description, image = "/etherealnews.jpg", publishedDate, isArticle = false, noindex = false } = Astro.props;
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://ethereal.news";
 const imageUrl = new URL(image, siteUrl).toString();
@@ -105,6 +93,7 @@ const breadcrumbSchema = {
 <link rel="icon" type="image/png" href="/favicon-32x32.png" />
 <link rel="apple-touch-icon" href="/etherealnews-logo.jpg" />
 <meta name="generator" content={Astro.generator} />
+<meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
 <!-- Preconnect hints -->
 <link rel="preconnect" href="https://etherealnews.substack.com" />
@@ -140,13 +129,13 @@ const breadcrumbSchema = {
 )}
 
 <!-- X / Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={imageUrl} />
-<meta property="twitter:site" content="@EtherealnewsHQ" />
-<meta property="twitter:creator" content="@abcoathup" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={Astro.url} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<meta name="twitter:site" content="@EtherealnewsHQ" />
+<meta name="twitter:creator" content="@abcoathup" />
 
 <!-- JSON-LD Structured Data -->
 <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

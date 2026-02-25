@@ -14,7 +14,7 @@ const { Content } = await newsSources.render();
 
 <Layout title={NEWS_SOURCES.TITLE} description={NEWS_SOURCES.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           Additional Ethereum news sources
@@ -23,6 +23,6 @@ const { Content } = await newsSources.render();
           <Content components={{ Link }} />
         </article>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

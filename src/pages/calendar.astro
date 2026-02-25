@@ -21,7 +21,7 @@ const appleCalendarUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
 
 <Layout title={CALENDAR.TITLE} description={CALENDAR.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <div class="animate flex items-center justify-between">
           <h1 class="text-3xl font-semibold text-black dark:text-white">
@@ -39,6 +39,6 @@ const appleCalendarUrl = icsUrl.replace(/^https?:\/\//, 'webcal://');
           }
         </ul>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

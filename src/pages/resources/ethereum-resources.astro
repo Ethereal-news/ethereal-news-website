@@ -14,7 +14,7 @@ const { Content } = await ethResources.render();
 
 <Layout title={ETHEREUM_RESOURCES.TITLE} description={ETHEREUM_RESOURCES.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           Ethereum resources
@@ -23,6 +23,6 @@ const { Content } = await ethResources.render();
           <Content components={{ Link }} />
         </article>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

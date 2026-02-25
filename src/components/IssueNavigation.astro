@@ -6,7 +6,7 @@ const { prevIssue, nextIssue } = Astro.props;
   {
     prevIssue?.id ? (
       <a
-        href={`/${prevIssue?.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
+        href={`/${prevIssue?.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}/`}
         class="group relative flex min-h-11 flex-nowrap items-center rounded-sm border border-black/15 px-3 py-2 pl-8 no-underline transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
       >
         <svg
@@ -36,7 +36,7 @@ const { prevIssue, nextIssue } = Astro.props;
   {
     nextIssue?.id ? (
       <a
-        href={`/${nextIssue?.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}`}
+        href={`/${nextIssue?.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}/`}
         class="group relative flex min-h-11 grow flex-row-reverse flex-nowrap items-center rounded-sm border border-black/15 px-3 py-2 pr-8 no-underline transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
       >
         <svg

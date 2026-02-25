@@ -14,7 +14,7 @@ const { Content } = await devTooling.render();
 
 <Layout title={DEV_TOOLING.TITLE} description={DEV_TOOLING.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           Dev Tooling
@@ -23,6 +23,6 @@ const { Content } = await devTooling.render();
           <Content components={{ Link }} />
         </article>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

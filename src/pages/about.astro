@@ -14,7 +14,7 @@ const { Content } = await about.render();
 
 <Layout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           About
@@ -23,6 +23,6 @@ const { Content } = await about.render();
           <Content components={{ Link }} />
         </article>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

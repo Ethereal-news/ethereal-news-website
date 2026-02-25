@@ -7,7 +7,7 @@ export const SITE: Site = {
 };
 
 export const HOME: Metadata = {
-  TITLE: "latest",
+  TITLE: "Latest Ethereum news",
   DESCRIPTION: "Latest Ethereum news focused on developers.",
 };
 

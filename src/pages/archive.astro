@@ -27,7 +27,7 @@ const years = Object.keys(issues).sort((a, b) => parseInt(b) - parseInt(a));
 
 <Layout title={ARCHIVE.TITLE} description={ARCHIVE.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           Archive
@@ -36,9 +36,9 @@ const years = Object.keys(issues).sort((a, b) => parseInt(b) - parseInt(a));
           {
             years.map((year) => (
               <section class="animate space-y-4">
-                <div class="text-xl font-semibold text-black dark:text-white">
+                <h2 class="text-xl font-semibold text-black dark:text-white">
                   {year}
-                </div>
+                </h2>
                 <div>
                   <ul class="not-prose flex flex-col gap-4">
                     {issues[year].map((issue) => (
@@ -53,6 +53,6 @@ const years = Object.keys(issues).sort((a, b) => parseInt(b) - parseInt(a));
           }
         </div>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

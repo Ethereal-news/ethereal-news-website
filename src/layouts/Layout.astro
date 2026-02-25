@@ -12,9 +12,10 @@ type Props = {
   image?: string;
   publishedDate?: Date;
   isArticle?: boolean;
+  noindex?: boolean;
 };
 
-const { title, description, image, publishedDate, isArticle } = Astro.props;
+const { title, description, image, publishedDate, isArticle, noindex } = Astro.props;
 
 // Remove "Ethereal news " prefix to avoid redundancy in page title
 const displayTitle = title.replace(/^Ethereal news /i, "");
@@ -29,6 +30,7 @@ const displayTitle = title.replace(/^Ethereal news /i, "");
       image={image}
       publishedDate={publishedDate}
       isArticle={isArticle}
+      noindex={noindex}
     />
   </head>
   <body>

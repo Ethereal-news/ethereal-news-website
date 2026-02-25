@@ -14,7 +14,7 @@ const { Content } = await clients.render();
 
 <Layout title={CLIENTS.TITLE} description={CLIENTS.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
+    <div data-pagefind-ignore>
       <div class="space-y-10">
         <h1 class="animate text-3xl font-semibold text-black dark:text-white">
           Ethereum Clients
@@ -23,6 +23,6 @@ const { Content } = await clients.render();
           <Content components={{ Link }} />
         </article>
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>
