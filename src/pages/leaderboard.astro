@@ -1,0 +1,72 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { getEntry } from "astro:content";
+import { LEADERBOARD } from "@consts";
+
+const leaderboard = await getEntry("pages", "leaderboard");
+if (!leaderboard) {
+  throw new Error("Leaderboard page not found in content collection");
+}
+
+const topClicks = leaderboard.data.topClicks ?? [];
+
+// Aggregate appearances by handle
+const handleCounts = new Map<string, number>();
+for (const issue of topClicks) {
+  for (const handle of issue.clicks) {
+    handleCounts.set(handle, (handleCounts.get(handle) ?? 0) + 1);
+  }
+}
+
+// Sort by count descending, then alphabetically
+const ranked = [...handleCounts.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+const totalIssues = topClicks.length;
+---
+
+<Layout title={LEADERBOARD.TITLE} description={LEADERBOARD.DESCRIPTION}>
+  <Container>
+    <div data-pagefind-ignore>
+      <div class="space-y-10">
+        <div class="animate">
+          <h1 class="text-3xl font-semibold text-black dark:text-white">
+            Leaderboard
+          </h1>
+          <p class="mt-2 text-sm text-black/60 dark:text-white/60">
+            Top links clicked by subscribers across {totalIssues} issue{totalIssues !== 1 ? "s" : ""}
+          </p>
+        </div>
+        {ranked.length > 0 ? (
+          <div class="animate">
+            <ul class="not-prose flex flex-col gap-3">
+              {ranked.map(([handle, count], index) => (
+                <li class="flex items-center gap-4 rounded-lg border border-black/15 p-4 transition-colors duration-300 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/5">
+                  <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black/10 text-sm font-semibold text-black dark:bg-white/10 dark:text-white">
+                    {index + 1}
+                  </span>
+                  <a
+                    href={`https://x.com/${handle}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-medium text-black transition-colors duration-300 hover:underline dark:text-white"
+                  >
+                    @{handle}
+                  </a>
+                  <span class="ml-auto text-sm text-black/60 dark:text-white/60">
+                    {count} {count === 1 ? "appearance" : "appearances"}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <p class="animate text-black/60 dark:text-white/60">
+            No data yet.
+          </p>
+        )}
+      </div>
+    </div>
+  </Container>
+</Layout>

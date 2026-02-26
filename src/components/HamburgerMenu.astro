@@ -50,10 +50,11 @@ const pathname = Astro.url.pathname;
     class="absolute right-0 top-full mt-2 w-48 overflow-hidden rounded-lg border border-black/15 bg-neutral-100 p-4 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-300 ease-out opacity-0 scale-95 -translate-y-2 pointer-events-none"
   >
     <nav class="flex flex-col gap-4 text-sm">
-      <a href="/archive/" class={`transition-colors duration-300 ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>archive</a>
       <a href="/calendar/" class={`transition-colors duration-300 ${pathname.startsWith('/calendar') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>calendar</a>
-      <a href="/resources/" class={`transition-colors duration-300 ${pathname.startsWith('/resources') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>resources</a>
       <a href="/about/" class={`transition-colors duration-300 ${pathname.startsWith('/about') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>about</a>
+      <a href="/archive/" class={`transition-colors duration-300 ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>archive</a>
+      <a href="/leaderboard/" class={`transition-colors duration-300 ${pathname.startsWith('/leaderboard') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>leaderboard</a>
+      <a href="/resources/" class={`transition-colors duration-300 ${pathname.startsWith('/resources') ? 'text-black dark:text-white' : 'hover:text-black dark:hover:text-white'}`}>resources</a>
       <div class="flex items-center gap-4">
         <button
           id="mobile-search"

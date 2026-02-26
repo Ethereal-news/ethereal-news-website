@@ -64,6 +64,11 @@ export const DEV_TOOLING: Metadata = {
     "Ethereum developer tools including frameworks, client libraries and security tools.",
 };
 
+export const LEADERBOARD: Metadata = {
+  TITLE: "leaderboard",
+  DESCRIPTION: "Top clicked content creators ranked by reader engagement.",
+};
+
 export const SOCIALS: Socials = [
   {
     NAME: "X",

@@ -19,10 +19,27 @@ const pathname = Astro.url.pathname;
         </div>
       </Link>
       <nav class="hidden items-center gap-6 text-sm md:flex">
-        <a href="/archive/" class={`nav-link ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) ? 'nav-link-active' : ''}`}>archive</a>
         <a href="/calendar/" class={`nav-link ${pathname.startsWith('/calendar') ? 'nav-link-active' : ''}`}>calendar</a>
-        <a href="/resources/" class={`nav-link ${pathname.startsWith('/resources') ? 'nav-link-active' : ''}`}>resources</a>
         <a href="/about/" class={`nav-link ${pathname.startsWith('/about') ? 'nav-link-active' : ''}`}>about</a>
+        <div class="relative" id="more-dropdown">
+          <button
+            id="more-btn"
+            class={`nav-link inline-flex items-center gap-0.5 cursor-pointer ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) || pathname.startsWith('/leaderboard') || pathname.startsWith('/resources') ? 'nav-link-active' : ''}`}
+          >
+            more
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5">
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div
+            id="more-menu"
+            class="absolute right-0 top-full mt-2 min-w-[160px] rounded-lg border border-black/15 bg-neutral-100 py-1 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-200 ease-out opacity-0 scale-95 pointer-events-none"
+          >
+            <a href="/archive/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">archive</a>
+            <a href="/leaderboard/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">leaderboard</a>
+            <a href="/resources/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">resources</a>
+          </div>
+        </div>
         <div class="flex items-center gap-3">
           <button
             id="magnifying-glass"
@@ -53,3 +70,42 @@ const pathname = Astro.url.pathname;
     </div>
   </Container>
 </header>
+
+<script>
+  function setupMoreDropdown() {
+    const btn = document.getElementById("more-btn");
+    const menu = document.getElementById("more-menu");
+    if (!btn || !menu) return;
+
+    let isOpen = false;
+
+    function open() {
+      isOpen = true;
+      menu!.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+      menu!.classList.add("opacity-100", "scale-100", "pointer-events-auto");
+    }
+
+    function close() {
+      isOpen = false;
+      menu!.classList.add("opacity-0", "scale-95", "pointer-events-none");
+      menu!.classList.remove("opacity-100", "scale-100", "pointer-events-auto");
+    }
+
+    btn.addEventListener("click", () => {
+      if (isOpen) close(); else open();
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target as Node) && !menu.contains(e.target as Node)) {
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && isOpen) close();
+    });
+  }
+
+  setupMoreDropdown();
+  document.addEventListener("astro:after-swap", setupMoreDropdown);
+</script>
