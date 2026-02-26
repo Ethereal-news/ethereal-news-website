@@ -97,4 +97,13 @@ topClicks:
     - peter_szilagyi
     - solidity_lang
     - offstage_x
+
+- issue: 12
+  clicks:
+    - Cyfrin
+    - tkstanczak
+    - VitalikButerin
+    - NexusMutual
+    - austingriffith
+
 ---
