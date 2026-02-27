@@ -12,11 +12,11 @@ Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund
 * [Strawmap](https://strawmap.org/faq) (strawman roadmap): 7 network upgrades (every 6 months) through to 2029, work-in-progress  
   * Justin Drake [overview](https://x.com/drakefjustin/status/2026755969540108659)  
   * North stars:   
-    * L1: fast (finality in seconds), gigagas, post quantum (hash based) & private (shielded transfers)  
-    * L2: teragas  
+    * L1: fast (finality in seconds), gigagas (1 gigagas/sec), post quantum (hash based) & private (shielded transfers)  
+    * L2: teragas (1 gigabyte/sec)  
   * Vitalik: [fast slots & fast finality](https://x.com/VitalikButerin/status/2026779557479723418), [quantum resistance roadmap](https://x.com/VitalikButerin/status/2027075026378543132)  
 * Ethereum Foundation:  
-  * [Staking 70k ETH from treasury](https://blog.ethereum.org/2026/02/24/staking): type 2 withdrawal credentials, uses Dirk (distributed signer) & Voucher (multiclient) and local block building  
+  * [Staking 70k ETH from treasury](https://blog.ethereum.org/2026/02/24/staking): type 2 withdrawal credentials, uses Dirk (distributed signer) & Vouch (multiclient) and local block building  
   * [Commitment to DeFi](https://blog.ethereum.org/2026/02/23/commitment-to-defi): App Relations team includes DeFi protocol specialist: Charles St. Louis (previously led DELV) & DeFi coordinator: ivangbi (previously co-founded Gearbox protocol)  
   * [Protocol support](https://ps.ethereum.foundation/) website & blog  
   * Ecosystem Support Program:   
@@ -37,22 +37,21 @@ Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund
 ![Consensys](./consensys.jpg)
 
 A complete suite of trusted products to build anything in web3.  
-[consensys.io](http://consensys.io)
+[consensys.io](https://consensys.io)
 
 ---
 
 ### Enterprise
 
-* Enterprise Ethereum Alliance [privacy working group](https://x.com/EntEthAlliance/status/2026336069277643261)  
-* [BNP Paribas Asset Management](https://group.bnpparibas/en/press-release/bnp-paribas-explores-public-blockchain-infrastructure-for-money-market-fund-tokenisation) issued permissioned tokenized shares for a money market fund
+* Enterprise Ethereum Alliance [privacy working group](https://x.com/EntEthAlliance/status/2026336069277643261) announced  
+* [BNP Paribas Asset Management](https://group.bnpparibas/en/press-release/bnp-paribas-explores-public-blockchain-infrastructure-for-money-market-fund-tokenisation) tokenized money market fund
 
 ### Applications
 
 * [Bungee Incognito](https://blog.bungee.exchange/bungee-incognito-privacy-simple-enough-113ab8b59265) live, no onchain link between sender & receiver, no KYC  
 * [zFI](https://zfi.wei.is/about/) (super dapp): swaps, token launchpad, prediction market, limit orders & .wei names   
 * [ENS resolver](https://ens-sheets.namespace.ninja/) for Google Sheets  
-* [Andyclaw](https://x.com/FreedomFactory/status/2026753108911476775) (AI assistant): OpenClaw Kotlin port, included on dGEN1 phone  
-* Vitalik: [personal governance agents](https://x.com/VitalikButerin/status/2025225247088402581)
+* [Andyclaw](https://x.com/FreedomFactory/status/2026753108911476775) (AI assistant): OpenClaw Kotlin port, included on dGEN1 phone
 
 ### Developers
 
@@ -140,7 +139,7 @@ A complete suite of trusted products to build anything in web3.
 
 ### Layer 2
 
-* [Linea](https://linea.build/blog/linea-achieves-100-mgas-s-throughput) 100mGas/s throughput  
+* [Linea](https://linea.build/blog/linea-achieves-100-mgas-s-throughput) 100MGas/s throughput  
 * [ZKsync Lite](https://x.com/zksync/status/2027161869124067400) (formerly ZKsync 1.0) deprecated, block production stops May 4  
 * L2Beat [Interop](https://l2beat.com/interop/summary): view flows for any pair of chains
 
@@ -153,14 +152,13 @@ A complete suite of trusted products to build anything in web3.
 
 * [LLMs enable deanonymization](https://arxiv.org/abs/2602.16800) at scale  
 * Book: [How crypto actually works](https://github.com/lawmaster10/howcryptoworksbook#readme), pre-first edition  
-* Anthropic [Claude for open source](https://www.anthropic.com/claude-for-oss-terms): maintainers can apply for 6 months of max 20x
+* Anthropic [Claude for open source](https://www.anthropic.com/claude-for-oss-terms): maintainers can apply for 6 months of Max 20x
 
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-13/](https://ethereal.news/ethereal-news-weekly-13/)*  
 *Markdown: [ethereal.news/ethereal-news-weekly-13.md](https://ethereal.news/ethereal-news-weekly-13.md)*  
-
 ---
 
 ### Upcoming calendar
@@ -173,4 +171,3 @@ A complete suite of trusted products to build anything in web3.
 * Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
 
 [*Full calendar*](https://ethereal.news/calendar/)  
-
