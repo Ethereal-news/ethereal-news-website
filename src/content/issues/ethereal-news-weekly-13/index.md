@@ -2,7 +2,6 @@
 title: 'Ethereal news weekly #13'
 description: 'Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund'
 date: 'February 27, 2026'
-draft: true
 ---
 
 Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund
@@ -19,16 +18,17 @@ Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund
   * [Staking 70k ETH from treasury](https://blog.ethereum.org/2026/02/24/staking): type 2 withdrawal credentials, uses Dirk (distributed signer) & Vouch (multiclient) and local block building  
   * [Commitment to DeFi](https://blog.ethereum.org/2026/02/23/commitment-to-defi): App Relations team includes DeFi protocol specialist: Charles St. Louis (previously led DELV) & DeFi coordinator: ivangbi (previously co-founded Gearbox protocol)  
   * [Protocol support](https://ps.ethereum.foundation/) website & blog  
+  * [Project Odin](https://blog.ethereum.org/en/2026/02/27/project-odin): support strategic grantees to sustainability over 2 years, piloting with Vyper core team  
   * Ecosystem Support Program:   
     * Wishlist: [developer tooling](https://esp.ethereum.foundation/applicants/wishlist/existing-devtool), proposals wanted to sustain, improve & extend existing dev tools, applications close April 15  
     * RFP: [RFP hub](https://esp.ethereum.foundation/applicants/rfp/rfp_hub), standardize RFP data, create API & reference front end and maintain dataset, applications close April 23  
 * ETHDenver hackathon [winners](https://x.com/devfolio/status/2026010775270334739) from [186 projects](https://ethdenver2026.devfolio.co/projects)  
 * ETH metrics:  
-  * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.0 (12.4 for zero net issuance)  
+  * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.0 (12.5 for zero net issuance)  
   * [ETH supply change](https://ultrasound.money/): 19k net issuance  
   * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,816 \- $2,099 (all time high $4,946, August 24, 2025\)  
   * [ETH ETFs](https://dune.com/hildobby/eth-etfs): 5% of ETH supply  
-  * [ETHBTC](https://ratiogang.com/): 0.030 (0.166 for the Flippening)
+  * [ETHBTC](https://ratiogang.com/): 0.029 (0.166 for the Flippening)
 
 ---
 
@@ -57,11 +57,11 @@ A complete suite of trusted products to build anything in web3.
 
 * Solidity (language): [revertStrings strip inconsistency](https://x.com/solidity_lang/status/2026349594691645537), IR pipeline removes strings & custom errors from require statements whilst legacy pipeline only removes strings  
 * Foundry (dev framework):  
-  * scopelint [v0.1.0](https://scopelift.co/blog/scopelint-v.0.1.0) (linter): adds checks, commands & flags, config & compatibility  
+  * scopelint [v0.1.0](https://scopelift.co/blog/scopelint-v.0.1.0) (linter): adds checks, commands & flags, config and compatibility  
 * OpenZeppelin Contracts [v5.6.0](https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v5.6.0) (Solidity library): adds TrieProof to verify Merkle-Patricia trie inclusion proofs, crosschain token bridge (ERC20 only) based on [ERC7786](https://eips.ethereum.org/EIPS/eip-7786) and account contracts updated to use ERC4337 entrypoint 0.9  
-* Franco Victorio: deterministic deployments [managed private key, Nicks method & pre-signed transactions](https://paragraph.com/@cethology/deterministic-deployments-part-1-the-basics), [CREATE2-based](https://paragraph.com/@cethology/deterministic-deployments-part-2-create2-based-approaches) & [other approaches](https://paragraph.com/@cethology/deterministic-deployments-part-3-other-approaches)  
+* Franco Victorio: deterministic deployments [managed private key, Nicks method & pre-signed transactions](https://paragraph.com/@cethology/deterministic-deployments-part-1-the-basics), [CREATE2-based approaches](https://paragraph.com/@cethology/deterministic-deployments-part-2-create2-based-approaches) & [other approaches](https://paragraph.com/@cethology/deterministic-deployments-part-3-other-approaches)  
 * Optimism [timelock guard](https://www.optimism.io/blog/timelock-guard) (Safe multisig plugin): schedule, execute & cancel, visible transaction queue, dynamic cancellation threshold and clear timelock queue mechanism  
-* [Evmresearch](https://evmresearch.io/): knowledge graph of EVM  
+* [Evmresearch](https://evmresearch.io/): knowledge graph of EVM, Solidity, vulnerability patterns, exploits, defensive security & DeFi protocol mechanics  
 * Application layer standards (ERCs):  
   * [ERC8167](https://github.com/ethereum/ERCs/pull/1554/changes): Modular dispatch proxies  
   * [ERC8168](https://github.com/ethereum/ERCs/pull/1555/changes): Payer web service capability  
@@ -74,11 +74,11 @@ A complete suite of trusted products to build anything in web3.
 
 ### Agents
 
-* [Alchemy](https://www.alchemy.com/blog/ai-agents-can-now-sign-up-for-alchemy): access real-time blockchain data, purchase credits via x402 on Base  
+* [Alchemy](https://www.alchemy.com/blog/ai-agents-can-now-sign-up-for-alchemy): access real-time blockchain data, purchase credits on Base via x402  
 * Base [skills](https://github.com/base/skills#readme): connect, deploy contracts, integrate Base Accounts SDK & run nodes  
 * Uniswap [skills](https://github.com/Uniswap/uniswap-ai#readme): v4 hooks, trading, Continuous Clearing Auction, driver & viem/wagmi  
-* [Flow](https://x.com/mjc716/status/2026759104367308987) ([skill](https://www.flow.bid/skill/skill.md)): auction launchpad, uses Uniswap Continuous Clearing Auction  
-* Veil cash [SDK v0.4.0](https://x.com/Veildotcash/status/2026599358897226122): execute deposits, private transfers & withdrawals on Base  
+* [Flow](https://x.com/mjc716/status/2026759104367308987) ([skill](https://www.flow.bid/skill/skill.md)): token launchpad, uses Uniswap Continuous Clearing Auction  
+* Veil cash [SDK](https://x.com/Veildotcash/status/2026599358897226122) (privacy): execute deposits, private transfers & withdrawals on Base  
 * [Herd MCP](https://x.com/andrewhong5297/status/2025973649212088721): search contract & transaction relationships
 
 ### Security
@@ -93,16 +93,16 @@ A complete suite of trusted products to build anything in web3.
 
 * [Hegotá](https://forkcast.org/upgrade/hegota/) upgrade (targeting late-2026)  
   * Headliner (execution layer) discussions:  
+    * Decide headliner at next ACDE  
     * Leading candidates: [EIP8141](https://forkcast.org/eips/8141/) Frame transactions or no headliner  
     * Client team preferences: [Geth](https://notes.ethereum.org/@lightclient/h-is-for-hardness), [Erigon](https://github.com/ethereum/pm/issues/1931#issuecomment-3961108850), [Besu](https://hackmd.io/@YwTR7izNSrCEQYKWdzdy_Q/Syutq86OZe) & [Nimbus](https://github.com/ethereum/pm/issues/1931#issuecomment-3966735519)  
-    * Decide at next ACDE  
     * Encrypted transaction pool: [LUCID](https://ethereum-magicians.org/t/hegota-headliner-proposal-eip-8105-universal-enshrined-encrypted-mempool-eem/27448/3) sole proposal after [EIP8105](https://forkcast.org/eips/8105/) withdrawn  
   * [EraE](https://notes.ethereum.org/j65MUa-KTB-hZ2kDrijS9A) (execution layer history archive format): supersedes Era1
 
 #### All core devs \- testing (ACDT) [\#71](https://forkcast.org/calls/acdt/071/)
 
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam) upgrade (targeting mid-2026):  
-  * bal-devnet-3 ([spec](https://notes.ethereum.org/@ethpandaops/bal-devnet-3)): planned for March 4, EIP8037 hardcoded to 100M gas due to complexity of implementing dynamic cost in testing framework  
+  * bal-devnet-3 ([spec](https://notes.ethereum.org/@ethpandaops/bal-devnet-3)): planned for March 4, EIP8037 hardcoded for 100M gas due to complexity of implementing dynamic cost in testing framework  
   * epbs-devnet-0 ([spec](https://notes.ethereum.org/@ethpandaops/epbs-devnet-0)): planned for March 4
 
 ### Layer 1
@@ -152,22 +152,13 @@ A complete suite of trusted products to build anything in web3.
 
 * [LLMs enable deanonymization](https://arxiv.org/abs/2602.16800) at scale  
 * Book: [How crypto actually works](https://github.com/lawmaster10/howcryptoworksbook#readme), pre-first edition  
-* Anthropic [Claude for open source](https://www.anthropic.com/claude-for-oss-terms): maintainers can apply for 6 months of Max 20x
+* Anthropic [Claude for open source](https://claude.com/contact-sales/claude-for-oss): maintainers can apply for 6 months of Max 20x
 
 ---
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-13/](https://ethereal.news/ethereal-news-weekly-13/)*  
 *Markdown: [ethereal.news/ethereal-news-weekly-13.md](https://ethereal.news/ethereal-news-weekly-13.md)*  
+
 ---
 
-### Upcoming calendar
-
-* Mar 12-15: [ETHMumbai](https://www.ethmumbai.in/) (conference & hackathon), Mumbai, India  
-* Mar 24-26: [EY Global blockchain summit](https://web.cvent.com/event/52099248-ee76-46aa-a579-a707420821f3/websitePage:34e89f81-7647-4dff-b5f8-cd05d75a1ea7) (conference), New York, USA  
-* Mar 30 \- Apr 2: [EthCC](https://ethcc.io/) (conference), Cannes, France  
-* Apr 3-5: [ETHGlobal Cannes](https://ethglobal.com/events/cannes2026) (hackathon), Cannes, France  
-* Jun 8-10: [ETHConf](https://ethconf.com/) (conference), New York, USA  
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
-
-[*Full calendar*](https://ethereal.news/calendar/)  
