@@ -4,7 +4,7 @@ description: Ethereum Foundation organization structure and people.
 ---
 
 *Text version of the [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png).
-EF last updated: January 2026. Please report any errors or omissions.*
+EF last updated: March 2026. Please report any errors or omissions.*
 
 *Markdown: [ethereal.news/resources/ef-people.md](https://ethereal.news/resources/ef-people.md)*
 
@@ -17,9 +17,12 @@ EF last updated: January 2026. Please report any errors or omissions.*
 
 ## Management
 
-* Co-Executive Directors: Tomasz Stanczak *[@tkstanczak](https://x.com/tkstanczak)* & Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
-* Bastian Aue *[@aerugoettinea](https://x.com/aerugoettinea)*
+* Co-Executive Directors: Bastian Aue (interim) *[@aerugoettinea](https://x.com/aerugoettinea)* & Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
 * Josh Stark *[@0xstark](https://x.com/0xstark)*
+
+### Management Project Support
+
+* Franzi Heintel *[@_franzihei](https://x.com/_franzihei)*
 
 ## Protocol
 
@@ -31,7 +34,6 @@ Coordinators: Alex Stokes *[@ralexstokes](https://x.com/ralexstokes)*, Barnabé 
 
 Alex Stokes *[@ralexstokes](https://x.com/ralexstokes)* & Tim Beiko *[@timbeiko](https://x.com/timbeiko)*
 
-* Joshua Rudolf *[@rudolf6_](https://x.com/rudolf6_)*
 * Will Corcoran *[@corcoranwill](https://x.com/corcoranwill)*
 * Ladislaus von Daniels *[@ladislaus0x](https://x.com/ladislaus0x)*
 * Trent van Epps *[@trent_vanepps](https://x.com/trent_vanepps)*
@@ -98,10 +100,9 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 
 [geth.ethereum.org](https://geth.ethereum.org) *[@go_ethereum](https://x.com/go_ethereum)*
 
-* **Felix Lange** *@ethereum.org*
+* **Felix Lange** (co-lead) *@ethereum.org*
+* **Matt Garnett** (co-lead) *[@lightclients](https://x.com/lightclients)*
 * Marius van der Wijden *[@vdWijden](https://x.com/vdWijden)*
-* Matt Garnett
-* Lightclient *[@lightclients](https://x.com/lightclients)*
 * Csaba Király
 * Sina Mahmoodi *[@sina_mahmoodi](https://x.com/sina_mahmoodi)*
 * Gary
@@ -113,15 +114,10 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 ### zkEVM
 
 * **Kev Wedderburn** *[@kevaundray](https://x.com/kevaundray)*
-* Thomas Coratger *[@tcoratger](https://x.com/tcoratger)*
 * Cody Gunton
 * Han Jian *[@han_0110](https://x.com/han_0110)*
 * Ignacio Hagopian *[@ignaciohagopian](https://x.com/ignaciohagopian)*
-
-### Application Support
-
-* **Nico Consigny** *[@ncsgy](https://x.com/ncsgy)*
-* Luc van Kampen *[@LucemansNL](https://x.com/LucemansNL)*
+* Marcin Bugaj *[TG: @marcinbugaj](https://t.me/marcinbugaj)*
 
 ### EthPandaOps
 
@@ -148,6 +144,8 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Hester Bruikman *[@hesterbruikman](https://x.com/hesterbruikman)*
 
 ### Protocol Support
+
+[ps.ethereum.foundation](https://ps.ethereum.foundation)
 
 * **Nixo** *[@nixorokish](https://x.com/nixorokish)*
 * Joshua Davis *[@joshdavislight](https://x.com/joshdavislight)*
@@ -207,9 +205,17 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * Keri Clowes *[TG: @kclowes](https://t.me/kclowes)*
 * Felipe Selmo *[TG: @mo_0x2](https://t.me/mo_0x2)*
 
+### Platform
+
+* **Joshua Rudolf** *[@rudolf6_](https://x.com/rudolf6_)*
+
+### Post Quantum
+
+* Thomas Coratger *[@tcoratger](https://x.com/tcoratger)*
+
 ## EcoDev
 
-Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
+Coordinator: James Smith *[@snapcrackle](https://x.com/snapcrackle)*
 
 ### Ecosystem Acceleration
 
@@ -217,6 +223,8 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 * **Austin Griffith** *[@austingriffith](https://x.com/austingriffith)*
 * Elliott Alexander *[@escottalexander](https://x.com/escottalexander)*
+* Philip Krause *[@phipsae](https://x.com/phipsae)*
+* Sophia Dew *[@sodofi_](https://x.com/sodofi_)*
 
 #### Founder Success
 
@@ -228,17 +236,27 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 * **Jason Chaskin** *[Farcaster: @chaskin.eth](https://warpcast.com/chaskin.eth)*
 * Isha Sangani *[@isha_sangani](https://x.com/isha_sangani)*
 * Charles St. Louis *[@CharlieStLouis](https://x.com/CharlieStLouis)*
+* ivangbi *[@ivangbi_](https://x.com/ivangbi_)*
 
 #### Enterprise Acceleration
 
 * **David Walsh** *[@davwals](https://x.com/davwals)*
 * Matthew Dawson *[@ismimatthew](https://x.com/ismimatthew)*
+* Kyle Rojas *[@kyleArojas](https://x.com/kyleArojas)*
+* Tiena Sekharan *[@_sekharan](https://x.com/_sekharan)*
 
 ### Ecosystem Unblocking
 
 #### Global Policy Strategy
 
 * **Connor Spelliscy** *[@c_spelliscy](https://x.com/c_spelliscy)*
+
+#### Funding Coordination
+
+* **Vinay Vasanji** *(Signal: @vinayvasanji.13)*
+* Martin Hansen *[@MartinBreiten](https://x.com/MartinBreiten)*
+* Raul Romanutti *[@nachortti](https://x.com/nachortti)*
+* Sofia Sukhinina *[@sonkiski](https://x.com/sonkiski)*
 
 #### Academic Secretariat
 
@@ -249,11 +267,13 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 
 * **Devansh Mehta** (Deep Funding) *[@thedevanshmehta](https://x.com/thedevanshmehta)*
 * Ori Shimony (Use Case Lab) *[@orishim](https://x.com/orishim)*
+* Perrie (Bridge Building) *[@youfoundperrie](https://x.com/youfoundperrie)*
 
 #### Ethereum for Public Infrastructure & Commons
 
 * **Taira Ishikura** (on leave) *[TG: @tairais](https://t.me/tairais)*
 * Sara Amaral (interim) *[@sarabdamaral](https://x.com/sarabdamaral)*
+* Otto Mora *[@ottomorac](https://x.com/ottomorac)*
 
 ### Ecosystem Amplification
 
@@ -264,18 +284,18 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 * Luka Kropec *[@LKropec](https://x.com/LKropec)*
 * Nuno Loureiro *[@nloureiro](https://x.com/nloureiro)*
 * Pablo Pettinari *[@pettinarip](https://x.com/pettinarip)*
-* Corwin Smith *[@corwintines](https://x.com/corwintines)*
 * Paul Wackerow *[GitHub: @wackerow](https://github.com/wackerow)*
 * Melissa Nelson *[@web3content](https://x.com/web3content)*
 * Binji *[@binji_x](https://x.com/binji_x)*
+* Louie *[@lou3e](https://x.com/lou3e)*
 
-#### Ecodev Automation
+#### AI & Analytics
 
 * **Ramshreyas Rao** *[@RamshreyasRao](https://x.com/RamshreyasRao)*
 * Patrick Wissmann *[TG: @BamRikket](https://t.me/BamRikket)*
 * Sherkhan Azimov *[@azimov_se](https://x.com/azimov_se)*
 
-#### Specialized Events
+#### Strategic Events
 
 * **Heather Davidson** *[@Heather_claire](https://x.com/Heather_claire)*
 
@@ -286,24 +306,6 @@ Coordinator: James Smith *[@james_gaps](https://x.com/james_gaps)*
 * Eniko Garam *[@Eniko_G](https://x.com/Eniko_G)*
 * Matteo D'Andreta *[@matteoikari](https://x.com/matteoikari)*
 
-### Ecosystem Support Program
-
-#### Grant Management
-
-* **Federico Landini** *[TG: @fedeebasta1](https://t.me/fedeebasta1)*
-* Monet du Plessis *[@EthMomi](https://x.com/EthMomi)*
-* Vanessa Koh
-* Yijin Lee *[@yj_alt](https://x.com/yj_alt)*
-* June Manuel *[Farcaster: @bugbird](https://warpcast.com/bugbird)*
-* Boris Stanic *[@BOR444](https://x.com/BOR444)*
-
-#### Funding Coordination
-
-* **Vinay Vasanji** *(Signal: @vinayvasanji.13)*
-* Martin Hansen *[@MartinBreiten](https://x.com/MartinBreiten)*
-* Raul Romanutti *[@nachortti](https://x.com/nachortti)*
-* Eliza Pancake *[@Elizapancake01](https://x.com/Elizapancake01)*
-
 ## Privacy
 
 Coordinator: Igor *[@barinov](https://x.com/barinov)*
@@ -311,45 +313,74 @@ Coordinator: Igor *[@barinov](https://x.com/barinov)*
 ### Kohaku
 
 * **Nico Consigny** *[@ncsgy](https://x.com/ncsgy)*
+* Luc van Kampen *[@LucemansNL](https://x.com/LucemansNL)*
+* Kassandra *[@kassandraETH](https://x.com/kassandraETH)*
 
 ### PSE (Privacy & Scaling Exploration)
 
-Coordinator: Andy *[@andyguzmaneth](https://x.com/andyguzmaneth)*
-
-Research Lead: N, Product Lead: Z, Ops Lead: zk_th
+Lead: Andy Guzman *[@andyguzmaneth](https://x.com/andyguzmaneth)*
 
 #### Private Reads
 
-* Private Reads: Ali, +4 team members
-* Product Management: Z, +3 team members
-* Privacy Support: Nicole, +4 team members
+Ali Atiia *[@0xalizk](https://x.com/0xalizk)*
+
+* TorJS: Andrew Morris *[@voltrevo](https://x.com/voltrevo)*
+* vUBT: Takamichi Tsutsumi *[@tkmct_t](https://x.com/tkmct_t)*
+* PIR: Keewoo Lee
+
+#### Long Term Research
+
+* Research & PQ Strategy: N *[@nbodynothig](https://x.com/nbodynothig)*
+* IO: Sora Suegami *[@SoraSue77](https://x.com/SoraSue77)*
+
+#### Institutional Privacy Task Force
+
+* Mo Jalil *[@motypes](https://x.com/motypes)*
+* Oskar *[@oskarth](https://x.com/oskarth)*
+* Yanis Meziane *[@yanis_mezn](https://x.com/yanis_mezn)*
+* rymnc *[@p1ge0nh8er](https://x.com/p1ge0nh8er)*
 
 #### Private Writes
 
-* Private Transfers Engineering: John, +3 team members
-* Private Computation: zk_th, +2 team members
-* Private Research: zk_th, +2 team members
+zk_th
+
+* Private Transfers Engineering: John Guilding *[@john_guilding](https://x.com/john_guilding)*, Anton Valov *[GitHub: @0xmac](https://github.com/0xmac)*, Nico Serrano *[@NicoSerrano](https://x.com/NicoSerrano)*
+* Private Transfers Research: Pierre *[@xyz_pierre](https://x.com/xyz_pierre)*, Winderica *[@w1nd3r1c4](https://x.com/w1nd3r1c4)*, +1 member
+* zk Social Recovery: Rasul Ibragimov *[@curryrasul](https://x.com/curryrasul)*
 
 #### Private Proving
 
-* Client-Side Proving: Z, +6 team members
-* Data Portability: Andy, +6 team members
-* Private Identities: Z
+Z
+
+* MoPro: Vivi Jeng *[@vivi4322](https://x.com/vivi4322)*
+* GPU Acceleration: Moven Tsai *[@moven0831](https://x.com/moven0831)*
+* CSP zkVM Benchmarking: Alex Kuzmin *[@alxkzmn](https://x.com/alxkzmn)*
+* Onchain WHIR: Brechy *[@brechy](https://x.com/brechy)*
+* zk ID: Vivian Plasencia *[@ViviPlasenciaC](https://x.com/ViviPlasenciaC)*
+* OpenAC Anon Aadhaa: Vikas Rushi r *[@vikas_rushi](https://x.com/vikas_rushi)*
+* PM: zkID+: Nicole *[TG: @NicoleYeh](https://t.me/NicoleYeh)*
+* PQ & GPU Accel Research: Miha
+
+#### TLSNotary
+
+* Hendrik Eeckhaut *[@heeckhau](https://x.com/heeckhau)*
+* Th4s *[@th4s_](https://x.com/th4s_)*
+* zk ID: Sinu *[@sinu_eth](https://x.com/sinu_eth)*
+* CSP: Dan Smidt *[@ds4t86](https://x.com/ds4t86)*
+* Vole zkVM Unified VC API: +1 member
 
 ## Devcon & Devconnect
 
-[devcon.com](https://devcon.com) | [devconnect.org](https://devconnect.org) *[@EFDevcon](https://x.com/EFDevcon)*
+[devcon.org](https://devcon.org) | [devconnect.org](https://devconnect.org) *[@EFDevcon](https://x.com/EFDevcon)*
 
-* Nethan *[@nethan_eth](https://x.com/nethan_eth)*
+* Nethan (on leave) *[@nethan_eth](https://x.com/nethan_eth)*
+* Natalia Madrid (Interim) *[@MadridMaloL](https://x.com/MadridMaloL)*
 * Lasse Jacobsen *[@lassejaco](https://x.com/lassejaco)*
 * Ligi *[@mr_ligi](https://x.com/mr_ligi)*
-* Natalia Madrid *[@MadridMaloL](https://x.com/MadridMaloL)*
 * Adam Lee *[@eth_adam](https://x.com/eth_adam)*
 * Winnie *[@winnie_2538](https://x.com/winnie_2538)*
 * Tomo
-* Pablo *[@pblvrt](https://x.com/pblvrt)*
 * Jakub Vysoky *[@kvbik](https://x.com/kvbik)*
-* Skylar *[@skylar_eth](https://x.com/skylar_eth)*
 * Didier Krux *[@DidierKrux](https://x.com/DidierKrux)*
 * Scott *[TG: @scott1up](https://t.me/scott1up)*
 * Candela *[@candufaz](https://x.com/candufaz)*
@@ -357,14 +388,22 @@ Research Lead: N, Product Lead: Z, Ops Lead: zk_th
 
 ## Operations
 
-Coordinator: George Trotter *[Farcaster: @georgey](https://warpcast.com/georgey)*
+Coordinator: Franzi Heintel *[@_franzihei](https://x.com/_franzihei)*
 
 * **DevOps** (4 team members)
 * **Finance** (5 team members)
-* **Legal** (5 team members)
+* **Legal** (4 team members)
 * **OpSec** (2 team members)
 * **People Ops**: José Cabrita *[@ZePedroCabrita](https://x.com/ZePedroCabrita)*, Mayra Castillo *[@TheMayCas](https://x.com/TheMayCas)*, Mitsu Matsumoto *[@mitsuu0925](https://x.com/mitsuu0925)*
 * **Node Infrastructure** (2 team members)
+
+### Grant Management
+
+* **Federico Landini** *[TG: @fedeebasta1](https://t.me/fedeebasta1)*
+* Monet du Plessis *[@EthMomi](https://x.com/EthMomi)*
+* Yijin Lee *[@yj_alt](https://x.com/yj_alt)*
+* June Manuel *[Farcaster: @bugbird](https://warpcast.com/bugbird)*
+* Boris Stanic *[@BOR444](https://x.com/BOR444)*
 
 ### Comms Coordination
 
@@ -372,6 +411,6 @@ Coordinator: George Trotter *[Farcaster: @georgey](https://warpcast.com/georgey)
 * Joe Schweitzer *[@JBSchweitzer](https://x.com/JBSchweitzer)*
 * Emily Rasowsky *[@erasowsky](https://x.com/erasowsky)*
 
-### Hiring
+### Talent
 
 * **Arpi Ter-Galstanyan** *[@arpiden](https://x.com/arpiden)*
