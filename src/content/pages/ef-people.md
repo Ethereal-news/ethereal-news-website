@@ -17,7 +17,7 @@ EF last updated: March 2026. Please report any errors or omissions.*
 
 ## Management
 
-* Co-Executive Directors: Bastian Aue (interim) *[@aerugoettinea](https://x.com/aerugoettinea)* & Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)*
+* Co-Executive Directors: Hsiao-Wei Wang *[@hwwonx](https://x.com/hwwonx)* & Bastian Aue (interim) *[@aerugoettinea](https://x.com/aerugoettinea)*
 * Josh Stark *[@0xstark](https://x.com/0xstark)*
 
 ### Management Project Support
@@ -173,14 +173,6 @@ Barnabé Monnot *[@barnabemonnot](https://x.com/barnabemonnot)*
 * **Roberto Saltini** *[@robsaltini](https://x.com/robsaltini)*
 * Luca Zanolini *[@luca_zanolini](https://x.com/luca_zanolini)*
 * Yann Vonlanthen
-
-### Chain Abstraction / Account Abstraction
-
-[erc4337.io](https://erc4337.io) *[@erc4337](https://x.com/erc4337)*
-
-* **Yoav Weiss** *[@yoavw](https://x.com/yoavw)*
-* Marissa Posner *[@thewizardofpos](https://x.com/thewizardofpos)*
-* Tom Teman *[@tomteman](https://x.com/tomteman)*
 
 ### Stateless Consensus
 
