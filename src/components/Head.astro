@@ -141,9 +141,10 @@ const breadcrumbSchema = {
 <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-<!-- PageFind -->
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<!-- PageFind (deferred to avoid blocking LCP) -->
+<link rel="preload" href="/pagefind/pagefind-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="/pagefind/pagefind-ui.css" rel="stylesheet" /></noscript>
+<script is:inline src="/pagefind/pagefind-ui.js" defer></script>
 
 <ClientRouter />
 
@@ -229,7 +230,7 @@ const breadcrumbSchema = {
     animateElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add("show");
-      }, index * 100);
+      }, index * 50);
     });
   }
 
