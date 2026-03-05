@@ -106,4 +106,13 @@ topClicks:
     - NexusMutual
     - austingriffith
 
+- issue: 13
+  clicks:
+    - ethereumfndn
+    - drakefjustin
+    - lawmaster
+    - VitalikButerin
+    - BungeeExchange
+
+
 ---
