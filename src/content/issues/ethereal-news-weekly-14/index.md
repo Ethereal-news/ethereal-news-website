@@ -1,8 +1,7 @@
 ---
 title: 'Ethereal news weekly #14'
-description: 'ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hackathon'
+description: 'ePBS first devnet live, Aave Labs temp check passed, Synthesis AI + human hackathon'
 date: 'March 6, 2026'
-draft: true
 ---
 
 ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hackathon
@@ -14,12 +13,12 @@ ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hacka
   * Vitalik explainers: [scaling](https://x.com/VitalikButerin/status/2027403360484430122), [account abstraction](https://x.com/VitalikButerin/status/2027774090627715377), [execution layer changes](https://x.com/VitalikButerin/status/2028158949720252574) & [block building pipeline](https://x.com/VitalikButerin/status/2028524112868708616)  
 * Vitalik:   
   * Ethereum part of ecosystem building [sanctuary technologies](https://www.reddit.com/r/ethereum/comments/1rjyqnx/sanctuary_technologies/)  
-  * [Call for more bold and open mindset](https://x.com/VitalikButerin/status/2029662920318275935) particularly for application layer without compromising censorship resistance, open source, privacy & security  
+  * [More bold and open mindset](https://x.com/VitalikButerin/status/2029662920318275935) particularly for application layer without compromising censorship resistance, open source, privacy & security  
 * [Ethereum Foundation org chart](https://ethereum.foundation/assets/ef-org-chart.png) updated ([text](https://ethereal.news/resources/ef-people/) version)  
 * ETH metrics:  
-  * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.0 (12.5 for zero net issuance)  
+  * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.7 (12.5 for zero net issuance)  
   * [ETH supply change](https://ultrasound.money/): 19k net issuance  
-  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,816 \- $2,099 (all time high $4,946, August 24, 2025\)  
+  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,841 \- $2,179 (all time high $4,946, August 24, 2025\)  
   * [ETH ETFs](https://dune.com/hildobby/eth-etfs): 5% of ETH supply  
   * [ETHBTC](https://ratiogang.com/): 0.029 (0.166 for the Flippening)
 
@@ -27,7 +26,7 @@ ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hacka
 
 ### Sponsor: [Consensys](https://consensys.io/)
 
-![][image1]
+![Consensys](./consensys.jpg)
 
 A complete suite of trusted products to build anything in web3.  
 [consensys.io](https://consensys.io)
@@ -36,18 +35,18 @@ A complete suite of trusted products to build anything in web3.
 
 ### Applications
 
-* Aave: [Aave Labs temp check](https://x.com/StaniKulechov/status/2027898881594327159) passed & [ACI leaving](https://governance.aave.com/t/aci-is-leaving-aave/24205)  
-* Ethereum Community Foundation [blobdrop](https://blobdrop.org/): file sharing via blobspace  
+* Aave: [Aave Labs temp check](https://x.com/StaniKulechov/status/2027898881594327159) passed (ratify v4, revenue to DAO, trademark foundation & funding request); [ACI](https://governance.aave.com/t/aci-is-leaving-aave/24205) & [BGD Labs](https://governance.aave.com/t/bgd-leaving-aave/24122) leaving  
 * Privacy Pools [self-report compromised address](https://x.com/0xprivacypools/status/2028591684024500286)  
 * Toni Wahrstätter: [Nachtara](https://x.com/nero_eth/status/2028413616660083112) (stealth addresses) optimized for agents  
+* Ethereum Community Foundation [blobdrop](https://blobdrop.org/): file sharing via blobspace  
 * Bordel hackerspace (Prague) [funded via crowdloaning](https://x.com/TMIYChao/status/2028939629987061809)
 
 ### Developers
 
 * Reminder: [Solidity developer survey](https://www.soliditylang.org/blog/2026/02/10/solidity-developer-survey-2025-announcement/), takes \~5 minutes to complete  
 * [Scopr](https://tintinweb.github.io/scopr/) (Solidity codebase visualizer): treemaps, call graphs, scope selection & NSLOC  
-* [Solidity testing handbook](https://www.soliditytestingbook.com/): basic & advanced testing and testing practices  
-* [Edge](https://github.com/refcell/edge-rs#readme) (language): statically-typed, Rust-inspired language for the EVM, alpha  
+* [Solidity testing handbook](https://www.soliditytestingbook.com/): basic & advanced and testing practices  
+* [Edge](https://github.com/refcell/edge-rs#readme) (language): statically-typed, Rust-inspired language for EVM, alpha  
 * Hardhat [v3.1.11](https://github.com/NomicFoundation/hardhat/releases/tag/hardhat%403.1.11) (dev framework): improved autocomplete, improved errors when failing to compile with configured compilers & upgrades EDR  
 * [Remix v2](https://ethereumremix.substack.com/p/beta-testers-needed-for-remix-v2) (dev framework): private beta testers wanted  
 * [Eth.zig](https://github.com/StrobeLabs/eth.zig#readme) (client library): supports ABI encoding, RLP serialization, secp256k1 signing, Keccak-256 hashing, HD wallets, ERC20/721, JSON-RPC & ENS  
@@ -57,7 +56,7 @@ A complete suite of trusted products to build anything in web3.
   * [ERC8179](https://github.com/ethereum/ERCs/pull/1577/changes): Blob space segments  
   * [ERC8180](https://github.com/ethereum/ERCs/pull/1578/changes): Blob authenticated messaging  
   * [ERC8181](https://github.com/ethereum/ERCs/pull/1579/changes): Self-sovereign agent NFTs  
-  * [ERC8183](https://github.com/ethereum/ERCs/pull/1581/changes): Agentic commerce  
+  * [ERC8183](https://eips.ethereum.org/EIPS/eip-8183): Agentic commerce  
   * [ERC8185](https://github.com/ethereum/ERCs/pull/1580/changes): Offchain entity registry  
   * [ERC8186](https://github.com/ethereum/ERCs/pull/1582/changes): Claimable escrow
 
@@ -72,14 +71,14 @@ A complete suite of trusted products to build anything in web3.
 * Foom [$2.26M exploit](https://x.com/Foomclub_/status/2028231845788188747) on mainnet & Base due to [Groth16 verifier incorrect setup](https://blog.zksecurity.xyz/posts/groth16-setup-exploit/), $1.8M recovered  
 * Solv protocol [$2.7M exploit](https://x.com/SolvProtocol/status/2029612210490933697)  
 * [Lindy score](https://x.com/z0r0zzz/status/2029810955232932142) (contract metric): calculated on age, value, complexity & penalties  
-  * Lindy security review NFT: reviewers mint soulbound record of security review
+  * Lindy audit NFT: reviewers mint soulbound record of security review
 
 ### All core devs (main protocol calls)
 
 #### All core devs \- consensus (ACDC) [\#176](https://ethereum-magicians.org/t/all-core-devs-consensus-acdc-176-mar-19-2026/27798/4) (async)
 
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam) upgrade (targeting mid-2026):  
-  * epbs-devnet-1 needs scoping & is there a need for an epbs-devnet-2 prior to glamsterdam-devnet-0  
+  * epbs-devnet-1 to be scoped & decide if epbs-devnet-2 needed prior to glamsterdam-devnet-0  
 * SSZ in the Engine API proposals
 
 #### All core devs \- testing (ACDT) [\#72](https://forkcast.org/calls/acdt/072/)
@@ -91,12 +90,12 @@ A complete suite of trusted products to build anything in web3.
 
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam) upgrade (targeting mid-2026):  
   * [epbs-devnet-0](https://epbs-devnet-0.ethpandaops.io/) ([Dora](https://dora.epbs-devnet-0.ethpandaops.io/) the explorer) live  
-  * Glamsterdam repricings breakout [\#3](https://forkcast.org/calls/price/003/)  
+  * Glamsterdam repricings [\#3](https://forkcast.org/calls/price/003/)  
   * Franco Victorio: [Block-Level Access Lists explainer](https://paragraph.com/@cethology/understanding-block-level-access-lists)  
 * [Hegotá](https://forkcast.org/upgrade/hegota/) upgrade (targeting late-2026):  
-  * Proposed execution layer headliners:  
+  * Breakouts for proposed execution layer headliners:  
     * EIP8141 Frame transaction [\#1](https://forkcast.org/calls/one-off-1954/001/)  
-    * Encrypt transaction pool [\#1](https://forkcast.org/calls/etm/001/)  
+    * EIP8184 LUCID encrypted transaction pool [\#1](https://forkcast.org/calls/etm/001/)  
 * [Lodestar](https://x.com/nicoflaig/status/2028462385313251595) 6 second slots proof of concept  
 * Post-quantum transaction signatures [\#3](https://x.com/asanso/status/2029639516265533700)  
 * ethPandaOps [EthIQ](https://ethpandaops.io/posts/introducing-ethiq/): benchmark for AI model understanding of protocol internals  
@@ -108,12 +107,12 @@ A complete suite of trusted products to build anything in web3.
 
 ### Staking
 
-* [Beaconcha.in](https://x.com/beaconcha_in/status/2029566432443285832) website updated with search first home page  
+* [Beaconcha.in](https://x.com/beaconcha_in/status/2029566432443285832) website updated with search first landing page  
 * [Client diversity](https://clientdiversity.org/#distribution):  
   * Consensus layer: Lighthouse \~51% (data may not be accurate)  
   * Execution layer: Geth \~41%, Nethermind \~38% (estimated from self reports)  
 * [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23% \[Note: [dual governance](https://dg.lido.fi/)\]  
-* [Validators](https://pectrified.com/mainnet): 954k active (target 128k)  
+* [Validators](https://pectrified.com/mainnet): 953k active (target 128k)  
 * Client releases:  
   * Consensus layer:  
     * Grandine [2.0.2](https://github.com/grandinetech/grandine/releases/tag/2.0.2) (high): security fixes & performance optimizations  
@@ -125,10 +124,10 @@ A complete suite of trusted products to build anything in web3.
 
 ### Regulation
 
-* US Fed, OCC & FDIC: [capital treatment of tokenized securities](https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260305a.htm) should be the same as non-tokenized securities   
+* US Fed, OCC & FDIC: [capital treatment of tokenized securities](https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260305a.htm) technology neutral   
 * [Class action against Uniswap dismissed](https://x.com/N0th1n3/status/2028552988894310535), not liable for third-party token issuers misconduct  
 * [Kraken Financial](https://blog.kraken.com/news/federal-reserve-master-account) (Wyoming-chartered bank) granted Federal Reserve master account  
-* [John Daghita arrested](https://x.com/fbidirectorkash/status/2029574256959389933), allegedly stole $46M in crypto from US Marshals Service, exposed via [ZachXBT investigation](https://x.com/zachxbt/status/2029577374057296175)
+* [John Daghita arrested](https://x.com/fbidirectorkash/status/2029574256959389933) after [ZachXBT investigation](https://x.com/zachxbt/status/2029577374057296175), allegedly stole $46M in crypto from US Marshals Service
 
 ### General
 
@@ -143,16 +142,5 @@ A complete suite of trusted products to build anything in web3.
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-14/](https://ethereal.news/ethereal-news-weekly-14/)*  
 *Markdown: [ethereal.news/ethereal-news-weekly-14.md](https://ethereal.news/ethereal-news-weekly-14.md)*  
+
 ---
-
-### Upcoming calendar
-
-* Mar 12-15: [ETHMumbai](https://www.ethmumbai.in/) (conference & hackathon), Mumbai, India  
-* Mar 13-22: [Synthesis](https://synthesis.md/) (hackathon), online  
-* Mar 24-26: [EY Global blockchain summit](https://web.cvent.com/event/52099248-ee76-46aa-a579-a707420821f3/websitePage:34e89f81-7647-4dff-b5f8-cd05d75a1ea7) (conference), New York, USA  
-* Mar 30 \- Apr 2: [EthCC](https://ethcc.io/) (conference), Cannes, France  
-* Apr 3-5: [ETHGlobal Cannes](https://ethglobal.com/events/cannes2026) (hackathon), Cannes, France  
-* Jun 8-10: [ETHConf](https://ethconf.com/) (conference), New York, USA  
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
-
-[*Full calendar*](https://ethereal.news/calendar/)  
