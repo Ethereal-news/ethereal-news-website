@@ -2,7 +2,6 @@
 title: 'Ethereal news weekly #15'
 description: 'US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, EF bug bounty $1M max payout'
 date: 'March 13, 2026'
-draft: true
 ---
 
 US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, EF bug bounty $1M max payout
@@ -28,7 +27,7 @@ US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, EF bug bounty $
 
 ![MetaMask](./metamask_synthesis.jpg)
 
-MetaMask is joining the Synthesis agent hackathon.
+MetaMask is joining the Synthesis agent hackathon. 🤖
 
 Agents register with their own identity, build, compete, and get evaluated by both agentic judges and humans.
 
@@ -78,7 +77,7 @@ Register now: [synthesis.md](https://synthesis.md/)
 
 * [ERC8183 agentic commerce](https://x.com/virtuals_io/status/2031042423288426979) explainer
 * [OpenSea CLI](https://github.com/ProjectOpenSea/opensea-cli#readme) ([skill](https://raw.githubusercontent.com/ProjectOpenSea/opensea-skill/refs/heads/main/SKILL.md)): query NFTs, listings & swaps
-* [Computer pizza](https://www.computerpizza.xyz/): order Domino's & pay with USDC on mainnet
+* [Computer pizza](https://www.computerpizza.xyz/): order Domino’s & pay with USDC on mainnet
 
 ### Security
 
@@ -126,7 +125,7 @@ Register now: [synthesis.md](https://synthesis.md/)
   * Lido [Q4 metrics](https://blog.lido.fi/lido-validator-and-node-operator-metrics-q4-2025/): Lighthouse 28% & Simple DVT: Nethermind 55% & CSM: Nethermind 60%
 * [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23% \[Note: [dual governance](https://dg.lido.fi/)\]
 * [Validators](https://pectrified.com/mainnet): 950k active (target 128k)
-* Teku [SSZ serialization post mortem](https://hackmd.io/@teku/r1AiIS_FWg), nodes couldn't save state to disk
+* Teku [SSZ serialization post mortem](https://hackmd.io/@teku/r1AiIS_FWg), nodes couldn’t save state to disk
 * Client releases:
   * Consensus layer:
     * Grandine [2.0.3](https://github.com/grandinetech/grandine/releases/tag/2.0.3) (high): security fixes & performance optimizations
@@ -159,14 +158,3 @@ Register now: [synthesis.md](https://synthesis.md/)
 *Markdown: [ethereal.news/ethereal-news-weekly-15.md](https://ethereal.news/ethereal-news-weekly-15.md)*
 
 ---
-
-### Upcoming calendar
-
-* Mar 13-22: [Synthesis](https://synthesis.md/) (hackathon), online
-* Mar 24-26: [EY Global blockchain summit](https://web.cvent.com/event/52099248-ee76-46aa-a579-a707420821f3/websitePage:34e89f81-7647-4dff-b5f8-cd05d75a1ea7) (conference), New York, USA
-* Mar 30 \- Apr 2: [EthCC](https://ethcc.io/) (conference), Cannes, France
-* Apr 3-5: [ETHGlobal Cannes](https://ethglobal.com/events/cannes2026) (hackathon), Cannes, France
-* Jun 8-10: [ETHConf](https://ethconf.com/) (conference), New York, USA
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
-
-[*Full calendar*](https://ethereal.news/calendar/)
