@@ -155,5 +155,6 @@ Register now: [synthesis.md](https://synthesis.md/)
 
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-weekly-15/](https://ethereal.news/ethereal-news-weekly-15/)*  
-*Markdown: [ethereal.news/ethereal-news-weekly-15.md](https://ethereal.news/ethereal-news-weekly-15.md)*  
+*Markdown: [ethereal.news/ethereal-news-weekly-15.md](https://ethereal.news/ethereal-news-weekly-15.md)*
+  
 ---
