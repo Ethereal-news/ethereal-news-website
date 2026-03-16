@@ -114,5 +114,13 @@ topClicks:
     - VitalikButerin
     - BungeeExchange
 
+- issue: 14
+  clicks:
+    - Snapcrackle
+    - ethereumfndn
+    - VitalikButerin
+    - PatrickAlphaC
+    - "0xasp_"
+
 
 ---
