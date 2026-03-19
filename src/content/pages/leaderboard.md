@@ -122,5 +122,13 @@ topClicks:
     - PatrickAlphaC
     - "0xasp_"
 
+- issue: 15
+  clicks:
+    - VitalikButerin
+    - VitalikButerin
+    - ethleaderboard
+    - EF_ESP
+    - trailofbits
+
 
 ---
