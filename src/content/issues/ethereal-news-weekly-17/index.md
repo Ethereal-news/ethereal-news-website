@@ -1,24 +1,23 @@
 ---
 title: 'Ethereal news weekly #17'
-description: 'Frame transactions CFId for Hegotá, EthStaker staking survey, EF post-quantum website'
+description: 'Frame transaction Considered for Inclusion for Hegotá, EthStaker staking survey, EF post-quantum website'
 date: 'March 27, 2026'
-draft: true
 ---
 
-Frame transactions CFId for Hegotá, EthStaker staking survey, EF post-quantum website
+Frame transaction Considered for Inclusion for Hegotá, EthStaker staking survey, EF post-quantum website
 
 ### Ecosystem
 
 * Ethereum Foundation:   
-  * [Post-quantum](https://pq.ethereum.org/) website: overview, roadmap, resources, FAQ & research retreat  
+  * [Post-quantum website](https://pq.ethereum.org/): overview, roadmap, resources, FAQ & research retreat  
   * EF Platform team: [L1 \+ L2 relationship](https://blog.ethereum.org/2026/03/23/l1-l2-ethereum)  
   * [Institutional Ethereum forum](https://x.com/davwals/status/2036442507437867130) hosted by EF in NYC  
-* Ethereum.org [v11](https://x.com/ethdotorg/status/2036898362037809213) (website): revamped gaming page, ETHSkills & increased translations   
+* [Ethereum.org v11](https://x.com/ethdotorg/status/2036898362037809213) (website): revamped gaming page, ETHSkills & increased translations   
 * Synthesis AI \+ human hackathon [685 projects](https://synthesis.md/projects/)  
 * ETH metrics:  
-  * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.6 (12.5 for zero net issuance)  
+  * [Gas](https://ultrasound.money/#gas) (gwei): 0.2 average, 0.0 \- 23.5 (12.6 for zero net issuance)  
   * [ETH supply change](https://ultrasound.money/): 19k net issuance  
-  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $2,067 \- $2,362 (all time high $4,946, August 24, 2025\)  
+  * [ETHUSD](https://www.coingecko.com/en/coins/ethereum): $1,990 \- $2,186 (all time high $4,946, August 24, 2025\)  
   * [ETH ETFs](https://dune.com/hildobby/eth-etfs): 5.1% of ETH supply  
   * [ETHBTC](https://ratiogang.com/): 0.030 (0.166 for the Flippening)
 
@@ -36,28 +35,28 @@ A complete suite of trusted products to build anything in web3.
 ### Enterprise
 
 * [NYSE collaborating with Securitize](https://ir.theice.com/press/news-details/2026/New-York-Stock-Exchange-and-Securitize-Agree-to-Memorandum-of-Understanding-to-Support-Tokenized-Securities/default.aspx) to develop digital transfer agent program to support onchain settlement of tokenized securities  
-* Bitmine launching [MAVAN](https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-launch-of-mavan-made-in-america-validator-network-the-companys-proprietary-staking-solution-302724419.html) (Made in America VAlidator Network) ETH staking platform  
+* Bitmine launching [MAVAN](https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-announces-launch-of-mavan-made-in-america-validator-network-the-companys-proprietary-staking-solution-302724419.html) ETH staking platform  
 * [Invesco](https://www.invesco.com/us-rest/contentdetail?contentId=e17441a5-aca9-4e00-a063-8ca1f74afef3) becoming investment manager of Superstate tokenized short-duration US treasuries fund (USTB)  
-* Bitpanda [Vision Chain](https://blog.vision.now/visionchain-press-release/) (OP Enterprise L2), targeting mainnet later this year
+* Bitpanda [Vision chain](https://blog.vision.now/visionchain-press-release/) (OP Enterprise L2), targeting mainnet later this year
 
 ### Applications
 
 * Better [crypto backed mortgage down payments](https://www.coinbase.com/en-au/blog/coinbase-powers-the-first-crypto-backed-conforming-mortgages-by-better) in US, using USDC/BTC in Coinbase   
-* [Aave Labs proposal](https://governance.aave.com/t/arfc-aave-will-win-framework/24352): Aave branded product revenue goes to DAO treasury, Labs requests $25M \+ 75k Aave \+ $17.5M (growth & development grants); brand & IP governing structure to be proposed within 180 days  
-* [Balancer restructuring proposals](https://x.com/Marcus_Balancer/status/2036167477906772187), end token emissions, route fees to treasury, reduce protocol take on swaps, smaller team & leaner operating structure  
+* [Aave Labs proposal](https://governance.aave.com/t/arfc-aave-will-win-framework/24352): Aave branded product revenue goes to DAO treasury, requests $25M for 12 months \+ 75k Aave \+ $17.5M (growth & development grants tied to product milestones); brand & IP governing structure to be proposed within 180 days  
+* [Balancer restructuring proposals](https://x.com/Marcus_Balancer/status/2036167477906772187), end token emissions, route fees to treasury, reduce protocol take on swaps, leaner operating structure & smaller team  
 * [Ondo](https://ondo.finance/blog/ondo-tokenizes-franklin-templeton-etfs) tokenizing five Franklin Templeton ETFs  
 * Privacy Pools [truncation bug](https://x.com/0xprivacypools/status/2036128249525272887): key entropy reduced to \~53 bits, migrate keys  
-* Sablier: [Bobs](https://blog.sablier.com/introducing-bobs-price-gated-eth-timelocks/) (price-gated ETH timelocks) & [variable claim airdrops](https://blog.sablier.com/introducing-vcas-and-lockup-v4-0/)  
-* [WalletChan OS](https://x.com/apoorveth/status/2036803662887235801) (website): app store (apps hosted in iFrames), auto connects wallet to apps, gas tracker, DefiLlama search  
-* Etherscan [ERC8004 metadata](https://x.com/etherscan/status/2037131140608434517): view agents operational status, x402 support & services
+* Sablier: [Bobs](https://blog.sablier.com/introducing-bobs-price-gated-eth-timelocks/) price-gated ETH timelocks earn yield via Lido & [variable claim airdrops](https://blog.sablier.com/introducing-vcas-and-lockup-v4-0/)  
+* [WalletChan OS](https://x.com/apoorveth/status/2036803662887235801) (website): auto connects wallet to apps, app store & DefiLlama search  
+* Etherscan: [connect wallet](https://x.com/etherscan/status/2037473090696032615) via browser extensions that support EIP6963 & [view ERC8004 trustless agents metadata](https://x.com/etherscan/status/2037131140608434517)
 
 ### Developers
 
-* OpenZeppelin [role manager](https://www.openzeppelin.com/news/introducing-role-manager) (web tool): manage contracts that use OpenZeppelin access control standards, run in browser or locally  
-* Remix [v2](https://ethereumremix.substack.com/p/remix-release-v2) (dev framework): RemixAI, integrated OpenZeppelin, Alchemy, The Graph & Etherscan MCPs, deploy & run updated and debugger revamped  
+* OpenZeppelin [role manager](https://www.openzeppelin.com/news/introducing-role-manager) (web tool): manage contracts that use OpenZeppelin access control standards, run locally or in browser  
+* Remix [v2](https://ethereumremix.substack.com/p/remix-release-v2) (dev framework): RemixAI integrated OpenZeppelin, Alchemy, The Graph & Etherscan MCPs, deploy & run updated and debugger revamped  
 * Nethereum [6.1.0](https://github.com/Nethereum/Nethereum/releases/tag/6.1.0) (.NET client library): zk proof infrastructure, Groth16 proof generation (native & browser based), privacy pools integration, new Merkle tree libraries, SSZ model improvements, cross-platform BLS runtime updates and demo apps  
-* [Solingo](https://solingo-blockchain.xyz/) (web tool): learn Solidity via gamified exercises  
 * Trail of Bits [dimensional analysis](https://blog.trailofbits.com/2026/03/25/try-our-new-dimensional-analysis-claude-plugin/) (Claude plugin): annotates code with dimensional types & flags mismatches  
+* [Solingo](https://solingo-blockchain.xyz/) (web tool): learn Solidity via gamified exercises  
 * Application layer standards (ERCs):  
   * [ERC8203](https://github.com/ethereum/ERCs/pull/1614/changes): Agent offchain conditional settlement  
   * [ERC8204](https://github.com/ethereum/ERCs/pull/1617/changes): Token payments  
@@ -73,7 +72,7 @@ A complete suite of trusted products to build anything in web3.
 ### Security
 
 * Resolv Labs [80M unbacked USR stablecoin minted](https://x.com/ResolvLabs/status/2035830314799599616) via compromised private key  
-* Cyfrin [BattleChain](https://x.com/cyfrin/status/2036945539879862416) (ZKSync L2): protocols deploy contracts prior to production, ethical hackers under Safe Harbor exploit vulnerabilities to earn bounties; testnet live  
+* Cyfrin [BattleChain](https://x.com/cyfrin/status/2036945539879862416) (ZKSync L2): protocols deploy contracts prior to production, hackers under Safe Harbor exploit vulnerabilities to earn bounties; testnet live  
 * TheDAO Security Fund:  
   * [ETHSecurity badges](https://paragraph.com/@thedao.fund/thedao-is-becoming-a-dao-again): first 40 issued, 160 remain  
   * [Ethereum Security quadratic funding round](https://x.com/Giveth/status/2036815581685350671) on Giveth, 500 ETH matching pool, applications open, runs April 21 \- May 12, 2x impact for ETHSecurity badges
@@ -85,7 +84,7 @@ A complete suite of trusted products to build anything in web3.
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam) upgrade (targeting mid-2026):  
   * bal-devnet-3 ([spec](https://notes.ethereum.org/@ethpandaops/bal-devnet-3)) planned for next week  
   * epbs-devnet-0 broken by withdrawals, epbs-devnet-1 ([spec](https://notes.ethereum.org/@ethpandaops/epbs-devnet-1)) planned for next week with PTC changes  
-  * [Repricing](https://docs.google.com/presentation/d/1ui9lPlbyxVnA36vB0EGk577XZhTRgriMDeWO0DfiTdg/edit) update & Benchmarkoor demo  
+  * [Repricing update](https://docs.google.com/presentation/d/1ui9lPlbyxVnA36vB0EGk577XZhTRgriMDeWO0DfiTdg/edit) & Benchmarkoor demo  
 * [Hegotá](https://forkcast.org/upgrade/hegota/) upgrade (targeting late-2026):  
   * No execution layer headliner  
   * [EIP8141](https://forkcast.org/eips/8141) Frame transaction Considered for Inclusion as non-headliner
@@ -118,7 +117,7 @@ A complete suite of trusted products to build anything in web3.
   * Consensus layer: Lighthouse \~52% (data may not be accurate)  
   * Execution layer: Geth \~41%, Nethermind \~38% (estimated from self reports)  
 * [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23.4% \[Note: [dual governance](https://dg.lido.fi/)\]  
-* [Validators](https://pectrified.com/mainnet): 934k active (target 128k), 11k accumulating (0x02 withdrawal credentials)  
+* [Validators](https://pectrified.com/mainnet): 933k active (target 128k), 11k accumulating (0x02 withdrawal credentials)  
 * Client releases:  
   * Consensus layer:  
     * Sigma Prime Lighthouse [v8.1.3](https://github.com/sigp/lighthouse/releases/tag/v8.1.3) (high): security-critical fixes atop v8.1.2  
@@ -128,20 +127,20 @@ A complete suite of trusted products to build anything in web3.
 ### Layer 2
 
 * Linea [Phylax credible layer assertion stopped drain attempt](https://phylax.systems/blog/0x-settler-mitigation-report/), preventing 4 ETH loss  
-* Arbitrum timeboost [secondary resale market](https://x.com/boez95/status/2036080415165776224) led to decline in primary auction competition & surplus shifted away from Arbitrum  
+* Arbitrum timeboost [secondary resale market](https://x.com/boez95/status/2036080415165776224) led to decline in primary auction competition & surplus shift away from Arbitrum  
 * [Public Goods Network](https://x.com/gitcoin/status/2036959221187858866) (PGN) shutting down, withdraw before April 20, unclaimed funds will be withdrawn to Gitcoin Foundation treasury
 
 ### Regulation
 
 * US CFTC:  
-  * [Innovation task force](https://www.cftc.gov/PressRoom/PressReleases/9201-26) work with the commission to develop a regulatory framework for crypto, AI & prediction markets  
+  * [Innovation task force](https://www.cftc.gov/PressRoom/PressReleases/9201-26): develop regulatory framework for crypto, AI & prediction markets  
   * [Haircut treatment for crypto](https://www.cftc.gov/PressRoom/PressReleases/9200-26) FAQ
 
 ### General
 
-* [Google post quantum migration](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) set for 2029  
+* [Google post quantum migration timeline](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) set to 2029  
 * LiteLLM (PyPI package) [supply chain attack](https://docs.litellm.ai/blog/security-update-march-2026)  
-* Apple: [adult verification in UK](https://support.apple.com/en-us/125666) via credit card or ID scan  
+* Apple: [UK adult verification](https://support.apple.com/en-us/125666) via credit card or ID scan  
 * Meta: [Instagram stopping end to end encrypted messaging](https://help.instagram.com/491565145294150)
 
 ---
@@ -151,3 +150,4 @@ A complete suite of trusted products to build anything in web3.
 *Markdown: [ethereal.news/ethereal-news-weekly-17.md](https://ethereal.news/ethereal-news-weekly-17.md)*  
 
 ---
+
