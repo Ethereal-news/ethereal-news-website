@@ -130,5 +130,13 @@ topClicks:
     - EF_ESP
     - trailofbits
 
+- issue: 16
+  clicks:
+    - tallyxyz
+    - ethcforg
+    - awscloud
+    - PayPal
+    - josefje
+
 
 ---
