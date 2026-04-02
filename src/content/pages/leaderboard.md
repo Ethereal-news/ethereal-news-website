@@ -138,5 +138,13 @@ topClicks:
     - PayPal
     - josefje
 
+- issue: 17
+  clicks:
+    - corcoranwill
+    - ethdotorg
+    - davwals
+    - jtriley2p
+    - coinbase
+
 
 ---
