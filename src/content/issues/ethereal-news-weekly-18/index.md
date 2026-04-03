@@ -43,7 +43,7 @@ A complete suite of trusted products to build anything in web3.
   * [DeFi Saver](https://blog.defisaver.com/aave-v4-is-now-live-on-defi-saver/) integrated Aave v4  
 * OpenCover [covered vaults](https://x.com/OpenCover/status/2039721567169483046): vault-native risk transfer primitive, fixed rate premiums streamed from yield while coverage is active  
 * Safe [Safenet](https://safefoundation.org/blog/safe-launches-safenet-beta): guard verifies validators have attested that a transaction satisfies a set of security rules before execution, beta  
-* [Ante Vaults](https://ante.org/blog/ante-vaults-is-live) live on mainnet & Base, time-based social recovery & inheritance, build on Safe  
+* [Ante Vaults](https://ante.org/blog/ante-vaults-is-live) live on mainnet & Base, time-based social recovery & inheritance, built on Safe  
 * ScopeLift taking over operation of [Tally governance platform](https://x.com/ScopeLift/status/2039102450410434820)  
 * Paragraph [publish.new](https://paragraph.com/@blog/your-work-paid-for-by-agents): digital goods marketplace
 
@@ -51,7 +51,7 @@ A complete suite of trusted products to build anything in web3.
 
 * Argot Collective [Fe 26](https://blog.fe-lang.org/posts/fe26-a-fresh-start/) (Rust-like language): rewrite with new compiler & type system, Sourcify support, not production ready  
 * Nomic Foundation [Hardhat v3.3.0](https://github.com/NomicFoundation/hardhat/releases/tag/hardhat%403.3.0) (dev framework): execution tracing support for JavaScript integration tests & inline configuration per test for Solidity tests  
-* Trail of Bits   
+* Trail of Bits:   
   * [Echidna v2.3.2](https://github.com/crytic/echidna/releases/tag/v2.3.2) (fuzzer): improved Foundry test support, coverage for contracts with immutables & factory contracts  
   * [Mewt](https://blog.trailofbits.com/2026/04/01/mutation-testing-for-the-agentic-era/) (mutation testing): language-agnostic, Solidity support, optimized for agents  
 * [Linux Foundation](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol) launching x402 Foundation  
