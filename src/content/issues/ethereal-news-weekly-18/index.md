@@ -1,8 +1,7 @@
 ---
 title: 'Ethereal news weekly #18'
-description: ''
+description: 'Quantum breakthrough papers, Aave v4, Aztec alpha'
 date: 'April 3, 2026'
-draft: true
 ---
 
 Quantum breakthrough papers, Aave v4, Aztec alpha
@@ -10,10 +9,11 @@ Quantum breakthrough papers, Aave v4, Aztec alpha
 ### Ecosystem
 
 * Justin Drake: [quantum breakthrough papers](https://x.com/drakefjustin/status/2038847732152996108) improve Shor's algorithm, \~10% chance of q-day by 2032  
-  * [Google Quantum AI](https://arxiv.org/abs/2603.28846): estimates breaking secp256k1 curve with \~1.5k logical qubits, circuits can execute in minutes on \~500k physical qubits  
+  * [Google Quantum AI](https://arxiv.org/abs/2603.28846): estimates breaking secp256k1 curve with \~1.5k logical qubits, circuits can execute in minutes on \~500k physical qubits, zk proof used to validate results without disclosing attack vectors  
   * [Oratomic](https://arxiv.org/abs/2603.28627): execute with 10k reconfigurable atomic qubits  
-* [Ethereum UX map](https://ethux.design/): dashboard of user experience pain points, solutions & adoption  
+* [Ethereum UX map](https://ethux.design/): user experience pain points, solutions & adoption  
 * Road to Devcon 8 [ecosystem program](https://devcon.org/en/ecosystem-program/), up to $500 grants for meetups, activations, bootcamps, roundtables & academic collabs, wave 1 application deadline April 30  
+* Synthesis AI \+ human [hackathon winners](https://x.com/synthesis_md/status/2039980188323488054)  
 * ETH metrics:  
   * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.9 (12.7 for zero net issuance)  
   * [ETH supply change](https://ultrasound.money/): 19k net issuance  
@@ -25,7 +25,7 @@ Quantum breakthrough papers, Aave v4, Aztec alpha
 
 ### Sponsor: [Consensys](https://consensys.io/)
 
-![][image1]
+![Consensys](./consensys.jpg)
 
 A complete suite of trusted products to build anything in web3.  
 [consensys.io](https://consensys.io)
@@ -41,36 +41,37 @@ A complete suite of trusted products to build anything in web3.
 
 * [Aave v4](https://aave.com/blog/aave-v4-live-ethereum) live on mainnet with 3 liquidity hubs & Aave Pro dedicated interface  
   * [DeFi Saver](https://blog.defisaver.com/aave-v4-is-now-live-on-defi-saver/) integrated Aave v4  
-* [Ante Vaults](https://ante.org/blog/ante-vaults-is-live) live on mainnet & Base, self-custody vault with time-based social recovery & inheritance  
-* OpenCover [covered vaults](https://x.com/OpenCover/status/2039721567169483046): vault-native risk transfer primitive, fixed rate premiums are streamed from yield while coverage is active  
-* Safe [Safenet](https://safefoundation.org/blog/safe-launches-safenet-beta): guard verifies validators have attested that a transaction satisfies a set of security rules before execution  
+* OpenCover [covered vaults](https://x.com/OpenCover/status/2039721567169483046): vault-native risk transfer primitive, fixed rate premiums streamed from yield while coverage is active  
+* Safe [Safenet](https://safefoundation.org/blog/safe-launches-safenet-beta): guard verifies validators have attested that a transaction satisfies a set of security rules before execution, beta  
+* [Ante Vaults](https://ante.org/blog/ante-vaults-is-live) live on mainnet & Base, time-based social recovery & inheritance, build on Safe  
 * ScopeLift taking over operation of [Tally governance platform](https://x.com/ScopeLift/status/2039102450410434820)  
 * Paragraph [publish.new](https://paragraph.com/@blog/your-work-paid-for-by-agents): digital goods marketplace
 
 ### Developers
 
-* Argot Collective [Fe 26](https://blog.fe-lang.org/posts/fe26-a-fresh-start/) (Rust like language): rewrite with new compiler & type system, Sourcify support, not production ready  
+* Argot Collective [Fe 26](https://blog.fe-lang.org/posts/fe26-a-fresh-start/) (Rust-like language): rewrite with new compiler & type system, Sourcify support, not production ready  
 * Nomic Foundation [Hardhat v3.3.0](https://github.com/NomicFoundation/hardhat/releases/tag/hardhat%403.3.0) (dev framework): execution tracing support for JavaScript integration tests & inline configuration per test for Solidity tests  
 * Trail of Bits   
   * [Echidna v2.3.2](https://github.com/crytic/echidna/releases/tag/v2.3.2) (fuzzer): improved Foundry test support, coverage for contracts with immutables & factory contracts  
   * [Mewt](https://blog.trailofbits.com/2026/04/01/mutation-testing-for-the-agentic-era/) (mutation testing): language-agnostic, Solidity support, optimized for agents  
+* [Linux Foundation](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol) launching x402 Foundation  
 * Privacy Stewards of Ethereum (PSE) [OpenAC Studio](https://openac-flow-builder.vercel.app/): design tool for anonymous credential presentation flows, work in progress  
 * Paul Miller noble-post-quantum [0.6.0](https://github.com/paulmillr/noble-post-quantum/releases/tag/0.6.0) (JavaScript library): adds Falcon support  
-* [Linux Foundation](https://www.linuxfoundation.org/press/linux-foundation-is-launching-the-x402-foundation-and-welcoming-the-contribution-of-the-x402-protocol) launching x402 Foundation  
 * Application layer standards (ERCs):  
   * [ERC8210](https://github.com/ethereum/ERCs/pull/1632/changes): Agent assurance  
   * [ERC8211](https://github.com/ethereum/ERCs/pull/1638/changes): Smart batching  
   * [ERC8213](https://github.com/ethereum/ERCs/pull/1639/changes): Wallet signature & calldata digest display  
-  * [ERC8214](https://github.com/ethereum/ERCs/pull/1643/change): Buy now pay later
+  * [ERC8214](https://github.com/ethereum/ERCs/pull/1643/changes): Buy now pay later
 
 ### Agents
 
 * SpeedRun Ethereum [build prompts](https://speedrunethereum.com/build-prompts): project specs to scaffold apps using Scaffold-ETH 2  
-* Nethermind [DeFi skills](https://defi-skills.nethermind.io/): intent based transaction builder, outputs unsigned transaction
+* Nethermind [DeFi skills](https://defi-skills.nethermind.io/): intent-based transaction builder, outputs unsigned transaction
 
 ### Security
 
-* CD Security [skills](https://github.com/CDSecurity/cdsecurity-skills#readme) (Claude Code): security review readiness check, scores test coverage & quality, NatSpec, code hygiene, dependencies, best practices, deployment & docs
+* Security Alliance (SEAL): [incident response template](https://frameworks.securityalliance.org/incident-management/incident-response-template/overview/)  
+* CD Security [skills](https://github.com/CDSecurity/cdsecurity-skills#readme) (Claude Code): security review readiness check, scores test coverage, test quality, NatSpec, code hygiene, dependencies, best practices, deployment & docs
 
 ### All core devs (main protocol calls)
 
@@ -78,7 +79,7 @@ A complete suite of trusted products to build anything in web3.
 
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam) upgrade (targeting mid-2026):  
   * bal-devnet-3 ([spec](https://notes.ethereum.org/@ethpandaops/bal-devnet-3)): targeting next week  
-  * glamsterdam-devnet-0 ([spec](https://notes.ethereum.org/@ethpandaops/glamsterdam-devnet-0)): targeting April 15, includes Block-level access lists & ePBS 
+  * glamsterdam-devnet-0 ([spec](https://notes.ethereum.org/@ethpandaops/glamsterdam-devnet-0)): targeting April 15, includes block-level access lists & ePBS 
 
 ### Layer 1
 
@@ -91,13 +92,13 @@ A complete suite of trusted products to build anything in web3.
 * Lightclient: [account abstraction link tree](https://hackmd.io/@matt/aa-link-tree), history of major contributions   
 * Ethereum improvement proposals (EIPs):  
   * [EIP8208](https://github.com/ethereum/EIPs/pull/11462/changes): Increase maximum contract size to 64KiB  
-  * [EIP8209](https://github.com/ethereum/EIPs/pull/11466/changes): Commit-reveal transaction frames  
+  * [EIP8209](https://eips.ethereum.org/EIPS/eip-8209): Commit-reveal transaction frames  
   * [EIP8212](https://github.com/ethereum/EIPs/pull/11467/changes): Block-scoped transient storage opcodes  
   * [EIP8215](https://github.com/ethereum/EIPs/pull/11480/changes): Hash-committed account 
 
 ### Research
 
-* [Decoupled consensus with Goldfish](https://ethresear.ch/t/unblocking-faster-finality-with-decoupled-consensus/24527), small randomly sampled committee for block production, finality pipeline runs in parallel, both pipelines can be optimized, without tradeoffs  
+* [Decoupled consensus with Goldfish](https://ethresear.ch/t/unblocking-faster-finality-with-decoupled-consensus/24527), small randomly sampled committee for block production, finality pipeline runs in parallel, both pipelines can be optimized  
 * [Sharded private information retrieval (PIR) design](https://ethresear.ch/t/sharded-pir-design-for-the-ethereum-state/24552): shard data & pair with PIR schemes
 
 ### Staking
@@ -106,7 +107,7 @@ A complete suite of trusted products to build anything in web3.
 * [Client diversity](https://clientdiversity.org/#distribution):  
   * Consensus layer: Lighthouse \~52% (data may not be accurate)  
   * Execution layer: Geth \~41%, Nethermind \~38% (estimated from self reports)  
-* [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23.4% \[Note: [dual governance](https://dg.lido.fi/)\]  
+* [Staking marketshare](https://dune.com/hildobby/eth2-staking): Lido 23.2% \[Note: [dual governance](https://dg.lido.fi/)\]  
 * [Validators](https://pectrified.com/mainnet): 922k active (target 128k), 11k accumulating (0x02 withdrawal credentials)  
 * Client releases:  
   * Consensus layer:  
@@ -118,8 +119,7 @@ A complete suite of trusted products to build anything in web3.
 
 ### Layer 2
 
-* [Aztec](https://aztec.network/blog/announcing-the-alpha-network) (privacy L2) live, alpha; [L2Beat](https://x.com/l2beat/status/2039332243680731188) assigned Stage 1   
-  * Santiago Palladino: [first Aztec transaction](https://x.com/smpalladino/status/2038984084186161403)  
+* [Aztec](https://aztec.network/blog/announcing-the-alpha-network) (privacy L2) live, alpha; [L2Beat](https://x.com/l2beat/status/2039332243680731188) Stage 1; Santiago Palladino: [first transaction](https://x.com/smpalladino/status/2038984084186161403)  
 * Linea:   
   * [yield boost](https://linea.build/blog/yield-boost-is-activated) rolling out, up to 60% of bridged ETH staked on mainnet via Lido v3  
   * [moving to RISC-V](https://linea.build/blog/linea-proved-the-evm-the-hard-way-heres-what-comes-next)  
@@ -143,4 +143,3 @@ A complete suite of trusted products to build anything in web3.
 *Markdown: [ethereal.news/ethereal-news-weekly-18.md](https://ethereal.news/ethereal-news-weekly-18.md)*  
 
 ---
-
