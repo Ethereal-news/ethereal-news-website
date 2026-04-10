@@ -23,7 +23,7 @@ Roman Storm acquittal hearing, ETHGlobal Cannes hackathon finalists, EVM Now blo
 
 ### Sponsor: [MetaMask](https://metamask.io/)
 
-![MetaMask Advanced Permissions][./metamask-advanced-permissions.png]
+![MetaMask Advanced Permissions](./metamask-advanced-permissions.png)
 
 [Advanced Permissions](https://metamask.io/news/introducing-advanced-permissions) allow users to grant scoped, time-bound access to a dapp or agent once.  Built on ERC-7715 and enforced by the ERC-7710 Delegation Framework contracts.
 
