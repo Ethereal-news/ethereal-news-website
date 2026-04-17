@@ -146,5 +146,21 @@ topClicks:
     - jtriley2p
     - coinbase
 
+- issue: 18
+  clicks:
+    - Asbet0s
+    - paragraph_xyz
+    - VitalikButerin
+    - EFDevcon
+    - AnteOrg
+
+- issue: 19
+  clicks:
+    - evmnow
+    - tcoratger
+    - grovedotfinance
+    - AugurProject
+    - austingriffith
+
 
 ---
