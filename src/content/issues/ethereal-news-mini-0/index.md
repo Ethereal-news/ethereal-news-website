@@ -36,7 +36,7 @@ A complete suite of trusted products to build anything in web3.
 ### Applications
 
 * [ether.fi](https://etherfi.medium.com/ether-fi-is-now-on-op-mainnet-37bbb301845e) migrated to OP Mainnet  
-* [ENS registration fee price increase proposal](https://discuss.ens.domains/t/temp-check-ens-v2-pricing-5-character-name-price-adjustment-multi-year-discounts/22038), $12 per year for 5+ char names  
+* [ENSv2 price increase temp check](https://discuss.ens.domains/t/temp-check-ens-v2-pricing-5-character-name-price-adjustment-multi-year-discounts/22038), $12 per year for 5+ char names & multi-year discounts  
 * [Lattice](https://x.com/latticexyz/status/2044103611072835744) winding down, withdraw funds from Redstone by May 15  
 * Etherscan (block explorer) [token holders overview](https://x.com/etherscan/status/2044374916607463868), concentration, tier distribution & Gini score; beta  
 * EVM Now (block explorer) [open source](https://x.com/evmnow/status/2044400042589511848): contract metadata standard, SDK & dapp UI 
@@ -125,6 +125,6 @@ A complete suite of trusted products to build anything in web3.
 *Vacation mini issue*  
 *Editor: [@abcoathup](https://x.com/abcoathup)*  
 *Permalink: [ethereal.news/ethereal-news-mini-0/](https://ethereal.news/ethereal-news-mini-0/)*  
-*Markdown: [ethereal.news/ethereal-news-mini-0.md](https://ethereal.news/ethereal-news-mini-0.md)*  
+*Markdown: [ethereal.news/ethereal-news-mini-0.md](https://ethereal.news/ethereal-news-mini-0.md)*
 
 --- 
