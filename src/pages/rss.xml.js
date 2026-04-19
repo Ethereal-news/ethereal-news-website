@@ -1,6 +1,10 @@
 import rss from "@astrojs/rss";
 import { SITE } from "@consts";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
+import sanitizeHtml from "sanitize-html";
+import MarkdownIt from "markdown-it";
+
+const parser = new MarkdownIt();
 
 export async function GET(context) {
   const issues = (await getCollection("issues")).filter((issue) => !issue.data.draft);
@@ -33,6 +37,9 @@ export async function GET(context) {
         description: item.data.description,
         pubDate: item.data.date,
         link: `/${item.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}/`,
+        content: sanitizeHtml(parser.render(item.body ?? ""), {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
+        }),
         customData: `<media:content url="${itemImageUrl}" type="image/jpeg">
 <media:description>${SITE.TITLE}</media:description>
 </media:content>`,
