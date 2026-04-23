@@ -31,7 +31,7 @@ const pages = defineCollection({
     title: z.string(),
     description: z.string(),
     topClicks: z.array(z.object({
-      issue: z.number(),
+      issue: z.union([z.number(), z.string()]),
       clicks: z.array(z.string()),
     })).optional(),
   }),

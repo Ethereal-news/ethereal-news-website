@@ -162,7 +162,7 @@ topClicks:
     - AugurProject
     - austingriffith
 
-- issue: 20 # mini #0
+- issue: m0 # mini #0
   clicks:
     - 0xstark
     - CoWSwap
