@@ -162,5 +162,13 @@ topClicks:
     - AugurProject
     - austingriffith
 
+- issue: 20 # mini #0
+  clicks:
+    - 0xstark
+    - CoWSwap
+    - etherscan
+    - EthCC
+    - latticexyz
+
 
 ---
