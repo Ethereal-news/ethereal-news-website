@@ -4,6 +4,11 @@ description: About Ethereal news
 ---
 Ethereal news is curated Ethereum news focused on developers (core & application), edited by Andrew B Coathup (former editor of [Week in Ethereum News](https://weekinethereumnews.com)).
 
+## Disclosures
+
+* Andrew is supported by [Consensys](https://consensys.io/).
+* Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and ENS (from airdrop).
+
 ## Credits
 
 * [Week in Ethereum News](https://weekinethereumnews.com) (WiEN): Published by [Evan Van Ness](https://x.com/evanvanness) from August 2016 until December 2024. Andrew was the editor from May 2021. WiEN set the standard for curated Ethereum developer news and Ethereal news stands on the shoulders of this giant.
@@ -13,9 +18,4 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 
 ## Licenses
 * Software & website is [MIT](https://github.com/Ethereal-news/ethereal-news-website?tab=MIT-1-ov-file)
-
-## Disclosures
-
-* Andrew is supported by [Consensys](https://consensys.io/).
-* Andrew invested in ETH and holds OP (from airdrops, RetroPGF & citizenship) and ENS (from airdrop).
 
