@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "astro-pagefind": "^1.8.5",
+    "astro-pagefind": "^1.8.6",
     "pagefind": "^1.4.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
