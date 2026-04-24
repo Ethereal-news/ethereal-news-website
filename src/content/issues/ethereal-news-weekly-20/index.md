@@ -24,7 +24,7 @@ Etherealize: ETH is productive money, DeFi united effort to restore rsETH backin
 
 ### Sponsor: [MetaMask](https://metamask.io/)
 
-![][image1]
+![MetaMask Community Call April](./metamask-community-call-april.jpg)
 
 Join us next week for the April MetaMask Community Call.
 
@@ -144,8 +144,8 @@ Thursday, April 30, 11:30 AM ET
 
 * Security Alliance (SEAL): [malicious Google Ads](https://radar.securityalliance.org/malicious-google-ads-targeting-crypto/) targeting crypto  
 * [Vercel security incident](https://vercel.com/kb/bulletin/vercel-april-2026-security-incident), unauthorized access to internal systems  
-* Firefox: [271 vulnerabilities fixed](https://blog.mozilla.org/en/firefox/ai-security-zero-day-vulnerabilities/), identified using Claude Mythos preview, no bugs that a human couldn’t have found  
-* Succinct [ZCAM](https://blog.succinct.xyz/introducing-zcam/): iPhone camera app, photos can be checked to show no pixels changed
+* Firefox: [271 vulnerabilities fixed](https://blog.mozilla.org/en/firefox/ai-security-zero-day-vulnerabilities/), identified using Claude Mythos preview, no bugs that an elite human researcher couldn't have found  
+* Succinct [ZCAM](https://blog.succinct.xyz/introducing-zcam/): iPhone camera app, photos can be verified that no pixels changed
 
 ---
 
