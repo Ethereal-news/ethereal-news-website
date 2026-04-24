@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
   return issues.map((issue) => ({
     params: {
-      id: issue.id.replace(/\/index\.md$/, "").replace(/\.md$/, ""),
+      id: issue.id.replace(/\/index$/, ""),
     },
     props: issue,
   }));

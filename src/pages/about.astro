@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import { ABOUT } from "@consts";
 import Link from "@components/Link.astro";
 
@@ -9,7 +9,7 @@ const about = await getEntry('pages', 'about');
 if (!about) {
   throw new Error('About page not found in content collection');
 }
-const { Content } = await about.render();
+const { Content } = await render(about);
 ---
 
 <Layout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>

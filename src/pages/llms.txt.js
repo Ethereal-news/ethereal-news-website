@@ -11,7 +11,7 @@ export async function GET(context) {
 
   const issueLinks = issues
     .map((issue) => {
-      const slug = issue.id.replace(/\/index\.md$/, "").replace(/\.md$/, "");
+      const slug = issue.id.replace(/\/index$/, "");
       const url = new URL(`/${slug}/`, context.site);
       return `- [${issue.data.title}](${url}): ${issue.data.description}`;
     })

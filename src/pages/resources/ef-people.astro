@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import { EF_PEOPLE } from "@consts";
 import Link from "@components/Link.astro";
 
@@ -9,7 +9,7 @@ const efPeople = await getEntry('pages', 'ef-people');
 if (!efPeople) {
   throw new Error('EF people page not found in content collection');
 }
-const { Content } = await efPeople.render();
+const { Content } = await render(efPeople);
 ---
 
 <Layout title={EF_PEOPLE.TITLE} description={EF_PEOPLE.DESCRIPTION}>

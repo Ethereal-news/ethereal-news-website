@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import { DEV_TOOLING } from "@consts";
 import Link from "@components/Link.astro";
 
@@ -9,7 +9,7 @@ const devTooling = await getEntry('pages', 'dev-tooling');
 if (!devTooling) {
   throw new Error('Dev tooling page not found in content collection');
 }
-const { Content } = await devTooling.render();
+const { Content } = await render(devTooling);
 ---
 
 <Layout title={DEV_TOOLING.TITLE} description={DEV_TOOLING.DESCRIPTION}>

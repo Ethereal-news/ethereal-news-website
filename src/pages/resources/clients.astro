@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import { CLIENTS } from "@consts";
 import Link from "@components/Link.astro";
 
@@ -9,7 +9,7 @@ const clients = await getEntry('pages', 'clients');
 if (!clients) {
   throw new Error('Clients page not found in content collection');
 }
-const { Content } = await clients.render();
+const { Content } = await render(clients);
 ---
 
 <Layout title={CLIENTS.TITLE} description={CLIENTS.DESCRIPTION}>

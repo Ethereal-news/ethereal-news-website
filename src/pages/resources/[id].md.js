@@ -4,11 +4,9 @@ export async function getStaticPaths() {
   const pages = await getCollection("pages");
 
   return pages
-    .filter((page) => page.id !== "about.md" && page.id !== "about" && page.id !== "leaderboard.md" && page.id !== "leaderboard")
+    .filter((page) => page.id !== "about" && page.id !== "leaderboard")
     .map((page) => ({
-      params: {
-        id: page.id.replace(/\.md$/, ""),
-      },
+      params: { id: page.id },
       props: page,
     }));
 }

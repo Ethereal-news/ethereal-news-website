@@ -32,7 +32,7 @@ export async function GET(context) {
         title: item.data.title,
         description: item.data.description,
         pubDate: item.data.date,
-        link: `/${item.id.replace(/\/index\.md$/, "").replace(/\.md$/, "")}/`,
+        link: `/${item.id.replace(/\/index$/, "")}/`,
         customData: `<media:content url="${itemImageUrl}" type="image/jpeg">
 <media:description>${SITE.TITLE}</media:description>
 </media:content>`,

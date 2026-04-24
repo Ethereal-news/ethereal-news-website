@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { getEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
 import { NEWS_SOURCES } from "@consts";
 import Link from "@components/Link.astro";
 
@@ -9,7 +9,7 @@ const newsSources = await getEntry('pages', 'news-sources');
 if (!newsSources) {
   throw new Error('News sources page not found in content collection');
 }
-const { Content } = await newsSources.render();
+const { Content } = await render(newsSources);
 ---
 
 <Layout title={NEWS_SOURCES.TITLE} description={NEWS_SOURCES.DESCRIPTION}>
