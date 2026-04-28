@@ -9,14 +9,15 @@ export async function GET(context) {
         new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
     );
 
-  // Google News sitemaps should only contain articles from the last 2 days,
-  // but weekly publications may not have new content that frequently.
-  // Include articles from the last 30 days to ensure coverage.
-  const thirtyDaysAgo = new Date();
-  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+  // Google News sitemaps should only contain articles from the last 2 days.
+  // For a weekly publication this means the sitemap is often empty between
+  // issues — that's fine. sitemap-index.xml handles long-term coverage;
+  // this sitemap is purely a freshness signal for the News tab.
+  const twoDaysAgo = new Date();
+  twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
 
   const recentIssues = issues.filter(
-    (issue) => new Date(issue.data.date) >= thirtyDaysAgo,
+    (issue) => new Date(issue.data.date) >= twoDaysAgo,
   );
 
   const urls = recentIssues
@@ -29,7 +30,7 @@ export async function GET(context) {
     <loc>${loc}</loc>
     <news:news>
       <news:publication>
-        <news:name>${SITE.TITLE}</news:name>
+        <news:name>${escapeXml(SITE.TITLE)}</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>${pubDate}</news:publication_date>
