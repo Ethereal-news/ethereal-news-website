@@ -142,7 +142,20 @@ const breadcrumbSchema = {
 <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
 <!-- PageFind (deferred to avoid blocking LCP) -->
-<link rel="preload" href="/pagefind/pagefind-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<link
+  id="pagefind-css"
+  rel="preload"
+  href="/pagefind/pagefind-ui.css"
+  as="style"
+/>
+<script is:inline>
+  const pagefindCss = document.getElementById("pagefind-css");
+  if (pagefindCss) {
+    pagefindCss.addEventListener("load", () => {
+      pagefindCss.rel = "stylesheet";
+    });
+  }
+</script>
 <noscript><link href="/pagefind/pagefind-ui.css" rel="stylesheet" /></noscript>
 <script is:inline src="/pagefind/pagefind-ui.js" defer></script>
 
