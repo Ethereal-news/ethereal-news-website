@@ -2,8 +2,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://ethereal.news/sitemap-index.xml
+Sitemap: https://ethereal.news/sitemap-news.xml
 
 # LLMs
 LLMs-Txt: https://ethereal.news/llms.txt
