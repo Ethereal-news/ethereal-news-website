@@ -170,5 +170,13 @@ topClicks:
     - EthCC
     - latticexyz
 
+- issue: 20
+  clicks:
+    - Etherealize_io
+    - pashov
+    - EF_ESP
+    - 0xmons
+    - l2beat
+
 
 ---
