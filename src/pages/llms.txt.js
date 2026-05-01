@@ -12,7 +12,7 @@ export async function GET(context) {
   const issueLinks = issues
     .map((issue) => {
       const slug = issue.id.replace(/\/index$/, "");
-      const url = new URL(`/${slug}/`, context.site);
+      const url = new URL(`/${slug}.md`, context.site);
       return `- [${issue.data.title}](${url}): ${issue.data.description}`;
     })
     .join("\n");
