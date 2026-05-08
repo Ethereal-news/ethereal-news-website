@@ -178,5 +178,13 @@ topClicks:
     - 0xmons
     - l2beat
 
+- issue: 21
+  clicks:
+    - 3pa15
+    - wmougayar
+    - katherinewu
+    - synthetix
+    - coinbase
+
 
 ---
