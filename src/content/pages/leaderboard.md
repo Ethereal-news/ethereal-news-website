@@ -186,5 +186,13 @@ topClicks:
     - synthetix
     - coinbase
 
+- issue: 22
+  clicks:
+    - tjayrush
+    - nixorokish
+    - etherscan
+    - timbeiko
+    - lfdecentralized
+
 
 ---
