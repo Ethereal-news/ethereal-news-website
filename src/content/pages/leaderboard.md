@@ -194,5 +194,13 @@ topClicks:
     - timbeiko
     - lfdecentralized
 
+- issue: 23
+  clicks:
+    - pcaversaccio
+    - EFDevcon
+    - cprkrn
+    - Montyly
+    - LayerZero_Core
+
 
 ---
