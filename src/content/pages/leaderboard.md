@@ -202,5 +202,13 @@ topClicks:
     - Montyly
     - LayerZero_Core
 
+- issue: 24
+  clicks:
+    - VitalikButerin
+    - PrivacyEthereum
+    - apoorveth
+    - blocknative
+    - blockchainssc
+
 
 ---
