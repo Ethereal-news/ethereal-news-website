@@ -35,6 +35,7 @@ Vitalik: EF will be smaller & more opinionated, Base Azul upgrade live with mult
 🎟️ FREE registration
 
 [​MetaMask Builder Nights NYC registration](https://luma.com/bnny).  
+
 ---
 
 ### Enterprise
