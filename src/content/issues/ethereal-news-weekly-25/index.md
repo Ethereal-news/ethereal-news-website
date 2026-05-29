@@ -25,7 +25,7 @@ Vitalik: EF will be smaller & more opinionated, Base Azul upgrade live with mult
 
 ### Sponsor: [MetaMask](https://metamask.io/)
 
-![​MetaMask Builder Nights NYC](./metamask-builder-nights-nyc.jpg)
+![​MetaMask Builder Nights NYC](./metamask-builder-nights-nyc.png)
 
 ​MetaMask Builder Nights NYC \- Agentic Frontier
 
