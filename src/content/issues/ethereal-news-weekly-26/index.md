@@ -156,16 +156,5 @@ Justin Drake qday odds: 10% by 2030 & 50% by 2032, Aave rsETH post mortem, glams
 
 ---
 
-### Upcoming calendar
-
-* Jun 8-10: [ETHConf](https://ethconf.com/) (conference), New York, USA  
-* Jun 12-14: [ETHGlobal New York](https://ethglobal.com/events/newyork2026) (hackathon), New York, USA  
-* Jun 15: [Berlin Ethereum Day](https://berlinethereumday.com/) (conference), Berlin, Germany  
-* Jun 16-17: [DappCon](https://dappcon.io/) (conference), Berlin, Germany  
-* Jul 2-3: [ETHis](https://www.ethis.xyz/) (conference), Munich, Germany  
-* Jul 24-26: [ETHGlobal Lisbon](https://ethglobal.com/events/lisbon2026) (hackathon), Lisbon, Portugal  
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India
-
-[*Full calendar*](https://ethereal.news/calendar/)  
 
 
