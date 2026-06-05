@@ -105,7 +105,7 @@ Vitalik: EF will be smaller & more opinionated, Base Azul upgrade live with mult
     * [EIP7688](https://forkcast.org/eips/7688) Forward compatible consensus data structures, review whether to include once devnets stable  
 * [Hegotá](https://forkcast.org/upgrade/hegota) upgrade (targeting late-2026):  
   * Non-headliners proposed for inclusion:  
-    * [EIP8148](https://forkcast.org/eips/8148) custom sweep threshold for validators  
+    * [EIP8148](https://forkcast.org/eips/8148) custom sweep threshold for validators; [presentation](https://pitch.com/v/eip-8148-acdc-z4w5ev) 
 * ACDC \#180 will trial 11am UTC start as more suitable for Australian timezones
 
 ### Layer 1
