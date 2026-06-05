@@ -210,5 +210,13 @@ topClicks:
     - blocknative
     - blockchainssc
 
+- issue: 25
+  clicks:
+    - VitalikButerin
+    - mrtdlgc
+    - VitalikButerin
+    - parithosh_j
+    - EFDevcon
+
 
 ---
