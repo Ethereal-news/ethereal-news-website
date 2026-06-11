@@ -218,5 +218,13 @@ topClicks:
     - parithosh_j
     - EFDevcon
 
+- issue: 26
+  clicks:
+    - fundstrat
+    - joechalom
+    - AyaMiyagotchi
+    - dankrad
+    - EF_ESP
+
 
 ---
