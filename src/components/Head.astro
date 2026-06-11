@@ -15,11 +15,12 @@ interface Props {
   publishedDate?: Date;
   isArticle?: boolean;
   noindex?: boolean;
+  markdownUrl?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/etherealnews.jpg", publishedDate, isArticle = false, noindex = false } = Astro.props;
+const { title, description, image = "/etherealnews.jpg", publishedDate, isArticle = false, noindex = false, markdownUrl } = Astro.props;
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, "") || "https://ethereal.news";
 const imageUrl = new URL(image, siteUrl).toString();
@@ -45,7 +46,12 @@ const jsonLd = isArticle && publishedDate ? {
     {
       "@type": "Person",
       "name": "Andrew B Coathup",
-      "url": "https://x.com/abcoathup"
+      "url": "https://x.com/abcoathup",
+      "jobTitle": "Editor",
+      "sameAs": [
+        "https://x.com/abcoathup",
+        "https://github.com/abcoathup"
+      ]
     }
   ],
   "publisher": {
@@ -70,7 +76,11 @@ const jsonLd = isArticle && publishedDate ? {
   "name": "Ethereal news",
   "description": "Ethereum news focused on developers.",
   "url": siteUrl,
-  "inLanguage": "en"
+  "inLanguage": "en",
+  "sameAs": [
+    "https://x.com/EtherealnewsHQ",
+    "https://github.com/Ethereal-news/ethereal-news-website"
+  ]
 };
 
 // BreadcrumbList structured data
@@ -101,6 +111,11 @@ const breadcrumbSchema = {
 <!-- RSS Autodiscovery -->
 <link rel="alternate" type="application/rss+xml" title="Ethereal news RSS Feed" href="/rss.xml" />
 
+<!-- Markdown alternate (for LLMs / agents) -->
+{markdownUrl && (
+  <link rel="alternate" type="text/markdown" title={`${title} (Markdown)`} href={markdownUrl} />
+)}
+
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
@@ -120,7 +135,7 @@ const breadcrumbSchema = {
 {isArticle && publishedDate && (
   <>
     <meta property="article:published_time" content={publishedDate.toISOString()} />
-    <meta property="article:author" content="Ethereal news" />
+    <meta property="article:author" content="Andrew B Coathup" />
     <meta property="article:section" content="Technology" />
     <meta property="article:tag" content="Ethereum" />
     <meta property="article:tag" content="web3" />

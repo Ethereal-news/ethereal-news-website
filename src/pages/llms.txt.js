@@ -13,7 +13,8 @@ export async function GET(context) {
     .map((issue) => {
       const slug = issue.id.replace(/\/index$/, "");
       const url = new URL(`/${slug}.md`, context.site);
-      return `- [${issue.data.title}](${url}): ${issue.data.description}`;
+      const date = new Date(issue.data.date).toISOString().split("T")[0];
+      return `- [${issue.data.title}](${url}) (${date}): ${issue.data.description}`;
     })
     .join("\n");
 
@@ -22,6 +23,8 @@ export async function GET(context) {
 > ${SITE.DESCRIPTION}
 
 Ethereal news is a weekly newsletter covering the latest Ethereum news focused on developers. It covers ecosystem updates, enterprise developments, applications, developer tools and resources, security, and research.
+
+Ethereal news is edited by Andrew B Coathup (former editor of Week in Ethereum News).
 
 ## Issues
 
@@ -40,7 +43,7 @@ ${issueLinks}
 - [Full content](${new URL("/llms-full.txt", context.site)}): All issues in a single file
 - [RSS feed](${new URL("/rss.xml", context.site)}): Subscribe for updates
 - [Calendar](${new URL("/calendar/", context.site)}): Ethereum conferences, hackathons, upgrades and grant deadlines
-- [About](${new URL("/about/", context.site)}): About Ethereal news
+- [About](${new URL("/about.md", context.site)}): About Ethereal news
 `;
 
   return new Response(body, {

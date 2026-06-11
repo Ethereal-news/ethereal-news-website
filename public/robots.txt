@@ -6,5 +6,4 @@ Allow: /
 Sitemap: https://ethereal.news/sitemap-index.xml
 Sitemap: https://ethereal.news/sitemap-news.xml
 
-# LLMs
-LLMs-Txt: https://ethereal.news/llms.txt
+# LLMs — see https://ethereal.news/llms.txt and https://ethereal.news/llms-full.txt

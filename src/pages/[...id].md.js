@@ -17,13 +17,19 @@ export async function getStaticPaths() {
   }));
 }
 
-export function GET({ props }) {
+export function GET({ props, site }) {
   const issue = props;
+  const slug = issue.id.replace(/\/index$/, "");
   const date = new Date(issue.data.date).toISOString().split("T")[0];
+  const canonical = new URL(`/${slug}/`, site).toString();
 
   const body = `# ${issue.data.title}
 
+> ${issue.data.description}
+
 Date: ${date}
+Source: ${canonical}
+Editor: Andrew B Coathup
 
 ${stripImages(issue.body).trim()}
 `;

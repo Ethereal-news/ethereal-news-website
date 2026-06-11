@@ -13,9 +13,10 @@ type Props = {
   publishedDate?: Date;
   isArticle?: boolean;
   noindex?: boolean;
+  markdownUrl?: string;
 };
 
-const { title, description, image, publishedDate, isArticle, noindex } = Astro.props;
+const { title, description, image, publishedDate, isArticle, noindex, markdownUrl } = Astro.props;
 
 // Remove "Ethereal news " prefix to avoid redundancy in page title
 const displayTitle = title.replace(/^Ethereal news /i, "");
@@ -31,6 +32,7 @@ const displayTitle = title.replace(/^Ethereal news /i, "");
       publishedDate={publishedDate}
       isArticle={isArticle}
       noindex={noindex}
+      markdownUrl={markdownUrl}
     />
   </head>
   <body>

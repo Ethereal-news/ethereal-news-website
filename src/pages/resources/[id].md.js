@@ -11,10 +11,16 @@ export async function getStaticPaths() {
     }));
 }
 
-export function GET({ props }) {
+export function GET({ props, site }) {
   const page = props;
+  const canonical = new URL(`/resources/${page.id}/`, site).toString();
 
   const body = `# ${page.data.title}
+
+> ${page.data.description}
+
+Source: ${canonical}
+Editor: Andrew B Coathup
 
 ${page.body.trim()}
 `;
