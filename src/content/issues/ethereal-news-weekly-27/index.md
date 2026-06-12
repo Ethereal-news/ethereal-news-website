@@ -31,7 +31,7 @@ A complete suite of trusted products to build anything in web3.
 
 ### Enterprise
 
-* [LG Electronics](https://x.com/arbitrum/status/2065145040775598235) built L2 for advertising, piloted with Japanese ad agency  
+* [LG Electronics](https://blog.arbitrum.io/lg-electronics-pilot/) built L2 for advertising, piloted with Japanese ad agency  
 * Türkiye [Directorate of Communications](https://cbiletisim.eth.limo/) publishing to IPFS \+ ENS
 
 ### Applications
