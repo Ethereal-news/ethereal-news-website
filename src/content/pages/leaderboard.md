@@ -226,5 +226,13 @@ topClicks:
     - dankrad
     - EF_ESP
 
+- issue: 27
+  clicks:
+    - iletisim
+    - arbitrum
+    - EF_ESP
+    - fvictorio_nan
+    - iptf_updates
+
 
 ---
