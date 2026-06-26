@@ -234,5 +234,13 @@ topClicks:
     - fvictorio_nan
     - iptf_updates
 
+- issue: 28
+  clicks:
+    - hwwonx
+    - joechalom
+    - sigp_io
+    - pcaversaccio
+    - awscloud
+
 
 ---
