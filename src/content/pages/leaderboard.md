@@ -242,5 +242,13 @@ topClicks:
     - pcaversaccio
     - awscloud
 
+- issue: 29
+  clicks:
+    - drakefjustin
+    - tkstanczak
+    - VitalikButerin
+    - Etherealize_io
+    - l2beat
+
 
 ---
