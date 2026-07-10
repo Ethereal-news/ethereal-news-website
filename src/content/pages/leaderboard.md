@@ -250,5 +250,13 @@ topClicks:
     - Etherealize_io
     - l2beat
 
+- issue: 30
+  clicks:
+    - apoorveth
+    - ethereumfndn
+    - VitalikButerin
+    - argotorg
+    - ethereuminsti
+
 
 ---
