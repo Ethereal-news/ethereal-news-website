@@ -1,10 +1,9 @@
 ---
-title: 'ETHTokyo'
+title: 'Ethereum Institutional Summit'
 description: ''
-date: 'September 19 2026'
-endDate: 'September 27 2026'
+date: 'September 25 2026'
 location: 'Tokyo, Japan'
 url: 'https://ethtokyo.org/'
-tags: ['conference', 'hackathon']
+tags: ['conference']
 ---
  
