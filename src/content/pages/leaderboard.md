@@ -258,5 +258,13 @@ topClicks:
     - argotorg
     - ethereuminsti
 
+- issue: m1 # mini #1
+  clicks:
+    - VitalikButerin
+    - TMIYChao
+    - ethlabs_org
+    - apoorveth
+    - apoorveth
+
 
 ---
