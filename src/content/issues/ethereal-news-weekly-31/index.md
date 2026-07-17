@@ -39,7 +39,7 @@ glamsterdam-devnet-7 open for app developer testing, EthSystems launched, Devcon
 ### Applications
 
 * Revoke [paid plans](https://revoke.cash/blog/2026/introducing-revoke-premium-and-ultimate): multichain dashboard with exploit checker & unlimited batch revokes; ultimate adds [auto revoking](https://revoke.cash/premium/automated-revoking) for wallets supporting ERC7715 permissions, e.g. MetaMask, requires upgrading to ERC7702 smart account  
-* Splits [shared engineering wallet use case](https://splits.org/blog/shared-eng-team-wallets/) via subaccounts or separate workspaces. 1 of n account, top up as needed, workspace admins can require memos on outgoing transactions  
+* Splits [shared engineering wallet use case](https://splits.org/blog/shared-eng-team-wallets/) via subaccounts or separate workspaces, 1 of n account, top up as needed, workspace admins can require memos on outgoing transactions  
 * [Sablier Labs](https://blog.sablier.com/sablier-labs-is-entering-maintenance-mode) maintenance mode, interface stopped accepting vesting streams & airdrops with end dates beyond June 2028 and blocks open ended payment streams  
 * [Summer.fi](https://blog.summer.fi/sunsetting-summer-fi-and-the-labs-company/) winding down after Lazy Summer Protocol exploit on July 6  
 * pcaversaccio [draft proposal to disable Tornado Cash DAO governance](https://x.com/pcaversaccio/status/2076945231271113031)
@@ -65,7 +65,7 @@ glamsterdam-devnet-7 open for app developer testing, EthSystems launched, Devcon
 ### Security
 
 * Ostium [exploit](https://x.com/kaledora/status/2077525044733837736) on Arbitrum, loss of funds from OLP vault, [trading paused](https://x.com/Ostium/status/2077628150054281700)  
-* BarnBridge DAO [ongoing governance attacks](https://x.com/blockful_io/status/2077823647855825319), \~$860k drained from token approvals, revoke approvals  
+* BarnBridge DAO [ongoing governance attacks](https://x.com/blockful_io/status/2077823647855825319), \~$860k drained via token approvals, revoke approvals  
 * Sigma Prime: [accelerating security review cycles](https://sigmaprime.io/blog/collapsing-security-review-cycle/) via commit reviews & integrated security engineers, to keep up with AI accelerated development cycles
 
 ### All core devs (main protocol calls)
