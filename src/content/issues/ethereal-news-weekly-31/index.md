@@ -4,7 +4,7 @@ description: 'glamsterdam-devnet-7 open for app developer testing, EthSystems la
 date: 'July 17, 2026'
 ---
 
-glamsterdam-devnet-7 open for app developer testing, EthSystems launched, Devcon 8 tickets
+*glamsterdam-devnet-7 open for app developer testing, EthSystems launched, Devcon 8 tickets*
 
 ### Ecosystem
 
@@ -28,6 +28,7 @@ glamsterdam-devnet-7 open for app developer testing, EthSystems launched, Devcon
 ![MetaMask 10th anniversary](./metamask-10-year-anniversary.avif)
 
 **MetaMask celebrates 10 years** as the world's leading self-custodial crypto wallet, names Gal Eldar as CPO, and unveils its Open Money vision for finance.  
+
 [MetaMask 10th anniversary](https://metamask.io/news/metamask-10th-anniversary).
 
 ---
