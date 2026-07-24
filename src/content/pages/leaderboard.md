@@ -266,5 +266,13 @@ topClicks:
     - apoorveth
     - apoorveth
 
+- issue: 31
+  clicks:
+    - eth_systems
+    - Visa
+    - jessepollak
+    - EFDevcon
+    - l2beat
+
 
 ---
