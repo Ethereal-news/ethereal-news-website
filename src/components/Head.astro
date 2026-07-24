@@ -156,23 +156,8 @@ const breadcrumbSchema = {
 <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-<!-- PageFind (deferred to avoid blocking LCP) -->
-<link
-  id="pagefind-css"
-  rel="preload"
-  href="/pagefind/pagefind-ui.css"
-  as="style"
-/>
-<script is:inline>
-  const pagefindCss = document.getElementById("pagefind-css");
-  if (pagefindCss) {
-    pagefindCss.addEventListener("load", () => {
-      pagefindCss.rel = "stylesheet";
-    });
-  }
-</script>
-<noscript><link href="/pagefind/pagefind-ui.css" rel="stylesheet" /></noscript>
-<script is:inline src="/pagefind/pagefind-ui.js" defer></script>
+<!-- PageFind Component UI CSS/JS is bundled via the <Search> component
+     (@pagefind/component-ui); only the search index is served from /pagefind/ -->
 
 <ClientRouter />
 
