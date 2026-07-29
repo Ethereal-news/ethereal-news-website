@@ -6,12 +6,9 @@ import Search from "astro-pagefind/components/Search.astro";
   <div
     transition:persist
     id="backdrop"
-    class="bg-[rgba(0, 0, 0, 0.5] invisible fixed left-0 top-0 z-50 flex h-screen w-full justify-center p-6 backdrop-blur-xs"
+    class="hidden fixed left-0 top-0 z-50 h-screen w-full items-start justify-center bg-black/50 p-6 backdrop-blur-xs"
   >
-    <div
-      id="pagefind-container"
-      class="m-0 flex h-fit max-h-[80%] w-full max-w-(--breakpoint-sm) flex-col overflow-auto rounded-sm border border-black/15 bg-neutral-100 p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-neutral-900"
-    >
+    <div id="pagefind-container" class="w-full max-w-(--breakpoint-sm)">
       <Search
         searchboxOptions={{
           placeholder: "Search Ethereal news…",
@@ -19,11 +16,6 @@ import Search from "astro-pagefind/components/Search.astro";
           "show-sub-results": true,
         }}
       />
-      <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
-        Press <span class="prose text-xs dark:prose-invert"
-          ><kbd class="">Esc</kbd></span
-        > or click anywhere to close
-      </div>
     </div>
   </div>
 </aside>
@@ -38,6 +30,9 @@ import Search from "astro-pagefind/components/Search.astro";
     }
 
     function openPagefind() {
+      // show first (can't focus a display:none element), then focus
+      backdrop?.classList.remove("hidden");
+      backdrop?.classList.add("flex");
       const searchbox = getSearchbox();
       // pagefind-searchbox exposes a public focus() that focuses its input
       setTimeout(() => {
@@ -47,8 +42,6 @@ import Search from "astro-pagefind/components/Search.astro";
           searchbox?.querySelector("input")?.focus();
         }
       }, 0);
-      backdrop?.classList.remove("invisible");
-      backdrop?.classList.add("visible");
     }
 
     function closePagefind() {
@@ -58,8 +51,8 @@ import Search from "astro-pagefind/components/Search.astro";
         // notify the component so it clears its results
         input.dispatchEvent(new Event("input", { bubbles: true }));
       }
-      backdrop?.classList.remove("visible");
-      backdrop?.classList.add("invisible");
+      backdrop?.classList.remove("flex");
+      backdrop?.classList.add("hidden");
     }
 
     // open pagefind
@@ -132,14 +125,6 @@ import Search from "astro-pagefind/components/Search.astro";
     --pf-border-focus: #525252;
     --pf-hover: #262626;
     --pf-mark: #78350f;
-  }
-
-  /* let the searchbox flow inside the modal container rather than as an
-     absolutely-positioned dropdown overlay */
-  #pagefind-container .pf-searchbox-dropdown {
-    position: static;
-    box-shadow: none;
-    border: none;
   }
 
   #pagefind-container .pf-searchbox-result-title {
