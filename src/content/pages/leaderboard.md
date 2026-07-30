@@ -274,5 +274,13 @@ topClicks:
     - EFDevcon
     - l2beat
 
+- issue: 32
+  clicks:
+    - VitalikButerin
+    - tw_tter
+    - token_works
+    - class_lambda
+    - Uniswap
+
 
 ---
