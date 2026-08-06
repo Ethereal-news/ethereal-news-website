@@ -282,5 +282,13 @@ topClicks:
     - class_lambda
     - Uniswap
 
+- issue: 33
+  clicks:
+    - ethereumfndn
+    - ethlabs_org
+    - ethereuminsti
+    - FreedomFactory
+    - DucasLeo
+
 
 ---
