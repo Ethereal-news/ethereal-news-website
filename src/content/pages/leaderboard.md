@@ -290,5 +290,13 @@ topClicks:
     - FreedomFactory
     - DucasLeo
 
+- issue: 34
+  clicks:
+    - CamiRusso
+    - serenita_luca
+    - corcoranwill
+    - Cloudflare
+    - vdWijden
+
 
 ---
