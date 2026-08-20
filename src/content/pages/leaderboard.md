@@ -298,5 +298,13 @@ topClicks:
     - Cloudflare
     - vdWijden
 
+- issue: 35
+  clicks:
+    - VitalikButerin
+    - drakefjustin
+    - EthCoordinate
+    - claudeai
+    - initc3org
+
 
 ---
