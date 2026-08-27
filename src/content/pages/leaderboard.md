@@ -306,5 +306,13 @@ topClicks:
     - claudeai
     - initc3org
 
+- issue: 36
+  clicks:
+    - ethereumfndn
+    - VitalikButerin
+    - OseroHQ
+    - sherlockdefi
+    - rish_neynar
+
 
 ---
