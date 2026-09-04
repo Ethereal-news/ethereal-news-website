@@ -314,5 +314,13 @@ topClicks:
     - sherlockdefi
     - rish_neynar
 
+- issue: 37
+  clicks:
+    - DefiLlama
+    - ox_shaman
+    - Revolut
+    - figtracer
+    - ethereumfndn
+
 
 ---
