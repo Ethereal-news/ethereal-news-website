@@ -166,7 +166,7 @@ const breadcrumbSchema = {
     preloadTheme();
     onScroll();
     animate();
-    updateThemeButtons();
+    updateThemeToggles();
     addCopyCodeButtons();
     setGiscusTheme();
 
@@ -176,65 +176,46 @@ const breadcrumbSchema = {
     const backToPrev = document.getElementById("back-to-prev");
     backToPrev?.addEventListener("click", () => window.history.back());
 
-    const lightThemeButton = document.getElementById("light-theme-button");
-    lightThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "light");
-      toggleTheme(false);
-      updateThemeButtons();
-    });
-
-    const darkThemeButton = document.getElementById("dark-theme-button");
-    darkThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "dark");
-      toggleTheme(true);
-      updateThemeButtons();
-    });
-
-    const systemThemeButton = document.getElementById("system-theme-button");
-    systemThemeButton?.addEventListener("click", () => {
-      localStorage.setItem("theme", "system");
-      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
-      updateThemeButtons();
-    });
-
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (event) => {
-        if (localStorage.theme === "system") {
-          toggleTheme(event.matches);
-        }
+    // Theme toggle cycles light → dark → system → light
+    document.querySelectorAll(".theme-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const order = ["light", "dark", "system"];
+        const next = order[(order.indexOf(getThemePreference()) + 1) % order.length];
+        setThemePreference(next);
       });
+    });
 
     document.addEventListener("scroll", onScroll);
   }
 
-  function updateThemeButtons() {
-    const theme = localStorage.getItem("theme");
-    const lightThemeButton = document.getElementById("light-theme-button");
-    const darkThemeButton = document.getElementById("dark-theme-button");
-    const systemThemeButton = document.getElementById("system-theme-button");
+  // Theme preference is one of "light", "dark" or "system". "system" follows
+  // the OS setting and is the default when nothing has been chosen.
+  function getThemePreference() {
+    const stored = localStorage.getItem("theme");
+    return stored === "light" || stored === "dark" ? stored : "system";
+  }
 
-    function removeActiveButtonTheme(button) {
-      button?.classList.remove("bg-black/5");
-      button?.classList.remove("dark:bg-white/5");
-    }
+  function setThemePreference(preference) {
+    localStorage.setItem("theme", preference);
+    applyThemePreference(preference);
+    updateThemeToggles();
+  }
 
-    function addActiveButtonTheme(button) {
-      button?.classList.add("bg-black/5");
-      button?.classList.add("dark:bg-white/5");
-    }
+  function applyThemePreference(preference) {
+    document.documentElement.dataset.theme = preference;
+    const dark =
+      preference === "system"
+        ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        : preference === "dark";
+    toggleTheme(dark);
+  }
 
-    removeActiveButtonTheme(lightThemeButton);
-    removeActiveButtonTheme(darkThemeButton);
-    removeActiveButtonTheme(systemThemeButton);
-
-    if (theme === "light") {
-      addActiveButtonTheme(lightThemeButton);
-    } else if (theme === "dark") {
-      addActiveButtonTheme(darkThemeButton);
-    } else {
-      addActiveButtonTheme(systemThemeButton);
-    }
+  function updateThemeToggles() {
+    const label = `Theme: ${getThemePreference()}`;
+    document.querySelectorAll(".theme-toggle").forEach((toggle) => {
+      toggle.setAttribute("aria-label", label);
+      toggle.setAttribute("title", label);
+    });
   }
 
   function animate() {
@@ -294,13 +275,7 @@ const breadcrumbSchema = {
   }
 
   function preloadTheme() {
-    const userTheme = localStorage.theme;
-
-    if (userTheme === "light" || userTheme === "dark") {
-      toggleTheme(userTheme === "dark");
-    } else {
-      toggleTheme(window.matchMedia("(prefers-color-scheme: dark)").matches);
-    }
+    applyThemePreference(getThemePreference());
   }
 
   function addCopyCodeButtons() {
@@ -354,5 +329,16 @@ const breadcrumbSchema = {
 
   document.addEventListener("DOMContentLoaded", () => init());
   document.addEventListener("astro:after-swap", () => init());
+
+  // Follow OS changes while the "system" preference is active. Registered once
+  // here rather than in init() so page swaps don't stack up listeners.
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      if (getThemePreference() === "system") {
+        toggleTheme(event.matches);
+      }
+    });
+
   preloadTheme();
 </script>

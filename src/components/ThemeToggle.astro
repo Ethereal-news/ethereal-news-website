@@ -6,11 +6,18 @@ interface Props {
 const { class: className = "" } = Astro.props;
 ---
 
+<!--
+  Three-state theme toggle: light → dark → system → light.
+  The icon shown reflects the current preference, which the Head script
+  exposes as the `data-theme` attribute on <html>. Click handling and
+  aria-label updates live in Head.astro alongside the rest of the theme logic.
+-->
 <button
-  aria-label="Toggle theme"
+  aria-label="Theme: system"
+  title="Theme: system"
   class={`theme-toggle text-black/50 transition-colors duration-300 ease-in-out hover:text-black dark:text-white/50 dark:hover:text-white ${className}`}
 >
-  <!-- Sun icon (shown in dark mode) -->
+  <!-- Sun icon (light preference) -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -21,7 +28,7 @@ const { class: className = "" } = Astro.props;
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="hidden dark:block"
+    class="theme-icon-light hidden"
   >
     <circle cx="12" cy="12" r="5"></circle>
     <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -33,7 +40,7 @@ const { class: className = "" } = Astro.props;
     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
   </svg>
-  <!-- Moon icon (shown in light mode) -->
+  <!-- Moon icon (dark preference) -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -44,28 +51,33 @@ const { class: className = "" } = Astro.props;
     stroke-width="2"
     stroke-linecap="round"
     stroke-linejoin="round"
-    class="block dark:hidden"
+    class="theme-icon-dark hidden"
   >
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
+  <!-- Monitor icon (system preference) -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="theme-icon-system hidden"
+  >
+    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+    <line x1="8" y1="21" x2="16" y2="21"></line>
+    <line x1="12" y1="17" x2="12" y2="21"></line>
+  </svg>
 </button>
 
-<script>
-  function setupThemeToggle() {
-    document.querySelectorAll(".theme-toggle").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const isDark = document.documentElement.classList.contains("dark");
-        if (isDark) {
-          localStorage.setItem("theme", "light");
-          document.documentElement.classList.remove("dark");
-        } else {
-          localStorage.setItem("theme", "dark");
-          document.documentElement.classList.add("dark");
-        }
-      });
-    });
+<style is:global>
+  html[data-theme="light"] .theme-icon-light,
+  html[data-theme="dark"] .theme-icon-dark,
+  html:not([data-theme="light"]):not([data-theme="dark"]) .theme-icon-system {
+    display: block;
   }
-
-  setupThemeToggle();
-  document.addEventListener("astro:after-swap", setupThemeToggle);
-</script>
+</style>
