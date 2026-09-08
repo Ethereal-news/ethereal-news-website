@@ -22,9 +22,21 @@ const ITAL = /(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])/g;
 const UNESCAPE = /\\([\\`*_{}\[\]()#+\-.!~>])/g;
 const FOOTER = /^\*(Editor|Permalink|Markdown):/;
 
+const SCHEME = /^[a-z][a-z0-9+.-]*:/i;
+const SAFE_SCHEME = /^(https?|mailto):/i;
+
 const esc = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const unescape = (s) => s.replace(UNESCAPE, "$1");
+
+// Allow http(s), mailto and relative URLs only. Returns null for anything else
+// (javascript:, data:, vbscript:, ...), which inline() renders as plain text.
+// Control characters are stripped before the scheme test so "java\x00script:" can't slip past.
+function safeHref(url) {
+  const clean = url.replace(/[\u0000-\u0020]/g, "");
+  if (SCHEME.test(clean) && !SAFE_SCHEME.test(clean)) return null;
+  return clean;
+}
 
 function fmt(s) {
   return esc(s).replace(BOLD, "<strong>$1</strong>").replace(ITAL, "<em>$1</em>");
@@ -38,7 +50,10 @@ function inline(text) {
   let out = "", pos = 0;
   for (const m of text.matchAll(LINK)) {
     out += fmt(text.slice(pos, m.index));
-    out += `<a href="${esc(m[2]).replace(/"/g, "&quot;")}">${fmt(m[1])}</a>`;
+    const url = safeHref(m[2]);
+    out += url === null
+      ? fmt(m[1]) // unsafe scheme: keep the text, drop the link
+      : `<a href="${esc(url).replace(/"/g, "&quot;")}">${fmt(m[1])}</a>`;
     pos = m.index + m[0].length;
   }
   return out + fmt(text.slice(pos));
