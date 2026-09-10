@@ -8,3 +8,4 @@ description: Additional Ethereum news sources including newsletters, podcasts an
 * [The Daily Gwei](https://www.youtube.com/c/TheDailyGwei): YouTube hosted by Anthony Sassano
 * [ETH Daily](https://ethdaily.io): Newsletter & podcast
 * [Doots](https://evmavericks.libsyn.com/): Podcast of the highlights from the r/ethereum daily
+* [Ethernews](https://ethernews.org/): Automated Ethereum news aggregator with daily & weekly email digests
