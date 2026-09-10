@@ -1,0 +1,7 @@
+# Cloudflare Pages custom headers: https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Serve markdown exports as text/plain. Cloudflare infers text/markdown from
+# the .md extension, and some AI assistants (e.g. ChatGPT) refuse to open
+# text/markdown responses, while text/plain (as used for llms.txt) works.
+/*.md
+  Content-Type: text/plain; charset=utf-8
