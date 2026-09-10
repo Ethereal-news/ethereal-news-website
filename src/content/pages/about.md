@@ -15,8 +15,8 @@ Ethereal news is curated Ethereum news focused on developers (core & application
 * [Astro Micro](https://github.com/trevortylerlee/astro-micro): Ethereal news is built on Astro and uses Astro Micro theme (MIT licence) as a base.
 * [OpenMoji kite](https://openmoji.org/library/emoji-1FA81/#variant=black): Ethereal news logo is based on kite emoji (CC BY-SA 4.0).
 * [Daring Fireball](https://daringfireball.net) (DF): John Gruber's minimalistic blog focused on one topic sustained by a single weekly sponsor is the inspiration for Ethereal news minimalism and long term sustainability model. John is also the creator of [Markdown](https://daringfireball.net/2004/03/introducing_markdown). 
-* [Techmeme](https://www.techmeme.com/): Gabe Rivera's technology news aggregator is the inspiration for the Ethereal news [feed](https://ethereal.news/).
-* [Ethernews](https://ethernews.org/): [Jonathan Meyer](https://x.com/jwmeyer)'s Ethereum news aggregator whose [sources page](https://ethernews.org/sources) inspired Ethereal news sharing its [news sources](https://ethereal.news/resources/news-sources/).
+* [Techmeme](https://www.techmeme.com/): Gabe Rivera's technology news aggregator is the inspiration for the Ethereal news [feed](https://feed.ethereal.news/).
+* [Ethernews](https://ethernews.org/): [Jonathan Meyer](https://x.com/jwmeyer)'s Ethereum news aggregator whose [sources page](https://ethernews.org/sources) inspired Ethereal news sharing its [news sources](https://feed.ethereal.news/sources).
 
 ## Licenses
 * Software & website is [MIT](https://github.com/Ethereal-news/ethereal-news-website?tab=MIT-1-ov-file)
