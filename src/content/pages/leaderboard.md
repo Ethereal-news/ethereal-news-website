@@ -322,5 +322,13 @@ topClicks:
     - figtracer
     - ethereumfndn
 
+- issue: 38
+  clicks:
+    - parithosh_j
+    - corcoranwill
+    - pcaversaccio
+    - buidlguidl
+    - paulmillr
+
 
 ---
