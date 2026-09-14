@@ -5,8 +5,8 @@
 //   second level -> bullets (bold when they introduce a third level),
 //   third level -> plain bullets at the same indent.
 //
-// LinkedIn only: headings containing links -> bold paragraphs (LinkedIn headings can't hold links),
-//                footer lines joined on one line.
+// Footer lines share one paragraph: joined on one line for LinkedIn, one per line (<br>) on X.
+// LinkedIn only: headings containing links -> bold paragraphs (LinkedIn headings can't hold links).
 //
 // Images are stripped (sponsor image is added by hand in the editor).
 // Dividers: <hr> on LinkedIn; a text rule (---) on X, whose editor can't create a divider from pasted HTML.
@@ -130,11 +130,15 @@ export function toSocialHtml(md, platform, opts = {}) {
       if (description && b.text.replace(/^\*|\*$/g, "") === description) {
         continue; // lead line already emitted from frontmatter below
       }
-      if (platform === "linkedin" && FOOTER.test(b.text)) {
-        // LinkedIn drops links whose text starts with "@" (treated as a mention), so strip it
-        b.text = b.text.replace(/\[@abcoathup\]/, "[abcoathup]");
+      if (FOOTER.test(b.text)) {
+        // Footer lines share one paragraph: on one line for LinkedIn, one per line on X
+        if (platform === "linkedin") {
+          // LinkedIn drops links whose text starts with "@" (treated as a mention), so strip it
+          b.text = b.text.replace(/\[@abcoathup\]/, "[abcoathup]");
+        }
+        const sep = platform === "linkedin" ? " " : "<br>";
         const last = body[body.length - 1];
-        if (last && last.startsWith("<p class=\"footer\">")) body[body.length - 1] = last.slice(0, -4) + " " + inline(b.text) + "</p>";
+        if (last && last.startsWith("<p class=\"footer\">")) body[body.length - 1] = last.slice(0, -4) + sep + inline(b.text) + "</p>";
         else body.push(`<p class="footer">${inline(b.text)}</p>`);
         continue;
       }
