@@ -10,7 +10,7 @@
 // X turns level 4+ headings into bold paragraphs (its editor has a single heading level).
 //
 // Images are stripped (sponsor image is added by hand in the editor).
-// Dividers: <hr> on LinkedIn; a text rule (---) on X, whose editor can't create a divider from pasted HTML.
+// Dividers: <hr> on LinkedIn; omitted on X, whose editor can't create a divider from pasted HTML.
 
 // Top level list labels rendered bold on LinkedIn; every other top level parent is a plain paragraph.
 export const BOLD_PARENTS = new Set([
@@ -149,8 +149,8 @@ export function toSocialHtml(md, platform, opts = {}) {
       body.push(`<p>${inline(b.text)}</p>`);
     } else if (b.kind === "hr") {
       // X's Draft.js editor only creates dividers from its insert menu; pasted <hr> (and every
-      // other HTML form tried) is dropped, so use a text rule the editor can be searched for
-      body.push(platform === "x" ? "<p>---</p>" : "<hr>");
+      // other HTML form tried) is dropped, so omit them there and add by hand like the sponsor image
+      if (platform === "linkedin") body.push("<hr>");
     } else if (b.kind === "list") {
       body.push(renderList(b.items));
     }
@@ -172,7 +172,7 @@ export function socialPage({ title, platform, fragment }) {
   button{font:inherit;padding:.4rem .9rem;border:1px solid #333;border-radius:.4rem;background:#fff;cursor:pointer}
   .bar span{color:#666;font-size:.9rem}
 </style></head><body>
-<div class="bar"><button id="copy">Copy for ${label}</button><span>Paste into the article body; type the title into the title field. Add the sponsor image by hand.</span></div>
+<div class="bar"><button id="copy">Copy for ${label}</button><span>Paste into the article body; type the title into the title field. Add the sponsor image${platform === "x" ? " and dividers" : ""} by hand.</span></div>
 <p style="font-size:.9rem;color:#666">Title: <strong>${esc(title)}</strong></p>
 <article id="content">
 ${fragment}
