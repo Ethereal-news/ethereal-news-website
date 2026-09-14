@@ -1,11 +1,12 @@
 // Convert an issue's markdown body into HTML tuned for pasting into X Articles or LinkedIn articles.
 //
-//   x        : nested bullets kept (X editor supports indentation)
-//   linkedin : top level bullets -> paragraphs (bold only for BOLD_PARENTS),
-//              second level -> bullets (bold when they introduce a third level),
-//              third level -> plain bullets at the same indent,
-//              headings containing links -> bold paragraphs (LinkedIn headings can't hold links),
-//              footer lines joined on one line
+// Lists are flattened the same way on both platforms (neither editor pastes nested lists reliably):
+//   top level bullets -> paragraphs (bold only for BOLD_PARENTS),
+//   second level -> bullets (bold when they introduce a third level),
+//   third level -> plain bullets at the same indent.
+//
+// LinkedIn only: headings containing links -> bold paragraphs (LinkedIn headings can't hold links),
+//                footer lines joined on one line.
 //
 // Images are stripped (sponsor image is added by hand in the editor). Dividers kept on both.
 
@@ -86,36 +87,24 @@ function parse(md) {
   return blocks;
 }
 
-function renderList(items, nested) {
-  if (!nested) {
-    const out = [];
-    let ul = [];
-    const close = () => { if (ul.length) { out.push(`<ul>${ul.join("")}</ul>`); ul = []; } };
-    items.forEach(({ depth, text }, i) => {
-      const hasChildren = i + 1 < items.length && items[i + 1].depth > depth;
-      const t = inline(text);
-      if (depth === 0) {
-        close();
-        const bold = hasChildren && BOLD_PARENTS.has(unescape(text).trim());
-        out.push(bold ? `<p><strong>${t}</strong></p>` : `<p>${t}</p>`);
-      } else {
-        const bold = depth === 1 && hasChildren;
-        ul.push(bold ? `<li><strong>${t}</strong></li>` : `<li>${t}</li>`);
-      }
-    });
-    close();
-    return out.join("\n");
-  }
+function renderList(items) {
   const out = [];
-  let depth = -1;
-  for (const { depth: d, text } of items) {
-    while (depth < d) { out.push("<ul>"); depth++; }
-    while (depth > d) { out.push("</ul></li>"); depth--; }
-    if (out.length && out[out.length - 1] !== "<ul>") out.push("</li>");
-    out.push(`<li>${inline(text)}`);
-  }
-  while (depth >= 0) { out.push("</li></ul>"); depth--; }
-  return out.join("");
+  let ul = [];
+  const close = () => { if (ul.length) { out.push(`<ul>${ul.join("")}</ul>`); ul = []; } };
+  items.forEach(({ depth, text }, i) => {
+    const hasChildren = i + 1 < items.length && items[i + 1].depth > depth;
+    const t = inline(text);
+    if (depth === 0) {
+      close();
+      const bold = hasChildren && BOLD_PARENTS.has(unescape(text).trim());
+      out.push(bold ? `<p><strong>${t}</strong></p>` : `<p>${t}</p>`);
+    } else {
+      const bold = depth === 1 && hasChildren;
+      ul.push(bold ? `<li><strong>${t}</strong></li>` : `<li>${t}</li>`);
+    }
+  });
+  close();
+  return out.join("\n");
 }
 
 /**
@@ -152,7 +141,7 @@ export function toSocialHtml(md, platform, opts = {}) {
     } else if (b.kind === "hr") {
       body.push("<hr>");
     } else if (b.kind === "list") {
-      body.push(renderList(b.items, platform === "x"));
+      body.push(renderList(b.items));
     }
   }
   const lead = description ? `<p><em>${esc(description)}</em></p>\n` : "";
