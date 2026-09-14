@@ -6,7 +6,8 @@
 //   third level -> plain bullets at the same indent.
 //
 // Footer lines share one paragraph: joined on one line for LinkedIn, one per line (<br>) on X.
-// LinkedIn only: headings containing links -> bold paragraphs (LinkedIn headings can't hold links).
+// Headings: LinkedIn turns headings containing links into bold paragraphs (its headings can't hold links);
+// X turns level 4+ headings into bold paragraphs (its editor has a single heading level).
 //
 // Images are stripped (sponsor image is added by hand in the editor).
 // Dividers: <hr> on LinkedIn; a text rule (---) on X, whose editor can't create a divider from pasted HTML.
@@ -122,7 +123,10 @@ export function toSocialHtml(md, platform, opts = {}) {
       if (b.level === 1) continue;
       const tag = b.level <= 3 ? "h2" : "h3";
       const hasLink = LINK.test(b.text); LINK.lastIndex = 0;
-      if (platform === "linkedin" && hasLink) body.push(`<p><strong>${inline(b.text)}</strong></p>`);
+      // LinkedIn headings can't hold links; X's editor has a single heading level, so
+      // deeper headings (the ACDE/ACDT call titles) become bold paragraphs there
+      const boldPara = platform === "linkedin" ? hasLink : b.level > 3;
+      if (boldPara) body.push(`<p><strong>${inline(b.text)}</strong></p>`);
       else body.push(`<${tag}>${inline(b.text)}</${tag}>`);
     } else if (b.kind === "quote") {
       body.push(`<p><em>${inline(b.text)}</em></p>`);
