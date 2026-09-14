@@ -8,7 +8,8 @@
 // LinkedIn only: headings containing links -> bold paragraphs (LinkedIn headings can't hold links),
 //                footer lines joined on one line.
 //
-// Images are stripped (sponsor image is added by hand in the editor). Dividers kept on both.
+// Images are stripped (sponsor image is added by hand in the editor).
+// Dividers: <hr> on LinkedIn; a text rule (---) on X, whose editor can't create a divider from pasted HTML.
 
 // Top level list labels rendered bold on LinkedIn; every other top level parent is a plain paragraph.
 export const BOLD_PARENTS = new Set([
@@ -139,7 +140,9 @@ export function toSocialHtml(md, platform, opts = {}) {
       }
       body.push(`<p>${inline(b.text)}</p>`);
     } else if (b.kind === "hr") {
-      body.push("<hr>");
+      // X's Draft.js editor only creates dividers from its insert menu; pasted <hr> (and every
+      // other HTML form tried) is dropped, so use a text rule the editor can be searched for
+      body.push(platform === "x" ? "<p>---</p>" : "<hr>");
     } else if (b.kind === "list") {
       body.push(renderList(b.items));
     }
