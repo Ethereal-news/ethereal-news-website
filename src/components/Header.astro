@@ -19,6 +19,7 @@ const pathname = Astro.url.pathname;
         </div>
       </Link>
       <nav class="hidden items-center gap-6 text-sm md:flex">
+        <a href="https://feed.ethereal.news" class="nav-link">feed</a>
         <a href="/calendar/" class={`nav-link ${pathname.startsWith('/calendar') ? 'nav-link-active' : ''}`}>calendar</a>
         <a href="/about/" class={`nav-link ${pathname.startsWith('/about') ? 'nav-link-active' : ''}`}>about</a>
         <div class="relative" id="more-dropdown">
