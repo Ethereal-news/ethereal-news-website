@@ -330,5 +330,13 @@ topClicks:
     - buidlguidl
     - paulmillr
 
+- issue: 39
+  clicks:
+    - banteg
+    - EFDevcon
+    - ethereumfndn
+    - heckerhut
+    - ethereumfndn
+
 
 ---
