@@ -146,15 +146,3 @@ The first self-custody wallet to guarantee an Ethereum or EVM app transaction ma
 *Markdown: [ethereal.news/ethereal-news-weekly-40.md](https://ethereal.news/ethereal-news-weekly-40.md)* 
 
 ---
-
-### Upcoming calendar
-
-* Sep 24: [ETHSofia](https://www.ethsofia.com/) (conference), Sofia, Bulgaria  
-* Sep 25-27: [ETHGlobal Tokyo](https://ethglobal.com/events/tokyo2026) (hackathon), Tokyo, Japan  
-* Sep 26-27: [Ethereum @ Sydney](https://x.com/EthAppsGuild/status/2098391250861007059) (hackathon \+ conference), Sydney, Australia  
-* Oct 9-12: [Post-Quantum Research Retreat](https://pq.ethereum.org/#retreat) (conference), Cambridge, UK  
-* Nov 3-6: [Devcon 8](https://devcon.org/) (conference), Mumbai, India  
-* Nov 5-7: [ETHGlobal Mumbai](https://ethglobal.com/events/mumbai) (hackathon), Mumbai, India  
-* Nov 12: [Ethereum Institutional Forum](https://forum.ethereuminstitutional.org/london-2026) (conference), London, United Kingdom
-
-[*Full calendar*](https://ethereal.news/calendar/)
