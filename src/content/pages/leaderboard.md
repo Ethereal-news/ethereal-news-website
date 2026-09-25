@@ -338,5 +338,13 @@ topClicks:
     - heckerhut
     - ethereumfndn
 
+- issue: 40
+  clicks:
+    - ethereumfndn
+    - w1nt3r_eth
+    - austingriffith
+    - SPGlobal
+    - ETHGlobal
+
 
 ---
