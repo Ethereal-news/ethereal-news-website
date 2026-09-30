@@ -1,5 +1,5 @@
 ---
-title: 'Glamsterdam upgrade'
+title: 'Glamsterdam'
 description: 'Epoch 353,024, slot 11,296,768, 13:53:36 UTC'
 date: 'October 6 2026'
 location: 'Sepolia testnet'
