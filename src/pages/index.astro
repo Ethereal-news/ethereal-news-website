@@ -4,11 +4,11 @@ import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
 import { HOME } from "@consts";
-import CalendarArrowCard from "@components/CalendarArrowCard.astro";
+import UpcomingCalendar from "@components/UpcomingCalendar.astro";
 import Link from "@components/Link.astro";
 import SubscribeButton from "@components/SubscribeButton.astro";
 import OpenInAI from "@components/OpenInAI.astro";
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 const issues = (await getCollection("issues"))
   .filter((issue) => !issue.data.draft)
@@ -17,39 +17,6 @@ const issues = (await getCollection("issues"))
 const issue = issues[0];
 
 const { Content } = await render(issue);
-
-const currentDate = new Date(); // Get today's date
-
-const allUpcomingEvents = (await getCollection("calendar"))
-  .filter((calendarItem) => !calendarItem.data.draft) // Filter out draft items
-  .filter((calendarItem) => calendarItem.data.date >= currentDate) // Filter out past dates
-  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()); // Sort by date
-
-// Get next 3 events overall (sorted by date)
-const next3Events = allUpcomingEvents.slice(0, 3);
-
-// Get next 3 highlighted events (sorted by date)
-const next3HighlightedEvents = allUpcomingEvents
-  .filter((calendarItem) => calendarItem.data.highlight === true)
-  .slice(0, 3);
-
-// Combine and deduplicate by entry id
-const eventMap = new Map();
-next3Events.forEach((event) => eventMap.set(event.id, event));
-next3HighlightedEvents.forEach((event) => eventMap.set(event.id, event));
-
-// If we have fewer than 6 unique events, fill with more upcoming events
-let calendar: CollectionEntry<"calendar">[] = Array.from(eventMap.values());
-if (calendar.length < 6) {
-  const selectedIds = new Set(calendar.map((e) => e.id));
-  const additionalEvents = allUpcomingEvents
-    .filter((event) => !selectedIds.has(event.id))
-    .slice(0, 6 - calendar.length);
-  calendar = [...calendar, ...additionalEvents];
-}
-
-// Sort by date
-calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
 ---
 
 <Layout
@@ -92,23 +59,7 @@ calendar.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
           <Link href="/archive/"> See all issues </Link>
         </div>
 
-        <section class="animate space-y-6">
-          <div class="flex flex-wrap items-center justify-between gap-y-2">
-            <h2 class="text-xl font-semibold text-black dark:text-white">
-              Upcoming calendar
-            </h2>
-            <Link href="/calendar/"> See full calendar </Link>
-          </div>
-          <ul class="not-prose flex flex-col gap-4">
-            {
-              calendar.map((calendar) => (
-                <li>
-                  <CalendarArrowCard entry={calendar} />
-                </li>
-              ))
-            }
-          </ul>
-        </section>
+        <UpcomingCalendar />
       </div>
     </div>
   </Container>
