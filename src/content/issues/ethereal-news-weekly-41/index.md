@@ -1,10 +1,10 @@
 ---
 title: 'Ethereal news weekly #41'
-description: 'Glamsterdam upgrade on Sepolia testnet October 6\. Vitalik: the cryptographic world computer, Hegotá upgrade focil-devnet-0 live'
+description: 'Glamsterdam upgrade on Sepolia testnet October 6, Vitalik: the cryptographic world computer, Hegotá upgrade focil-devnet-0 live'
 date: 'October 2, 2026'
 ---
 
-*Glamsterdam upgrade on Sepolia testnet October 6\. Vitalik: the cryptographic world computer, Hegotá upgrade focil-devnet-0 live*
+*Glamsterdam upgrade on Sepolia testnet October 6, Vitalik: the cryptographic world computer, Hegotá upgrade focil-devnet-0 live*
 
 ### Ecosystem
 
