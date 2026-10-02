@@ -346,5 +346,13 @@ topClicks:
     - SPGlobal
     - ETHGlobal
 
+- issue: m2 # mini #2
+  clicks:
+    - KelpDAO
+    - Khovr
+    - lfdecentralized
+    - nymis_privacy
+    - ARKInvest
+
 
 ---
