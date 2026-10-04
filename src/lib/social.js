@@ -22,7 +22,7 @@ export const BOLD_PARENTS = new Set([
 const LINK = /\[([^\]]+?)\]\((\S+?)\)/g;
 const BOLD = /\*\*(.+?)\*\*/g;
 const ITAL = /(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])/g;
-const UNESCAPE = /\\([\\`*_{}\[\]()#+\-.!~>])/g;
+const UNESCAPE = /\\([!-\/:-@\[-`{-~])/g; // any ASCII punctuation, as in CommonMark
 const FOOTER = /^\*(Editor|Permalink|Markdown):/;
 
 const SCHEME = /^[a-z][a-z0-9+.-]*:/i;
@@ -155,7 +155,7 @@ export function toSocialHtml(md, platform, opts = {}) {
       body.push(renderList(b.items));
     }
   }
-  const lead = description ? `<p><em>${esc(description)}</em></p>\n` : "";
+  const lead = description ? `<p><em>${esc(unescape(description))}</em></p>\n` : "";
   return lead + body.join("\n");
 }
 
