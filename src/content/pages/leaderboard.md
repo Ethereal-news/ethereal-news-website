@@ -354,5 +354,13 @@ topClicks:
     - nymis_privacy
     - ARKInvest
 
+- issue: 41
+  clicks:
+    - VitalikButerin
+    - VitalikButerin
+    - ethlabs_org
+    - johnkarp
+    - PeirceArchived
+
 
 ---
