@@ -4,7 +4,7 @@ import Link from "@components/Link.astro";
 import HamburgerMenu from "@components/HamburgerMenu.astro";
 import KiteIcon from "@components/KiteIcon.astro";
 import ThemeToggle from "@components/ThemeToggle.astro";
-import { SITE } from "@consts";
+import { SITE, SUBSCRIBE } from "@consts";
 
 const pathname = Astro.url.pathname;
 ---
@@ -41,6 +41,10 @@ const pathname = Astro.url.pathname;
             <a href="/resources/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">resources</a>
           </div>
         </div>
+        <a
+          href={SUBSCRIBE.URL}
+          class="rounded-sm border border-black/15 px-2.5 py-1 text-black transition-colors duration-300 ease-in-out hover:bg-black/5 focus-visible:bg-black/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5 dark:focus-visible:bg-white/5"
+        >subscribe</a>
         <div class="flex items-center gap-3">
           <button
             id="magnifying-glass"
