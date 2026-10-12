@@ -102,7 +102,7 @@ A complete suite of trusted products to build anything in web3.
 * [Glamsterdam](https://forkcast.org/upgrade/glamsterdam/) upgrade:  
   * [EIP7732](https://forkcast.org/upgrade/glamsterdam/#eip-7732) ePBS breakout [\#28](https://x.com/JustinTraglia/status/1997021426914668843): [dynamic penalties](https://ethresear.ch/t/dynamic-penalties-for-epbs/23472) as solution to free option problem, non-staked builders & trustless payments discussion  
 * [Consensus spec viewer](https://jtraglia.github.io/eth-spec-viewer/): view spec items & navigate to consumers  
-  Discovery v5 (used to find new peers) [migration tracker](https://notes.ethereum.org/@cskiraly/el-discovery-v5-tracker): sunset v4 by Glamsterdam  
+* Discovery v5 (used to find new peers) [migration tracker](https://notes.ethereum.org/@cskiraly/el-discovery-v5-tracker): sunset v4 by Glamsterdam  
 * Karl Floersch: [EVM scaling](https://evmscaling.com), interactive overview  
 * Ethereum improvement proposals (EIPs):  
   * [EIP8101](https://github.com/ethereum/EIPs/pull/10900/files): Payload chunking with chunk access lists
