@@ -19,7 +19,7 @@ export const BOLD_PARENTS = new Set([
   "Ethereum improvement proposals (EIPs):",
 ]);
 
-const LINK = /\[([^\]]+?)\]\((\S+?)\)/g;
+const LINK = /\[([^\[\]]+?)\]\((\S+?)\)/g;
 const BOLD = /\*\*(.+?)\*\*/g;
 const ITAL = /(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])/g;
 const UNESCAPE = /\\([!-\/:-@\[-`{-~])/g; // any ASCII punctuation, as in CommonMark
@@ -32,6 +32,13 @@ const esc = (s) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const unescape = (s) => s.replace(UNESCAPE, "$1");
 
+// Escaped characters are swapped for private use placeholders while links & emphasis are parsed,
+// so "\[" or "\*" can't be mistaken for markup, then restored as literal (HTML escaped) text.
+const protect = (s) => s.replace(UNESCAPE, (_, c) => String.fromCharCode(0xe000 + c.charCodeAt(0)));
+const PLACEHOLDER = /[-]/g;
+const restoreRaw = (s) => s.replace(PLACEHOLDER, (p) => String.fromCharCode(p.charCodeAt(0) - 0xe000));
+const restore = (s) => s.replace(PLACEHOLDER, (p) => esc(restoreRaw(p)));
+
 // Allow http(s), mailto and relative URLs only. Returns null for anything else
 // (javascript:, data:, vbscript:, ...), which inline() renders as plain text.
 // Control characters are stripped before the scheme test so "java\x00script:" can't slip past.
@@ -42,18 +49,18 @@ function safeHref(url) {
 }
 
 function fmt(s) {
-  return esc(s).replace(BOLD, "<strong>$1</strong>").replace(ITAL, "<em>$1</em>");
+  return restore(esc(s).replace(BOLD, "<strong>$1</strong>").replace(ITAL, "<em>$1</em>"));
 }
 
 function inline(text) {
-  text = unescape(text);
+  text = protect(text);
   if (text.length > 2 && text.startsWith("*") && text.endsWith("*") && !text.startsWith("**")) {
     return `<em>${inline(text.slice(1, -1))}</em>`; // whole line italic (footer lines with links)
   }
   let out = "", pos = 0;
   for (const m of text.matchAll(LINK)) {
     out += fmt(text.slice(pos, m.index));
-    const url = safeHref(m[2]);
+    const url = safeHref(restoreRaw(m[2]));
     out += url === null
       ? fmt(m[1]) // unsafe scheme: keep the text, drop the link
       : `<a href="${esc(url).replace(/"/g, "&quot;")}">${fmt(m[1])}</a>`;
