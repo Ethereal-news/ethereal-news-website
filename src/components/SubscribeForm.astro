@@ -1,22 +1,20 @@
 ---
 import { SUBSCRIBE } from "@consts";
 
-type Props = {
-  /** Heading above the form. */
-  heading?: string;
-};
-
-const { heading = "Get Ethereal news in your inbox" } = Astro.props;
+// Substack only adds a subscriber after a click on its own site (its embed
+// works the same way). This form opens Substack's subscribe page in a new tab
+// with the email already filled in, so the reader just confirms there.
 ---
 
 <form
-  action={SUBSCRIBE.FORM_ACTION}
-  method="post"
+  action={SUBSCRIBE.URL}
+  method="get"
   target="_blank"
   class="not-prose rounded-sm border border-black/15 p-4 dark:border-white/20"
   data-pagefind-ignore
 >
-  <div class="font-semibold text-black dark:text-white">{heading}</div>
+  <input type="hidden" name="utm_source" value="ethereal.news" />
+  <div class="font-semibold text-black dark:text-white">Get Ethereal news in your inbox</div>
   <p class="mt-1 text-sm text-black/60 dark:text-white/60">
     Curated Ethereum news focused on developers, every week. Free.
   </p>
@@ -38,7 +36,7 @@ const { heading = "Get Ethereal news in your inbox" } = Astro.props;
     </button>
   </div>
   <p class="mt-2 text-xs text-black/50 dark:text-white/50">
-    Delivered via Substack. Prefer a feed reader? <a
+    You'll confirm on Substack. Prefer a feed reader? <a
       href="/rss.xml"
       class="underline decoration-black/30 underline-offset-2 hover:text-black dark:decoration-white/30 dark:hover:text-white"
       >RSS</a
