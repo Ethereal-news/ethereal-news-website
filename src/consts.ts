@@ -6,6 +6,16 @@ export const SITE: Site = {
   NUM_CALENDAR_ITEMS_ON_HOMEPAGE: 6,
 };
 
+export const SUBSCRIBE = {
+  /** Substack's subscribe page: used by the header link and SubscribeButton. */
+  URL: "https://etherealnews.substack.com/subscribe",
+  /**
+   * Substack's free-signup endpoint. A plain form POST here (no JS) subscribes
+   * the address and lands the reader on Substack's confirmation page in a new tab.
+   */
+  FORM_ACTION: "https://etherealnews.substack.com/api/v1/free?nojs=true",
+};
+
 export const HOME: Metadata = {
   TITLE: "Latest Ethereum news",
   DESCRIPTION: "Latest Ethereum news focused on developers.",

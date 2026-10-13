@@ -5,6 +5,7 @@ import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
 import SubscribeButton from "@components/SubscribeButton.astro";
+import SubscribeForm from "@components/SubscribeForm.astro";
 import OpenInAI from "@components/OpenInAI.astro";
 import IssueNavigation from "@components/IssueNavigation.astro";
 import UpcomingCalendar from "@components/UpcomingCalendar.astro";
@@ -82,6 +83,9 @@ const { Content } = await render(issue);
       <SubscribeButton />
       <article>
         <Content />
+        <div class="mt-10">
+          <SubscribeForm />
+        </div>
         <div class="mt-6">
           <IssueNavigation prevIssue={prevIssue} nextIssue={nextIssue} />
         </div>
