@@ -1,6 +1,15 @@
 import rss from "@astrojs/rss";
 import { SITE } from "@consts";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
+import { experimental_AstroContainer as AstroContainer } from "astro/container";
+
+/** Newest issues that carry the full issue in <content:encoded>; older ones keep the summary only. */
+const FULL_CONTENT_ISSUES = 10;
+
+/** Root-relative src/href (optimized images under /_astro/, internal links) made absolute for feed readers. */
+function absolutize(html, site) {
+  return html.replace(/(\s(?:src|href)=")\/(?!\/)/g, `$1${new URL("/", site)}`);
+}
 
 export async function GET(context) {
   const issues = (await getCollection("issues")).filter((issue) => !issue.data.draft);
@@ -11,6 +20,14 @@ export async function GET(context) {
 
   const imageUrl = new URL("/etherealnews.jpg", context.site).toString();
   const rssUrl = new URL("/rss.xml", context.site).toString();
+
+  // Render with Astro's own markdown pipeline so the feed matches the site, images included.
+  const container = await AstroContainer.create();
+  const content = new Map();
+  for (const item of items.slice(0, FULL_CONTENT_ISSUES)) {
+    const { Content } = await render(item);
+    content.set(item.id, absolutize(await container.renderToString(Content), context.site));
+  }
 
   return rss({
     title: SITE.TITLE,
@@ -33,6 +50,7 @@ export async function GET(context) {
         description: item.data.description,
         pubDate: item.data.date,
         link: `/${item.id.replace(/\/index$/, "")}/`,
+        content: content.get(item.id),
         customData: `<media:content url="${itemImageUrl}" type="image/jpeg">
 <media:description>${SITE.TITLE}</media:description>
 </media:content>`,
