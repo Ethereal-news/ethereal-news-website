@@ -1,26 +1,45 @@
 ---
 import { SUBSCRIBE } from "@consts";
 
-// Substack's official embed. Substack doesn't add signups posted from other
-// sites, so the form has to live in Substack's own iframe, which handles
-// validation and confirmation. Substack sets the look (white card, orange
-// button) and has no dark mode.
+// Substack only adds a subscriber after a click on its own site (its embed
+// works the same way). This form opens Substack's subscribe page in a new tab
+// with the email already filled in, so the reader just confirms there.
 ---
 
-<div class="not-prose flex flex-col items-center gap-2" data-pagefind-ignore>
-  <iframe
-    src={SUBSCRIBE.EMBED_URL}
-    title="Subscribe to Ethereal news"
-    loading="lazy"
-    width="480"
-    height="320"
-    class="h-[340px] w-full max-w-[480px] rounded-sm border border-solid border-black/15 bg-white dark:border-white/20"
-    scrolling="no"></iframe>
-  <p class="text-xs text-black/50 dark:text-white/50">
-    Prefer a feed reader? <a
+<form
+  action={SUBSCRIBE.URL}
+  method="get"
+  target="_blank"
+  class="not-prose rounded-sm border border-black/15 p-4 dark:border-white/20"
+  data-pagefind-ignore
+>
+  <input type="hidden" name="utm_source" value="ethereal.news" />
+  <div class="font-semibold text-black dark:text-white">Get Ethereal news in your inbox</div>
+  <p class="mt-1 text-sm text-black/60 dark:text-white/60">
+    Curated Ethereum news focused on developers, every week. Free.
+  </p>
+  <div class="mt-3 flex flex-col gap-2 sm:flex-row">
+    <input
+      type="email"
+      name="email"
+      required
+      autocomplete="email"
+      placeholder="you@example.com"
+      aria-label="Email address"
+      class="min-h-11 w-full rounded-sm border border-black/15 bg-white px-3 text-sm text-black placeholder:text-black/40 focus:border-black/40 focus:outline-none dark:border-white/20 dark:bg-neutral-950 dark:text-white dark:placeholder:text-white/40 dark:focus:border-white/50"
+    />
+    <button
+      type="submit"
+      class="min-h-11 shrink-0 cursor-pointer rounded-sm bg-neutral-800 px-5 text-sm font-semibold text-white transition-colors duration-300 ease-in-out hover:bg-neutral-900 focus-visible:bg-neutral-900 dark:bg-neutral-200 dark:text-black dark:hover:bg-neutral-100 dark:focus-visible:bg-neutral-100"
+    >
+      Subscribe
+    </button>
+  </div>
+  <p class="mt-2 text-xs text-black/50 dark:text-white/50">
+    You'll confirm on Substack. Prefer a feed reader? <a
       href="/rss.xml"
       class="underline decoration-black/30 underline-offset-2 hover:text-black dark:decoration-white/30 dark:hover:text-white"
       >RSS</a
     >
   </p>
-</div>
+</form>

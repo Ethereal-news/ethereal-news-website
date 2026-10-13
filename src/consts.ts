@@ -7,10 +7,11 @@ export const SITE: Site = {
 };
 
 export const SUBSCRIBE = {
-  /** Substack's subscribe page: used by the header link and SubscribeButton. */
+  /**
+   * Substack's subscribe page: used by the header link, SubscribeButton and
+   * SubscribeForm (which adds ?email= to prefill the address).
+   */
   URL: "https://etherealnews.substack.com/subscribe",
-  /** Substack's signup embed, used by SubscribeForm. */
-  EMBED_URL: "https://etherealnews.substack.com/embed",
 };
 
 export const HOME: Metadata = {
