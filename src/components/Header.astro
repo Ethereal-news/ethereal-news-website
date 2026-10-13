@@ -21,11 +21,10 @@ const pathname = Astro.url.pathname;
       <nav class="hidden items-center gap-6 text-sm md:flex">
         <a href="https://feed.ethereal.news" class="nav-link">feed</a>
         <a href="/calendar/" class={`nav-link ${pathname.startsWith('/calendar') ? 'nav-link-active' : ''}`}>calendar</a>
-        <a href="/about/" class={`nav-link ${pathname.startsWith('/about') ? 'nav-link-active' : ''}`}>about</a>
         <div class="relative" id="more-dropdown">
           <button
             id="more-btn"
-            class={`nav-link inline-flex items-center gap-0.5 cursor-pointer ${pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) || pathname.startsWith('/leaderboard') || pathname.startsWith('/resources') ? 'nav-link-active' : ''}`}
+            class={`nav-link inline-flex items-center gap-0.5 cursor-pointer ${pathname.startsWith('/about') || pathname.startsWith('/archive') || pathname.match(/^\/\d{4}\//) || pathname.startsWith('/leaderboard') || pathname.startsWith('/resources') ? 'nav-link-active' : ''}`}
           >
             more
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3.5">
@@ -36,15 +35,12 @@ const pathname = Astro.url.pathname;
             id="more-menu"
             class="absolute right-0 top-full mt-2 min-w-[160px] rounded-lg border border-black/15 bg-neutral-100 py-1 shadow-lg dark:border-white/20 dark:bg-neutral-900 transition-all duration-200 ease-out opacity-0 scale-95 pointer-events-none"
           >
+            <a href="/about/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">about</a>
             <a href="/archive/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">archive</a>
             <a href="/leaderboard/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">leaderboard</a>
             <a href="/resources/" class="flex px-3 py-2.5 text-sm transition-colors duration-300 hover:bg-black/5 hover:text-black dark:hover:bg-white/5 dark:hover:text-white">resources</a>
           </div>
         </div>
-        <a
-          href={SUBSCRIBE.URL}
-          class="rounded-sm border border-black/15 px-2.5 py-1 text-black transition-colors duration-300 ease-in-out hover:bg-black/5 focus-visible:bg-black/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5 dark:focus-visible:bg-white/5"
-        >subscribe</a>
         <div class="flex items-center gap-3">
           <button
             id="magnifying-glass"
@@ -67,6 +63,10 @@ const pathname = Astro.url.pathname;
             <span class="text-xs">search</span>
           </button>
           <ThemeToggle />
+          <a
+            href={SUBSCRIBE.URL}
+            class="ml-2 rounded-sm border border-black/15 px-2.5 py-1 text-black transition-colors duration-300 ease-in-out hover:bg-black/5 focus-visible:bg-black/5 dark:border-white/20 dark:text-white dark:hover:bg-white/5 dark:focus-visible:bg-white/5"
+          >subscribe</a>
         </div>
       </nav>
       <div class="md:hidden">
