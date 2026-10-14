@@ -25,7 +25,7 @@ export const ARCHIVE: Metadata = {
 };
 
 export const CALENDAR: Metadata = {
-  TITLE: "calendar",
+  TITLE: "Ethereum events calendar",
   DESCRIPTION:
     "Calendar of Ethereum focused conferences, hackathons, upgrades and grant deadlines.",
 };
@@ -43,7 +43,7 @@ export const RESOURCES: Metadata = {
 };
 
 export const EF_PEOPLE: Metadata = {
-  TITLE: "EF people",
+  TITLE: "Ethereum Foundation people",
   DESCRIPTION:
     "Ethereum Foundation organization structure and people.",
 };
@@ -55,19 +55,19 @@ export const ETHEREUM_RESOURCES: Metadata = {
 };
 
 export const NEWS_SOURCES: Metadata = {
-  TITLE: "news sources",
+  TITLE: "Ethereum news sources",
   DESCRIPTION:
     "Additional Ethereum news sources including newsletters, podcasts and YouTube.",
 };
 
 export const CLIENTS: Metadata = {
-  TITLE: "clients",
+  TITLE: "Ethereum clients",
   DESCRIPTION:
     "Ethereum execution layer and consensus layer clients.",
 };
 
 export const DEV_TOOLING: Metadata = {
-  TITLE: "dev tooling",
+  TITLE: "Ethereum dev tooling",
   DESCRIPTION:
     "Ethereum developer tools including frameworks, client libraries and security tools.",
 };
