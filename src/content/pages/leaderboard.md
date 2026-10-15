@@ -362,5 +362,13 @@ topClicks:
     - johnkarp
     - PeirceArchived
 
+- issue: 42
+  clicks:
+    - drakefjustin
+    - terencechain
+    - AnthropicAI
+    - figtracer
+    - ETHSofiaBG
+
 
 ---
