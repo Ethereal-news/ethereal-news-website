@@ -10,7 +10,7 @@ Roman Storm acquittal hearing, ETHGlobal Cannes hackathon finalists, EVM Now blo
 
 * Ethereum Foundation:  
   * Thomas Coratger (PQ team): [quantum threat & Ethereum roadmap](https://x.com/tcoratger/status/2040847594323100110) explainer  
-  * [EF swapped 5k ETH for stablecoins](https://x.com/ethereumfndn/status/2041878615625728167) to fund R\&D, grants & donations  
+  * [EF swapped 5k ETH for stablecoins](https://x.com/ethereumfndn/status/2041878615625728167) to fund R&D, grants & donations  
 * ETHGlobal Cannes hackathon [finalists](https://x.com/ETHGlobal/status/2040805013937877297) from [266 projects](https://ethglobal.com/showcase?events=cannes2026)  
 * ETH metrics:  
   * [Gas](https://ultrasound.money/#gas) (gwei): 0.1 average, 0.0 \- 1.3 (12.8 for zero net issuance)  

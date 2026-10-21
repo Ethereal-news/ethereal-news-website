@@ -10,7 +10,7 @@ date: 'July 31, 2026'
 
 * Ethereum Foundation: [pcaversaccio joined board](https://blog.ethereum.org/2026/07/29/ef-board-update) for initial one year term on voluntary basis; co-founder & lead of SEAL 911 and member of EF Silviculture Society  
 * Ethereum [11 years since genesis](https://x.com/ethereum/status/2082850621296673042)  
-  * Ethlabs (R\&D lab): [11x11 pixel artwork](https://x.com/ethlabs_org/status/2082835818130063360) using 11 colors for onchain canvas  
+  * Ethlabs (R&D lab): [11x11 pixel artwork](https://x.com/ethlabs_org/status/2082835818130063360) using 11 colors for onchain canvas  
 * Devcon 8 [infinite garden exhibition](https://infinitegarden.art), 2 month online artist cohort, apply by August 25  
 * ETHGlobal Lisbon [hackathon finalists](https://x.com/ETHGlobal/status/2081396442720346241) from [173 projects](https://ethglobal.com/showcase?events=lisbon2026)  
 * ETH metrics:  

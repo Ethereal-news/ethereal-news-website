@@ -132,7 +132,7 @@ A complete suite of trusted products to build anything in web3.
 
 ### Regulation
 
-* S\&P Global: [USDT (Tether) stability assessment](https://www.spglobal.com/ratings/en/regulatory/delegate/getPDF?articleId=3486415) downgraded to weak (from constrained)
+* S&P Global: [USDT (Tether) stability assessment](https://www.spglobal.com/ratings/en/regulatory/delegate/getPDF?articleId=3486415) downgraded to weak (from constrained)
 
 ### General
 

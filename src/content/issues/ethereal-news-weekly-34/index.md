@@ -9,7 +9,7 @@ date: 'August 7, 2026'
 ### Ecosystem
 
 * Issuance change proposal for Hegotá: [EIP8363 tapered issuance burn](https://x.com/jdetychey/status/2084638778677751889), burn fraction of validator idealized duty reward, net staking yield tapers linearly to zero at 50% staking ratio, phased in over 18 months (after the upgrade)  
-  * Governance discussion on [Eth Magicians](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263) & technical discussion (specs, implementation & alternatives) on [Eth R\&D](https://discordapp.com/channels/595666850260713488/1534394630131683409)  
+  * Governance discussion on [Eth Magicians](https://ethereum-magicians.org/t/eip-8363-tapered-issuance-burn/29263) & technical discussion (specs, implementation & alternatives) on [Eth R&D](https://discordapp.com/channels/595666850260713488/1534394630131683409)  
 * Ethereum Foundation:  
   * Will Corcoran [Protocol cluster update](https://x.com/corcoranwill/status/2083313409744130449): highlights & plans per team  
   * EF Trillion Dollar Security [grant for WEBCAT](https://blog.ethereum.org/en/2026/08/05/1ts-grant) (web based code assurance & transparency), fund development of verification library, Chromium browser support research, help devs integrate, external security review & create ERC  

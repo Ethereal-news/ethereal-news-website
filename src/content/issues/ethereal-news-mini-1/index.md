@@ -12,7 +12,7 @@ date: 'July 10, 2026'
   * Lean Ethereum is collection of improvements replacing almost every piece of the protocol over 3-4 years, Hegotá likely last pre-Lean upgrade  
   * Includes privacy as first class goal, formal verification for security, quantum safety, medium scaling of current dynamic state, large scaling of new types of state, gas limit increases, blob increases & slot time decreases  
 * EF Protocol Support team [dissolved](https://x.com/TMIYChao/status/2074907379930440014)  
-* Hiring: [Ethlabs](https://x.com/barnabemonnot/status/2073691519492489354) (R\&D lab) \~10 near term, \~20 medium term & [Ethereum Institutional](https://www.ethereuminstitutional.org/careers/) (accelerate institutional adoption)  
+* Hiring: [Ethlabs](https://x.com/barnabemonnot/status/2073691519492489354) (R&D lab) \~10 near term, \~20 medium term & [Ethereum Institutional](https://www.ethereuminstitutional.org/careers/) (accelerate institutional adoption)  
 * Devcon 8 [speaker applications open](https://devcon.org/en/speaker-applications/), August 6 deadline  
 * ETHConf [videos](https://ethconf.com/talks)  
 * ETH metrics:  

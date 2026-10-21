@@ -1,10 +1,10 @@
 ---
 title: 'Ethereal news weekly #40'
-description: 'US SEC innovation exemption for trading tokenized stocks on permissioned AMMs, S\&P Global acquiring OpenZeppelin, Blockspace Forum multi party block construction live'
+description: 'US SEC innovation exemption for trading tokenized stocks on permissioned AMMs, S&P Global acquiring OpenZeppelin, Blockspace Forum multi party block construction live'
 date: 'September 18, 2026'
 ---
 
-*US SEC innovation exemption for trading tokenized stocks on permissioned AMMs, S\&P Global acquiring OpenZeppelin, Blockspace Forum multi party block construction live*
+*US SEC innovation exemption for trading tokenized stocks on permissioned AMMs, S&P Global acquiring OpenZeppelin, Blockspace Forum multi party block construction live*
 
 ### Ecosystem
 
@@ -37,7 +37,7 @@ The first self-custody wallet to guarantee an Ethereum or EVM app transaction ma
 
 ### Enterprise
 
-* S\&P Global [acquiring OpenZeppelin](https://press.spglobal.com/2026-09-17-S-P-Global-Announces-Agreement-to-Acquire-OpenZeppelin), will continue as its own business unit under the OpenZeppelin name, [OpenZeppelin Contracts to remain open source](https://www.openzeppelin.com/news/spglobal-enters-agreement-to-acquire-openzeppelin)  
+* S&P Global [acquiring OpenZeppelin](https://press.spglobal.com/2026-09-17-S-P-Global-Announces-Agreement-to-Acquire-OpenZeppelin), will continue as its own business unit under the OpenZeppelin name, [OpenZeppelin Contracts to remain open source](https://www.openzeppelin.com/news/spglobal-enters-agreement-to-acquire-openzeppelin)  
 * Deutsche Bank [digital asset custody](https://www.db.com/news/detail/20260916-deutsche-bank-to-launch-digital-asset-custody-solution-for-institutional-and-corporate-clients) for European institutional & corporate clients, includes ETH & selected stablecoins (USDC, EURC & EURAU), targeting this year
 
 ### Applications

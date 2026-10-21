@@ -11,7 +11,7 @@ date: 'July 17, 2026'
 * [EthSystems](https://ethsystems.org/blog/introducing-ethsystems/) launched, for profit, building confidential systems for institutions:  
   * Founding team (ex-EF Institutional Privacy Task Force): Mo Jalil, Oskar Thorén & Aaryamann Challani  
   * [Anchor funding](https://www.globenewswire.com/news-release/2026/07/14/3326790/0/en/ethsystems-launches-to-build-privacy-solutions-for-institutions-on-ethereum.html) includes Bitmine, Sharplink & Joe Lubin  
-* [Ethlabs](https://x.com/ethlabs_org/status/2077739868025762252) (R\&D lab): Francesco (researcher) moving from EF  
+* [Ethlabs](https://x.com/ethlabs_org/status/2077739868025762252) (R&D lab): Francesco (researcher) moving from EF  
 * Cambridge Centre for Alternative Finance [Ethereum environmental footprint](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/ethereum-after-the-merge-a-change-in-power/): \~7.87 GWh annually, \~8,522 nodes at \~105 W each & \~2.37 ktCO₂e annual emissions  
 * Devcon 8 [tickets](https://blog.ethereum.org/en/2026/07/14/devcon8-tickets): general admission first wave $499 ETH or $999 fiat; self claim community discounts; student, youth & builder applications (reviewed in rolling batches)  
 * ETH metrics:  

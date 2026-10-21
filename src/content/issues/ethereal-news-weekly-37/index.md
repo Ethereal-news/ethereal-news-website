@@ -11,7 +11,7 @@ date: 'August 28, 2026'
 * Ethereum Foundation:  
   * EF Academic Secretariat hiring [project manager (academic engagements)](https://jobs.ashbyhq.com/ethereum-foundation/aa57649b-4d03-4b48-80c4-ec5a58f5abb0)  
   * Workshop on privacy preserving technologies (Asiacrypt, Hong Kong): [call for presentations](https://privacypreserving.tech/call), 3 page abstract, deadline September 25  
-* Ethlabs (R\&D lab): [Mislav Javor](https://x.com/ox_shaman/status/2091885798069072355) joined  
+* Ethlabs (R&D lab): [Mislav Javor](https://x.com/ox_shaman/status/2091885798069072355) joined  
 * ETH metrics:  
   * [Gas](https://ultrasound.money/#gas) (gwei): 0.3 average, 0 \- 9.3 (13.4 for zero net issuance)  
   * [ETH supply change](https://ultrasound.money): 20k net issuance  

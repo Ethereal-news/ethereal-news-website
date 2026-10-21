@@ -21,7 +21,7 @@ date: 'June 26, 2026'
     * EF is for **eliminating weaknesses** (e.g. EF dogfooding ETH/stablecoins & preventing toxic MEV) and **seizing opportunities**  
     * **Departures**: mix of resignations & terminations due to strategy, role fit, normal change & best contribution elsewhere  
     * **Spinouts**: mix of better homes, markets should decide worth, not mandate compatible & useful but not EF work  
-* [Ethlabs](https://ethlabs.org/thesis.html) launched, non-profit R\&D lab for Ethereum & ETH  
+* [Ethlabs](https://ethlabs.org/thesis.html) launched, non-profit R&D lab for Ethereum & ETH  
   * Founding team (ex-EF protocol): Ansgar Dietrichs, Barnabé Monnot, Caspar Schwarz-Schilling, Josh Rudolf & Julian Ma  
   * [Anchor funding](https://www.globenewswire.com/news-release/2026/06/22/3315546/0/en/ethlabs-founded-by-former-ethereum-foundation-contributors-and-funded-by-bitmine-sharplink-and-joe-lubin-launches-to-accelerate-ethereum-s-institutional-supercycle.html) by Bitmine, Sharplink & Joe Lubin   
 * ETH metrics:  
