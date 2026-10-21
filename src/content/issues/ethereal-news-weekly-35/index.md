@@ -15,7 +15,7 @@ date: 'August 14, 2026'
   * Team: Nixo, Butta, Patricio Worthalter, Yorick, Jérôme de Tychey, Marc Garreau & Franco Balzani  
   * Nixo [All Core Devs facilitator role](https://x.com/nixorokish/status/2087164297306595557) jointly funded with Protocol Guild [ACD Fund](https://www.protocolguild.org/blog/20260810-announcing-ACD-Fund-and-Nixo-Support)  
   * [Forkcast](https://x.com/wolovim/status/2087173693151588496) (built by Marc Garreau) new home  
-* Ethlabs (R\&D lab): [Derek Chiang](https://x.com/decentrek/status/2087585101261725854) (ZeroDev founder) joined  
+* Ethlabs (R&D lab): [Derek Chiang](https://x.com/decentrek/status/2087585101261725854) (ZeroDev founder) joined  
 * Berlin Ethereum day (June 15\) [videos](https://www.youtube.com/playlist?list=PLZldrTINNNNM)  
 * Science of Blockchain Conference (July 27-29) [videos](https://www.sbc-conference.com/2026/)  
 * Devcon 8 [music performance applications](https://docs.google.com/forms/d/e/1FAIpQLSck9I3Tu0lZqCBt9FsE9VG4UjGM71gbY86aDDlC9jb_akPMmg/viewform) open for live music & DJs   

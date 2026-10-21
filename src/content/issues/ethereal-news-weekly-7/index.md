@@ -67,7 +67,7 @@ We’ve consolidated everything you need to build on MetaMask, from quickstarts 
 
 ### All core devs (main protocol calls)
 
-[Tim Beiko](https://x.com/i/status/2009625017554772107) moving on from L1 R\&D to explore frontier use cases
+[Tim Beiko](https://x.com/i/status/2009625017554772107) moving on from L1 R&D to explore frontier use cases
 
 #### All core devs \- execution (ACDE) [\#228](https://forkcast.org/calls/acde/228)
 

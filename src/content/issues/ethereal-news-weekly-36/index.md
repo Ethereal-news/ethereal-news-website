@@ -11,7 +11,7 @@ date: 'August 21, 2026'
 * Ethereum Foundation:  
   * EF Formal Verification [better.codes](https://blog.ethereum.org/en/2026/08/20/better-codes-challenge): autoresearch challenge raising proven lower bound for koalaIRS12 to 128 bits, to advance hash based SNARKs  
   * EF Ecosystem Support Program [Q2 allocations](https://blog.ethereum.org/en/2026/08/18/allocation-q2-26), 70 projects shared $5.5M; ZK proofs, client diversity, formal verification, tooling & internship program  
-* Ethlabs (R\&D lab): [Binji](https://x.com/binji_x/status/2090112863746642176) (ex-EF) joined as founding member  
+* Ethlabs (R&D lab): [Binji](https://x.com/binji_x/status/2090112863746642176) (ex-EF) joined as founding member  
 * Devcon 8:  
   * Reminder: [community hub applications](https://forum.devcon.org/t/rfp-13-devcon-8-india-community-hubs/8657) deadline August 26  
   * [Student discounted ticket applications](https://x.com/EFDevcon/status/2088469227040624921) extended to September 30  
@@ -89,7 +89,7 @@ A complete suite of trusted products to build anything in web3.
 * [Hegotá](https://forkcast.org/upgrade/hegota/) upgrade (targeting 2027):  
   * Non-headliners proposed for inclusion (67 EIPs):  
     * EF Protocol Architecture: [Hegotá preferences](https://ethereum-magicians.org/t/eip-8081-hegota-network-upgrade-meta-thread/26876/7)  
-    * Ethlabs (R\&D lab): [Hegotá preferences](https://ethlabs.org/writings/hegota-view.html)  
+    * Ethlabs (R&D lab): [Hegotá preferences](https://ethlabs.org/writings/hegota-view.html)  
     * [Forkcast tier maker](https://forkcast.org/rank/): create EIP ranking, share on [Eth Magicians](https://ethereum-magicians.org/t/eip-8081-hegota-network-upgrade-meta-thread/26876)  
   * FOCIL breakout [\#40](https://x.com/jih2nn/status/2090027687343694203), focil-devnet-0 ([spec](https://notes.ethereum.org/@ethpandaops/focil-devnet-0)) targeting August 31  
 * [ZisK v1.1.0-alpha](https://x.com/ziskvm/status/2089645436806078570) (proving): 4 x 5090 GPUs with p99 of 9.62s  

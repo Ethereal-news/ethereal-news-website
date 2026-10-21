@@ -13,7 +13,7 @@ date: 'July 3, 2026'
   * Founding team (ex-EF Enterprise): David Walsh, Marius Smith & Matthew Dawson  
   * Focus areas: engagement, research, marketing, discovery & events  
   * [Anchor funding](https://www.globenewswire.com/news-release/2026/07/01/3320659/0/en/ethereum-institutional-launches-as-independent-non-profit-to-bring-institutional-finance-onchain-at-scale.html) by Bitmine, Sharplink & Joe Lubin  
-* Ethlabs (non-profit R\&D lab) [FAQ](https://x.com/ethlabs_org/status/2071543303741309181):  
+* Ethlabs (non-profit R&D lab) [FAQ](https://x.com/ethlabs_org/status/2071543303741309181):  
   * Work domains: chain (execution scaling, blob scaling & faster Ethereum), platform (interop, block construction market & EVM) and growth (go to market for Fast Confirmation Rule)  
   * 2-3 years of runway including hiring  
 * [ETH.sh Ethereum orgs](https://eth.sh/orgs): directory of foundations, labs, guilds, collectives & treasury companies  

@@ -12,7 +12,7 @@ date: 'May 8, 2026'
   * 200M+ gas limit target post-Glamsterdam upgrade  
   * ePBS implementations running with external builders  
   * [EIP8037](https://forkcast.org/eips/8037) state creation gas cost increase: changed from being dynamic to a fixed cost per state byte  
-  * [Tim Beiko](https://hackmd.io/@nixorokish/svalbard-closing-summary#8-Closing-Remarks) finished work on L1 R\&D  
+  * [Tim Beiko](https://hackmd.io/@nixorokish/svalbard-closing-summary#8-Closing-Remarks) finished work on L1 R&D  
   * Alex Stokes on 3 month sabbatical, Pari covering ACDC moderation   
 * [25M blocks](https://etherscan.io/block/25000000) on mainnet  
 * Ethereum Foundation:  
