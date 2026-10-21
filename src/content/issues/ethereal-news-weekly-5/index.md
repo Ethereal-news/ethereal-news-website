@@ -4,7 +4,7 @@ description: 'Vitalik: call to improve usability & decentralization, Nethereum 1
 date: 'January 2, 2026'
 ---
 
-Vitalik: call to improve usability & decentralization, Nethereum 10 year anniversary release, Uniswap interface fees set to zero
+*Vitalik: call to improve usability & decentralization, Nethereum 10 year anniversary release, Uniswap interface fees set to zero*
 
 ### Ecosystem
 

@@ -4,7 +4,7 @@ description: 'Fusaka upgrade live on mainnet, client diversity: Lighthouse 55%, 
 date: 'December 5, 2025'
 ---
 
-Fusaka upgrade live on mainnet, client diversity: Lighthouse 55%, Beacon chain 5th anniversary
+*Fusaka upgrade live on mainnet, client diversity: Lighthouse 55%, Beacon chain 5th anniversary*
 
 ### Ecosystem
 

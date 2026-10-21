@@ -4,7 +4,7 @@ description: 'Clear signing, CLARITY Act advanced out of Senate Banking committe
 date: 'May 15, 2026'
 ---
 
-Clear signing, CLARITY Act advanced out of Senate Banking committee, Ben Edgington fast finality plan
+*Clear signing, CLARITY Act advanced out of Senate Banking committee, Ben Edgington fast finality plan*
 
 ### Ecosystem
 

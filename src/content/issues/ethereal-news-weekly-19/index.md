@@ -4,7 +4,7 @@ description: 'Roman Storm acquittal hearing, ETHGlobal Cannes hackathon finalist
 date: 'April 10, 2026'
 ---
 
-Roman Storm acquittal hearing, ETHGlobal Cannes hackathon finalists, EVM Now block explorer
+*Roman Storm acquittal hearing, ETHGlobal Cannes hackathon finalists, EVM Now block explorer*
 
 ### Ecosystem
 

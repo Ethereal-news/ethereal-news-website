@@ -4,7 +4,7 @@ description: 'BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, So
 date: 'February 13, 2026'
 ---
 
-BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity developer survey
+*BlackRock BUIDL tradeable via UniswapX, ENS staying on mainnet, Solidity developer survey*
 
 ### Ecosystem
 

@@ -4,7 +4,7 @@ description: 'Etherealize: ETH is productive money, DeFi united: effort to resto
 date: 'April 24, 2026'
 ---
 
-Etherealize: ETH is productive money, DeFi united effort to restore rsETH backing, Arbitrum security council froze exploiter ETH
+*Etherealize: ETH is productive money, DeFi united effort to restore rsETH backing, Arbitrum security council froze exploiter ETH*
 
 ### Ecosystem
 

@@ -4,7 +4,7 @@ description: 'Gas limit increased to 60M, Fusaka upgrade December 3, FOCIL not i
 date: 'November 28, 2025'
 ---
 
-Gas limit increased to 60M, Fusaka upgrade December 3, FOCIL not in Glamsterdam upgrade 
+*Gas limit increased to 60M, Fusaka upgrade December 3, FOCIL not in Glamsterdam upgrade*
 
 ### Ecosystem
 

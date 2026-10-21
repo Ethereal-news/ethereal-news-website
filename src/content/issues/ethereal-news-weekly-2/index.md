@@ -4,7 +4,7 @@ description: 'BPO1 upgrade increased blobs, DTC securities tokenization pilot, W
 date: 'December 12, 2025'
 ---
 
-BPO1 upgrade increased blobs, DTC securities tokenization pilot, William Mougayar: Ethereum valuation 
+*BPO1 upgrade increased blobs, DTC securities tokenization pilot, William Mougayar: Ethereum valuation*
 
 ### Ecosystem
 

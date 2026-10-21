@@ -4,7 +4,7 @@ description: 'ePBS first devnet live, Aave Labs temp check passed, Synthesis AI 
 date: 'March 6, 2026'
 ---
 
-ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hackathon
+*ePBS first devnet live, Aave Labs temp check passed, Synthesis AI \+ human hackathon*
 
 ### Ecosystem
 

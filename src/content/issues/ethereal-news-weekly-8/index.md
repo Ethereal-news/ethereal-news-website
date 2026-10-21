@@ -4,7 +4,7 @@ description: 'NYSE tokenized securities platform, Neynar new steward of Farcaste
 date: 'January 23, 2026'
 ---
 
-NYSE tokenized securities platform, Neynar new steward of Farcaster, Glamsterdam upgrade Considered for Inclusion scope finalized
+*NYSE tokenized securities platform, Neynar new steward of Farcaster, Glamsterdam upgrade Considered for Inclusion scope finalized*
 
 ### Ecosystem
 

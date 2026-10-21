@@ -4,7 +4,7 @@ description: 'Uniswap voted for UNIfication, Devcon 8 November 3 - 6 at JIO Worl
 date: 'December 26, 2025'
 ---
 
-Uniswap voted for UNIfication, Devcon 8 November 3 \- 6 at JIO World Center, Punks & Squiggles donated to MoMA
+*Uniswap voted for UNIfication, Devcon 8 November 3 \- 6 at JIO World Center, Punks & Squiggles donated to MoMA*
 
 ### Ecosystem
 

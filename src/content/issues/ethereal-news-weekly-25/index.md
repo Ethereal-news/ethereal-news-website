@@ -4,7 +4,7 @@ description: 'Vitalik: EF will be smaller & more opinionated, Base Azul upgrade 
 date: 'May 29, 2026'
 ---
 
-Vitalik: EF will be smaller & more opinionated, Base Azul upgrade live with multiproofs, FTSE Russell US indexes: Bitmine & Sharplink to join
+*Vitalik: EF will be smaller & more opinionated, Base Azul upgrade live with multiproofs, FTSE Russell US indexes: Bitmine & Sharplink to join*
 
 ### Ecosystem
 

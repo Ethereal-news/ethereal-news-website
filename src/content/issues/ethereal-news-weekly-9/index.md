@@ -4,7 +4,7 @@ description: 'Fidelity Investments FIDD stablecoin, TheDAO Security Fund, Hegot�
 date: 'January 30, 2026'
 ---
 
-Fidelity Investments FIDD stablecoin, TheDAO Security Fund, Hegotá upgrade headliner proposals
+*Fidelity Investments FIDD stablecoin, TheDAO Security Fund, Hegotá upgrade headliner proposals*
 
 ### Ecosystem
 
