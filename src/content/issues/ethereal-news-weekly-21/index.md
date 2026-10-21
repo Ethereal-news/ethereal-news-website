@@ -4,7 +4,7 @@ description: 'DeFi United technical implementation plan to restore rsETH backing
 date: 'May 1, 2026'
 ---
 
-DeFi United technical implementation plan to restore rsETH backing, Solidity 0.8.35, Status Network merging into Linea stack
+*DeFi United technical implementation plan to restore rsETH backing, Solidity 0.8.35, Status Network merging into Linea stack*
 
 ### Ecosystem
 

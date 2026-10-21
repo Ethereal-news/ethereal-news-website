@@ -4,7 +4,7 @@ description: 'FOCIL is Hegotá consensus layer headliner, EF protocol priorities
 date: 'February 20, 2026'
 ---
 
-FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack
+*FOCIL is Hegotá consensus layer headliner, EF protocol priorities: Scale, Improve UX & Harden the L1, Base moving to own stack*
 
 ### Ecosystem
 

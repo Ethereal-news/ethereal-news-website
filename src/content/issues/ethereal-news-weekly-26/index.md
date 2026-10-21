@@ -4,7 +4,7 @@ description: 'Justin Drake qday odds: 10% by 2030 & 50% by 2032, Aave rsETH post
 date: 'June 5, 2026'
 ---
 
-Justin Drake qday odds: 10% by 2030 & 50% by 2032, Aave rsETH post mortem, glamsterdam-devnet-5 launched
+*Justin Drake qday odds: 10% by 2030 & 50% by 2032, Aave rsETH post mortem, glamsterdam-devnet-5 launched*
 
 ### Ecosystem
 

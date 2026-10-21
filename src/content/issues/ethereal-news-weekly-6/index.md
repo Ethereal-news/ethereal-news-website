@@ -4,7 +4,7 @@ description: 'BPO2 upgrade increased blobs, write Roman Storm a letter of suppor
 date: 'January 9, 2026'
 ---
 
-BPO2 upgrade increased blobs, write Roman Storm a letter of support, Octant epoch 10
+*BPO2 upgrade increased blobs, write Roman Storm a letter of support, Octant epoch 10*
 
 ### Ecosystem
 

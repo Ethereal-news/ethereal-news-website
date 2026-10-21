@@ -4,7 +4,7 @@ description: 'LG Electronics built L2 for advertising, Aave risk framework propo
 date: 'June 12, 2026'
 ---
 
-LG Electronics built L2 for advertising, Aave risk framework proposed, history of account abstraction
+*LG Electronics built L2 for advertising, Aave risk framework proposed, history of account abstraction*
 
 ### Ecosystem
 

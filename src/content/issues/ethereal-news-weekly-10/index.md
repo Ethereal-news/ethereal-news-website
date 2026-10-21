@@ -4,7 +4,7 @@ description: 'Vitalik: role of L2s has changed, Hegotá upgrade headliner propos
 date: 'February 6, 2026'
 ---
 
-Vitalik: role of L2s has changed, Hegotá upgrade headliner proposals, Lido v3 live
+*Vitalik: role of L2s has changed, Hegotá upgrade headliner proposals, Lido v3 live*
 
 ### Ecosystem
 

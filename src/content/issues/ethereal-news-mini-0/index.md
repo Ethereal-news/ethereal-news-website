@@ -4,7 +4,7 @@ description: 'Solidity developer survey results, ether.fi migrated to OP Mainnet
 date: 'April 17, 2026'
 ---
 
-Solidity developer survey results, ether.fi migrated to OP Mainnet, X $ETH cashtag
+*Solidity developer survey results, ether.fi migrated to OP Mainnet, X $ETH cashtag*
 
 ### Ecosystem
 

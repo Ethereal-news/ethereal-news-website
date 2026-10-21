@@ -4,7 +4,7 @@ description: 'Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas token
 date: 'February 27, 2026'
 ---
 
-Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund
+*Strawmap (strawman roadmap), EF staking 70k ETH, BNP Paribas tokenized fund*
 
 ### Ecosystem
 

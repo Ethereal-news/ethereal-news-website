@@ -4,7 +4,7 @@ description: 'Devcon 8 early bird tickets, ApeWorX collective: nonprofit for Pyt
 date: 'May 22, 2026'
 ---
 
-Devcon 8 early bird tickets, ApeWorX collective: nonprofit for Python dev tooling, glamsterdam-devnet-4 launched
+*Devcon 8 early bird tickets, ApeWorX collective: nonprofit for Python dev tooling, glamsterdam-devnet-4 launched*
 
 ### Ecosystem
 

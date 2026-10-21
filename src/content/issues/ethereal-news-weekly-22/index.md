@@ -4,7 +4,7 @@ description: '200M+ gas limit target post-Glamsterdam, 25M blocks on mainnet, Ar
 date: 'May 8, 2026'
 ---
 
-200M+ gas limit target post-Glamsterdam, 25M blocks on mainnet, Arbitrum DAO voted to release frozen ETH
+*200M+ gas limit target post-Glamsterdam, 25M blocks on mainnet, Arbitrum DAO voted to release frozen ETH*
 
 ### Ecosystem
 

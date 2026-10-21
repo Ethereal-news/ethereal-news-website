@@ -4,7 +4,7 @@ description: 'J.P. Morgan tokenized fund, Privacy Pools on Arbitrum & Optimism, 
 date: 'December 19, 2025'
 ---
 
-J.P. Morgan tokenized fund, Privacy Pools on Arbitrum & Optimism, SEC talks privacy
+*J.P. Morgan tokenized fund, Privacy Pools on Arbitrum & Optimism, SEC talks privacy*
 
 ### Ecosystem
 

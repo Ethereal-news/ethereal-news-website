@@ -4,7 +4,7 @@ description: 'Frame transaction Considered for Inclusion for Hegotá, EthStaker 
 date: 'March 27, 2026'
 ---
 
-Frame transaction Considered for Inclusion for Hegotá, EthStaker staking survey, EF post-quantum website
+*Frame transaction Considered for Inclusion for Hegotá, EthStaker staking survey, EF post-quantum website*
 
 ### Ecosystem
 

@@ -4,7 +4,7 @@ description: 'Ethereum must pass walkaway test, Base app focuses on trading, Tra
 date: 'January 16, 2026'
 ---
 
-Ethereum must pass walkaway test, Base app focuses on trading, Trail of Bits Claude Code skills
+*Ethereum must pass walkaway test, Base app focuses on trading, Trail of Bits Claude Code skills*
 
 ### Ecosystem
 

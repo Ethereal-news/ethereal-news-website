@@ -4,7 +4,7 @@ description: 'US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, E
 date: 'March 13, 2026'
 ---
 
-US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, EF bug bounty $1M max payout
+*US DoJ seeks Roman Storm retrial, BlackRock staked ETH ETF live, EF bug bounty $1M max payout*
 
 ### Ecosystem
 

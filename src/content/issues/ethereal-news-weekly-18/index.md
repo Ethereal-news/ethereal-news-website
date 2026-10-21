@@ -4,7 +4,7 @@ description: 'Quantum breakthrough papers, Aave v4, Aztec alpha'
 date: 'April 3, 2026'
 ---
 
-Quantum breakthrough papers, Aave v4, Aztec alpha
+*Quantum breakthrough papers, Aave v4, Aztec alpha*
 
 ### Ecosystem
 

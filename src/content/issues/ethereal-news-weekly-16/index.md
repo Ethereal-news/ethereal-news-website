@@ -4,7 +4,7 @@ description: 'US SEC securities laws application to crypto, fast confirmation ru
 date: 'March 20, 2026'
 ---
 
-US SEC securities laws application to crypto, fast confirmation rule, EF mandate
+*US SEC securities laws application to crypto, fast confirmation rule, EF mandate*
 
 ### Ecosystem
 
