@@ -370,5 +370,13 @@ topClicks:
     - figtracer
     - ETHSofiaBG
 
+- issue: 43
+  clicks:
+    - rish_neynar
+    - VitalikButerin
+    - barnabemonnot
+    - Ledger
+    - ac6kdev
+
 
 ---
