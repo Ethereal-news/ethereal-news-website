@@ -378,5 +378,13 @@ topClicks:
     - Ledger
     - ac6kdev
 
+- issue: 44
+  clicks:
+    - AnthropicAI
+    - mysticryuujin
+    - austingriffith
+    - joshrudolf
+    - 0xprivacypools
+
 
 ---
