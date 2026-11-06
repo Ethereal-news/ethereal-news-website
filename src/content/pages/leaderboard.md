@@ -386,5 +386,13 @@ topClicks:
     - joshrudolf
     - 0xprivacypools
 
+- issue: 45
+  clicks:
+    - OpenAI
+    - donnoh_eth
+    - decentrek
+    - ensdomains
+    - EFDevcon
+
 
 ---
