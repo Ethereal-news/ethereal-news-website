@@ -394,5 +394,13 @@ topClicks:
     - ensdomains
     - EFDevcon
 
+- issue: 46
+  clicks:
+    - VitalikButerin
+    - VitalikButerin
+    - ethereumtv_
+    - drakefjustin
+    - Amundi_ENG
+
 
 ---
